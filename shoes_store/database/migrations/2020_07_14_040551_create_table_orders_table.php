@@ -18,7 +18,7 @@ class CreateTableOrdersTable extends Migration
             $table->unsignedBigInteger('user_id');
             $table->float('amount');
             $table->timestamp('date_order');
-            $table->string('date_order', 255)->nullable();
+            $table->string('note', 255)->nullable();
             $table->foreign('user_id')
                 ->references('id')->on('users')
                 ->onDelete('cascade');

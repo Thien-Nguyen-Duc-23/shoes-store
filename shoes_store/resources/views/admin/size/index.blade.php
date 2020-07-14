@@ -69,11 +69,9 @@
                                         <td class="text-sllipsis ">XL</td>
                                         <td class="text-center">ddd</td>
                                         <td class="text-center">dddd</td>
-                                        <td class="text-center pull-right-container">
+                                        <td class="text-center">
                                             <a href="{{ route('size.edit', 1) }}" class="btn btn-info btn-sm">Edit</a>
-                                            {!! Form::open(['url' => route('size.destroy', 1),'method' => 'DELETE', 'class' => 'form-delete']) !!}
-                                                <button type="button" class="btn btn-danger btn-sm btn-delete" data-id="1" data-table="notifications">Delete</button>
-                                            {!! Form::close() !!}
+                                            <button type="button" class="btn btn-danger btn-sm btn-delete" data-id="1" data-table="notifications">Delete</button>
                                         </td>
                                     </tr>
                                     {{-- @endforeach --}}

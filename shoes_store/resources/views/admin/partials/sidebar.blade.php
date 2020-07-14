@@ -34,7 +34,7 @@
         </a>
         <ul class="treeview-menu">
           <li class="active"><a href="{{ route('size.index') }}"><i class="fa fa-circle-o"></i> List Size </a></li>
-          <li><a href="index2.html"><i class="fa fa-circle-o"></i> Create </a></li>
+          <li><a href="{{ route('size.create') }}"><i class="fa fa-circle-o"></i> Create </a></li>
         </ul>
       </li>
     </ul>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Sizes;
 
 class SizeController extends Controller
 {
@@ -24,7 +25,7 @@ class SizeController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.size.create');
     }
 
     /**
@@ -57,7 +58,8 @@ class SizeController extends Controller
      */
     public function edit($id)
     {
-        //
+        $size = Sizes::find($id);
+        return view('admin.size.edit', compact('size'));
     }
 
     /**

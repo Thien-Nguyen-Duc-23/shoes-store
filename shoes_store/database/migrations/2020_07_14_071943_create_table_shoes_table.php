@@ -19,7 +19,7 @@ class CreateTableShoesTable extends Migration
             $table->foreign('category_id')
                 ->references('id')->on('categories')
                 ->onDelete('cascade');
-            $table->string('slug', 255)->unique();
+            $table->string('slug', 255);
             $table->string('name', 255);
             $table->float('price');
             $table->float('price_sale')->nullable();
