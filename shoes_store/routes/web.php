@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('layout.admin');
+Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
+    Route::get('/', 'DashboardController@index')->name('index');
 });

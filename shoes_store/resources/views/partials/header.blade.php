@@ -30,99 +30,99 @@
                     </span>
                     </a>
                     <ul class="dropdown-menu">
-                    <li class="header">You have 4 messages
-                    </li>
-                    <li>
-                        <!-- inner menu: contains the actual data -->
-                        <ul class="menu">
-                        <li>
-                            <!-- start message -->
-                            <a href="#">
-                            <div class="pull-left">
-                                <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-                            </div>
-                            <h4>
-                                Support Team
-                                <small>
-                                <i class="fa fa-clock-o">
-                                </i> 5 mins
-                                </small>
-                            </h4>
-                            <p>Why not buy a new awesome theme?
-                            </p>
-                            </a>
-                        </li>
-                        <!-- end message -->
-                        <li>
-                            <a href="#">
-                            <div class="pull-left">
-                                <img src="dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
-                            </div>
-                            <h4>
-                                AdminLTE Design Team
-                                <small>
-                                <i class="fa fa-clock-o">
-                                </i> 2 hours
-                                </small>
-                            </h4>
-                            <p>Why not buy a new awesome theme?
-                            </p>
-                            </a>
+                        <li class="header">You have 4 messages
                         </li>
                         <li>
-                            <a href="#">
-                            <div class="pull-left">
-                                <img src="dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
-                            </div>
-                            <h4>
-                                Developers
-                                <small>
-                                <i class="fa fa-clock-o">
-                                </i> Today
-                                </small>
-                            </h4>
-                            <p>Why not buy a new awesome theme?
-                            </p>
+                            <!-- inner menu: contains the actual data -->
+                            <ul class="menu">
+                                <li>
+                                    <!-- start message -->
+                                    <a href="#">
+                                    <div class="pull-left">
+                                        <img src="{{ asset('admin_lte/dist/img/user2-160x160.jpg') }}" class="img-circle" alt="User Image">
+                                    </div>
+                                    <h4>
+                                        Support Team
+                                        <small>
+                                        <i class="fa fa-clock-o">
+                                        </i> 5 mins
+                                        </small>
+                                    </h4>
+                                    <p>Why not buy a new awesome theme?
+                                    </p>
+                                    </a>
+                                </li>
+                                <!-- end message -->
+                                <li>
+                                    <a href="#">
+                                    <div class="pull-left">
+                                        <img src="{{ asset('admin_lte/dist/img/user2-160x160.jpg') }}" class="img-circle" alt="User Image">
+                                    </div>
+                                    <h4>
+                                        AdminLTE Design Team
+                                        <small>
+                                        <i class="fa fa-clock-o">
+                                        </i> 2 hours
+                                        </small>
+                                    </h4>
+                                    <p>Why not buy a new awesome theme?
+                                    </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    <div class="pull-left">
+                                        <img src="{{ asset('admin_lte/dist/img/user2-160x160.jpg') }}" class="img-circle" alt="User Image">
+                                    </div>
+                                    <h4>
+                                        Developers
+                                        <small>
+                                        <i class="fa fa-clock-o">
+                                        </i> Today
+                                        </small>
+                                    </h4>
+                                    <p>Why not buy a new awesome theme?
+                                    </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    <div class="pull-left">
+                                        <img src="{{ asset('admin_lte/dist/img/user3-128x128.jpg') }}" class="img-circle" alt="User Image">
+                                    </div>
+                                    <h4>
+                                        Sales Department
+                                        <small>
+                                        <i class="fa fa-clock-o">
+                                        </i> Yesterday
+                                        </small>
+                                    </h4>
+                                    <p>Why not buy a new awesome theme?
+                                    </p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    <div class="pull-left">
+                                        <img src="{{ asset('admin_lte/dist/img/user4-128x128.jpg') }}" class="img-circle" alt="User Image">
+                                    </div>
+                                    <h4>
+                                        Reviewers
+                                        <small>
+                                        <i class="fa fa-clock-o">
+                                        </i> 2 days
+                                        </small>
+                                    </h4>
+                                    <p>Why not buy a new awesome theme?
+                                    </p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="footer">
+                            <a href="#">See All Messages
                             </a>
                         </li>
-                        <li>
-                            <a href="#">
-                            <div class="pull-left">
-                                <img src="dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
-                            </div>
-                            <h4>
-                                Sales Department
-                                <small>
-                                <i class="fa fa-clock-o">
-                                </i> Yesterday
-                                </small>
-                            </h4>
-                            <p>Why not buy a new awesome theme?
-                            </p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                            <div class="pull-left">
-                                <img src="dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
-                            </div>
-                            <h4>
-                                Reviewers
-                                <small>
-                                <i class="fa fa-clock-o">
-                                </i> 2 days
-                                </small>
-                            </h4>
-                            <p>Why not buy a new awesome theme?
-                            </p>
-                            </a>
-                        </li>
-                        </ul>
-                    </li>
-                    <li class="footer">
-                        <a href="#">See All Messages
-                        </a>
-                    </li>
                     </ul>
                 </li>
                 <!-- Notifications: style can be found in dropdown.less -->
@@ -275,14 +275,14 @@
                 <!-- User Account: style can be found in dropdown.less -->
                 <li class="dropdown user user-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                    <img src="{{ asset('admin_lte/dist/img/user2-160x160.jpg') }}" class="user-image" alt="User Image">
                     <span class="hidden-xs">Alexander Pierce
                     </span>
                     </a>
                     <ul class="dropdown-menu">
                     <!-- User image -->
                     <li class="user-header">
-                        <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                        <img src="{{ asset('admin_lte/dist/img/user2-160x160.jpg') }}" class="img-circle" alt="User Image">
                         <p>
                         Alexander Pierce - Web Developer
                         <small>Member since Nov. 2012
@@ -323,8 +323,8 @@
                 <!-- Control Sidebar Toggle Button -->
                 <li>
                     <a href="#" data-toggle="control-sidebar">
-                    <i class="fa fa-gears">
-                    </i>
+                        <i class="fa fa-gears">
+                        </i>
                     </a>
                 </li>
             </ul>
