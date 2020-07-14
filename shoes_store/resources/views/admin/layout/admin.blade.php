@@ -30,14 +30,13 @@
     </head>
     <body class="hold-transition skin-blue sidebar-mini">
         <div class="wrapper">
-            @includeIf('partials.header')
+            @includeIf('admin.partials.header')
             <!-- Left side column. contains the logo and sidebar -->
-            @includeIf('partials.sidebar')
+            @includeIf('admin.partials.sidebar')
             <!-- Content Wrapper. Contains page content -->
-            <div class="content-wrapper">
-            </div>
+            @yield('content')
             <!-- /.content-wrapper -->
-            @includeIf('partials.footer')
+            @includeIf('admin.partials.footer')
         </div>
         <!-- ./wrapper -->
 
