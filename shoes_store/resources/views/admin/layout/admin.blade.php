@@ -31,6 +31,8 @@
     <body class="hold-transition skin-blue sidebar-mini">
         <div class="wrapper">
             @includeIf('admin.partials.header')
+            <!-- begin::Model delete -->
+            @includeIf('admin.common.modal_del')
             <!-- Left side column. contains the logo and sidebar -->
             @includeIf('admin.partials.sidebar')
             <!-- Content Wrapper. Contains page content -->
@@ -69,6 +71,8 @@
         <script src="{{ asset('admin_lte/dist/js/pages/dashboard.js') }}"></script>
         <!-- AdminLTE for demo purposes -->
         <script src="{{ asset('admin_lte/dist/js/demo.js') }}"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="{{ asset('js/admin.js') }}"></script>
         @stack('scripts')
     </body>
 </html>

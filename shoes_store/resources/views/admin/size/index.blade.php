@@ -3,7 +3,7 @@
 @section('content')
     <div class="content-wrapper">
         <section class="content">
-            {{-- @include('flash::message') --}}
+            @include('flash::message')
             <div class="row box-search">
                 <div class="col-md-12">
                     <div class="box">
@@ -12,7 +12,7 @@
                         </div>
                         <!-- /.box-header -->
                         <!-- form start -->
-                        {!! Form::open(['method' => 'GET', 'url' => '', 'class' => 'form-horizontal']) !!}
+                        {!! Form::open(['method' => 'GET', 'url' => route("size.index"), 'class' => 'form-horizontal']) !!}
                             <div class="box-body">
                                 <div class="row">
                                     <div class="col-md-8">
@@ -55,32 +55,38 @@
                             <table class="table table-striped table-hover table-bordered" per-page="" current-page="">
                                 <thead>
                                     <tr>
-                                        <th>ID</th>
-                                        <th>Name</th>
-                                        <th>Created At</th>
-                                        <th>Updated_at</th>
-                                        <th>Action</th>
+                                        <th class="text-center">ID</th>
+                                        <th class="text-center">Name</th>
+                                        <th class="text-center">Created At</th>
+                                        <th class="text-center">Updated_at</th>
+                                        <th class="text-center">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {{-- @foreach($admins as $val) --}}
-                                    <tr>
-                                        <td class="">1</td>
-                                        <td class="text-sllipsis ">XL</td>
-                                        <td class="text-center">ddd</td>
-                                        <td class="text-center">dddd</td>
-                                        <td class="text-center">
-                                            <a href="{{ route('size.edit', 1) }}" class="btn btn-info btn-sm">Edit</a>
-                                            <button type="button" class="btn btn-danger btn-sm btn-delete" data-id="1" data-table="notifications">Delete</button>
-                                        </td>
-                                    </tr>
-                                    {{-- @endforeach --}}
+                                    @foreach($sizes as $size)
+                                        <tr>
+                                            <td class="text-center">{{ $size->id }}</td>
+                                            <td class="text-center">{{ $size->name }}</td>
+                                            <td class="text-center">{{ \Carbon\Carbon::parse($size->created_at)->toDateTimeString() ?? '' }}</td>
+                                            <td class="text-center">{{ \Carbon\Carbon::parse($size->updated_at)->toDateTimeString() ?? '' }}</td>
+                                            <td class="text-center">
+                                                <div>
+                                                    <a style="display: inline-block;" href="{{ route('size.edit', $size->id) }}" class="btn btn-info btn-sm">Edit</a>
+                                                    {!! Form::open(['url' => route('size.destroy', $size->id),'method' => 'DELETE', 'class' => 'form-delete', 'style' => 'display: inline-block;']) !!}
+                                                        <button type="button" class="btn btn-danger btn-sm btn-delete" data-id="1" data-table="notifications" style="display: inline-block;">Delete</button>
+                                                    {!! Form::close() !!}
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>
                         <!-- /.box-body -->
                         <div class="box-footer clearfix float-right">
-                            {{-- {!! $admins->appends(request()->query())->links() !!} --}}
+                            <div style="float: right;">
+                                {!! $sizes->appends(request()->query())->links() !!}
+                            </div>
                         </div>
                     </div>
                 </div>
