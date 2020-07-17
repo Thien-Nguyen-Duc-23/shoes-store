@@ -12,5 +12,5 @@
 */
 
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
-    Route::get('/', 'DashboardController@index')->name('index');
+    Route::resource('size', 'SizeController');
 });
