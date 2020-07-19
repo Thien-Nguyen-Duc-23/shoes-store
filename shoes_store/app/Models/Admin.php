@@ -7,12 +7,12 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class User extends Authenticatable
+class Admin extends Authenticatable
 {
     use Notifiable;
     use SoftDeletes;
 
-    protected $table = 'users';
+    protected $table = 'admins';
     protected $dates = ['deleted_at'];
 
     /**
@@ -22,6 +22,7 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
+        'role_id',
         'email',
         'password',
         'status',
@@ -54,8 +55,8 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function orders()
+    public function role()
     {
-        return $this->hasMany(Orders::class, 'user_id');
+        return $this->belongsTo(Roles::class, 'role_id');
     }
 }

@@ -12,6 +12,10 @@
 */
 
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
-    Route::resource('size', 'SizeController');
-    Route::resource('color', 'ColorController');
+    Route::prefix('auth')->group(base_path('routes/auth.php'));
+    Route::group(['middleware' => 'admin.auth'], function () {
+        Route::get('dashboard', 'DashboardController@index')->name('admin.dashboard');
+        Route::resource('size', 'SizeController');
+        Route::resource('color', 'ColorController');
+    });
 });

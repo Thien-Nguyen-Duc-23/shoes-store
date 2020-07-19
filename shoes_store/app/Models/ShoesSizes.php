@@ -26,6 +26,6 @@ class ShoesSizes extends Model
 
     public function sizes()
     {
-        return $this->belongsTo(Sizes::class, 'size_id');
+        return $this->belongsTo(Sizes::class, 'size_id');
     }
 }

@@ -17,8 +17,28 @@ class RedirectIfAuthenticated
      */
     public function handle($request, Closure $next, $guard = null)
     {
-        if (Auth::guard($guard)->check()) {
-            return redirect('/home');
+        switch ($guard) {
+            case 'admin':
+                if (Auth::guard($guard)->check()) {
+                    // if (Auth::guard($guard)->user()->role_id == config('define.admin')) {
+                    //     return redirect(route('users.index'));
+                    // } else {
+                        return redirect(route('dashboard.index'));
+                    // }
+                }
+                break;
+            // case 'client':
+            //     if (Auth::guard($guard)->check()) {
+            //         if (Auth::guard($guard)->user()->role_id == config('define.user')) {
+            //             return redirect(session('link'));
+            //         }
+            //     }
+            //     break;
+            default:
+                if (Auth::guard($guard)->check()) {
+                    return redirect()->back();
+                }
+                break;
         }
 
         return $next($request);

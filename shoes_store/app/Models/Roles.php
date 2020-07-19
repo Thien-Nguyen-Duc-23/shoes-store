@@ -4,9 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Colors extends Model
+class Roles extends Model
 {
-    protected $table = 'colors';
+    protected $table = 'roles';
     protected $dates = ['deleted_at'];
 
     protected $fillable = [
@@ -15,8 +15,8 @@ class Colors extends Model
         'updated_at',
     ];
 
-    public function shoesColors()
+    public function admin()
     {
-        return $this->hasMany(ShoesColors::class, 'color_id');
+        return $this->hasMany(Admin::class, 'role_id');
     }
 }
