@@ -26,6 +26,6 @@ class ShoesColors extends Model
 
     public function colors()
     {
-        return $this->belongsTo(Colors::class, 'color_id');
+        return $this->belongsTo(Colors::class, 'color_id');
     }
 }

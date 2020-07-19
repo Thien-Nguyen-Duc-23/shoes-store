@@ -27,6 +27,11 @@
       <li class="header">MAIN NAVIGATION</li>
       <li class="active treeview">
         <a href="#">
+          <i class="fa fa-ticket"></i> <span>Dashboard</span>
+        </a>
+      </li>
+      <li class="active treeview">
+        <a href="#">
           <i class="fa fa-ticket"></i> <span>Size</span>
           <span class="pull-right-container">
             <i class="fa fa-angle-left pull-right"></i>
