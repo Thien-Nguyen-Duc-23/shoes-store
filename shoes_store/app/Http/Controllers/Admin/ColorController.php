@@ -4,9 +4,9 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Models\Sizes;
+use App\Models\Colors;
 
-class SizeController extends Controller
+class ColorController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,17 +15,17 @@ class SizeController extends Controller
      */
     public function index(Request $request)
     {
-        $sizes = new Sizes;
+        $colors = new Colors;
         if ($request->id) {
-            $sizes = $sizes->where('id', $request->id);
+            $colors = $colors->where('id', $request->id);
         }
         if ($request->name) {
-            $sizes = $sizes->where('name', 'like', '%' . $request->name . '%');
+            $colors = $colors->where('name', 'like', '%' . $request->name . '%');
         }
 
-        $sizes = $sizes->orderBy('created_at', 'asc')->paginate(15);
+        $colors = $colors->orderBy('created_at', 'asc')->paginate(15);
 
-        return view('admin.size.index', compact('sizes'));
+        return view('admin.color.index', compact('colors'));
     }
 
     /**
@@ -35,7 +35,7 @@ class SizeController extends Controller
      */
     public function create()
     {
-        return view('admin.size.create');
+        return view('admin.color.create');
     }
 
     /**
@@ -51,11 +51,11 @@ class SizeController extends Controller
             $data = [
                 'name' => $request->name,
             ];
-            Sizes::create($data);
+            Colors::create($data);
 
             \DB::commit();
             flash('Created Successfully!', ['name' => 'Insert successfully'])->success();
-            return redirect()->route('size.index');
+            return redirect()->route('color.index');
         } catch (\Exception $e) {
             \DB::rollBack();
             \Log::error($e->getMessage());
@@ -83,13 +83,13 @@ class SizeController extends Controller
      */
     public function edit($id)
     {
-        $size = Sizes::find($id);
-        if (!$size) {
-            flash('Not find size!')->warning();
+        $color = Colors::find($id);
+        if (!$color) {
+            flash('Not find color!')->warning();
             return redirect()->back();
         }
 
-        return view('admin.size.edit', compact('size'));
+        return view('admin.color.edit', compact('color'));
     }
 
     /**
@@ -106,11 +106,11 @@ class SizeController extends Controller
             $data = [
                 'name' => $request->name,
             ];
-            Sizes::where('id', $id)->update($data);
+            Colors::where('id', $id)->update($data);
 
             \DB::commit();
             flash('Update Successfully!', ['name' => 'Update successfully'])->success();
-            return redirect()->route('size.index');
+            return redirect()->route('color.index');
         } catch (\Exception $e) {
             \DB::rollBack();
             \Log::error($e->getMessage());
@@ -129,16 +129,16 @@ class SizeController extends Controller
     {
         \DB::beginTransaction();
         try {
-            $size = Sizes::find($id);
-            if (!$size) {
+            $color = Colors::find($id);
+            if (!$color) {
                 flash('Not find size!')->warning();
                 return redirect()->back();
             }
 
-            $size->delete();
+            $color->delete();
             \DB::commit();
             flash('Delete Successfully!', ['name' => 'Delete successfully'])->success();
-            return redirect()->route('size.index');
+            return redirect()->route('color.index');
         } catch (\Exception $e) {
             \DB::rollBack();
             \Log::notice($e->getMessage());

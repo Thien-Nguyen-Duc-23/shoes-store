@@ -34,7 +34,19 @@
         </a>
         <ul class="treeview-menu">
           <li class="active"><a href="{{ route('size.index') }}"><i class="fa fa-circle-o"></i> List Size </a></li>
-          <li><a href="{{ route('size.create') }}"><i class="fa fa-circle-o"></i> Create </a></li>
+          <li><a href="{{ route('size.create') }}"><i class="fa fa-circle-o"></i> New </a></li>
+        </ul>
+      </li>
+      <li class="active treeview">
+        <a href="#">
+          <i class="fa fa-ticket"></i> <span>Color</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+        </a>
+        <ul class="treeview-menu">
+          <li class="active"><a href="{{ route('color.index') }}"><i class="fa fa-circle-o"></i> List Color </a></li>
+          <li><a href="{{ route('color.create') }}"><i class="fa fa-circle-o"></i> New </a></li>
         </ul>
       </li>
     </ul>
