@@ -13,4 +13,5 @@
 
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
     Route::resource('size', 'SizeController');
+    Route::resource('color', 'ColorController');
 });
