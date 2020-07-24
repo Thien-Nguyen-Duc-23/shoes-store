@@ -25,7 +25,7 @@
             <!-- /.login-logo -->
             <div class="login-box-body">
                 @if (session('error'))
-                    <p class="login-box-msg">
+                    <p class="text-danger login-box-msg">
                         {{ session('error') }}
                     </p>
                 @endif
@@ -36,8 +36,8 @@
                         <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus placeholder="Email">
                         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
                         @if ($errors->has('email'))
-                            <span class="help-block">
-                                <strong>{{ $errors->first('email') }}</strong>
+                            <span class="text-danger help-block">
+                                <strong class="text-danger">{{ $errors->first('email') }}</strong>
                             </span>
                         @endif
                     </div>
@@ -46,8 +46,8 @@
                         <input id="password" type="password" class="form-control" name="password" required  placeholder="Password">
                         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                         @if ($errors->has('password'))
-                            <span class="help-block">
-                                <strong>{{ $errors->first('password') }}</strong>
+                            <span class="text-danger help-block">
+                                <strong class="text-danger">{{ $errors->first('password') }}</strong>
                             </span>
                         @endif
                     </div>

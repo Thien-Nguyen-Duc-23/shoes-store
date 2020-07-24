@@ -23,6 +23,7 @@ class CreateTableShoesSizesTable extends Migration
             $table->foreign('size_id')
                 ->references('id')->on('sizes')
                 ->onDelete('cascade');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

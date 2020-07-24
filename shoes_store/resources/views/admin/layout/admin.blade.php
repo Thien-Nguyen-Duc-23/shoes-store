@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>AdminLTE 2 | Dashboard</title>
+        <title>@yield('title', 'Shoes Store')</title>
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <!-- Bootstrap 3.3.7 -->
@@ -26,6 +26,10 @@
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.0.1/css/fileinput.min.css" media="all" rel="stylesheet" type="text/css" />
+        {{-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script> --}}
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.0.1/js/fileinput.min.js"></script>
+        <link href="{{ asset('libs/fileinput/fileinput.min.css') }}" rel="stylesheet" type="text/css">
         @stack('styles')
     </head>
     <body class="hold-transition skin-blue sidebar-mini">
@@ -73,6 +77,8 @@
         <script src="{{ asset('admin_lte/dist/js/demo.js') }}"></script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script src="{{ asset('js/admin.js') }}"></script>
+        <script src="{{ asset('libs/fileinput/fileinput.min.js') }}"></script>
+        <script src="{{ asset('libs/bootstrap-notify/bootstrap-notify.min.js') }}"></script>
         @stack('scripts')
     </body>
 </html>

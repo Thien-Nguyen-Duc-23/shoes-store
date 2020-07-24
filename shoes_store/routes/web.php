@@ -17,5 +17,6 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
         Route::get('dashboard', 'DashboardController@index')->name('admin.dashboard');
         Route::resource('size', 'SizeController');
         Route::resource('color', 'ColorController');
+        Route::resource('category', 'CategoryController');
     });
 });

@@ -23,6 +23,8 @@ class CreateTableShoesColorsTable extends Migration
             $table->foreign('color_id')
                 ->references('id')->on('colors')
                 ->onDelete('cascade');
+            
+            $table->softDeletes();
             $table->timestamps();
         });
     }

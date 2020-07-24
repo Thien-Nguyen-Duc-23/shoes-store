@@ -25,6 +25,7 @@ class CreateTableOrderDetailsTable extends Migration
                 ->onDelete('cascade');
             $table->integer('quantity');
             $table->float('price');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

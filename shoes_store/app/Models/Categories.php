@@ -9,8 +9,12 @@ class Categories extends Model
 {
     use SoftDeletes;
 
-    protected $table = 'colors';
-    protected $dates = ['deleted_at'];
+    protected $table = 'categories';
+    protected $dates = [
+        'deleted_at',
+    ];
+
+    const DIRECTORY = 'category';
 
     protected $fillable = [
         'name',

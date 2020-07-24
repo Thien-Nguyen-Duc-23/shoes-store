@@ -1,5 +1,5 @@
 @extends('admin.layout.admin')
-@section('title', 'Size List')
+@section('title', 'Categories List')
 @section('content')
     <div class="content-wrapper">
         <section class="content">
@@ -8,11 +8,11 @@
                 <div class="col-md-12">
                     <div class="box">
                         <div class="box-header with-border">
-                            <h3 class="box-title">Filter List Of Sizes</h3>
+                            <h3 class="box-title">Filter List Of Category</h3>
                         </div>
                         <!-- /.box-header -->
                         <!-- form start -->
-                        {!! Form::open(['method' => 'GET', 'url' => route("size.index"), 'class' => 'form-horizontal']) !!}
+                        {!! Form::open(['method' => 'GET', 'url' => route("category.index"), 'class' => 'form-horizontal']) !!}
                             <div class="box-body">
                                 <div class="row">
                                     <div class="col-md-8">
@@ -57,23 +57,35 @@
                                     <tr>
                                         <th class="text-center">ID</th>
                                         <th class="text-center">Name</th>
+                                        <th class="text-center">Image</th>
+                                        <th class="text-center">Description</th>
                                         <th class="text-center">Created At</th>
                                         <th class="text-center">Updated_at</th>
                                         <th class="text-center">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach($sizes as $size)
+                                    @foreach($categories as $category)
                                         <tr>
-                                            <td class="text-center">{{ $size->id }}</td>
-                                            <td class="text-center">{{ $size->name }}</td>
-                                            <td class="text-center">{{ \Carbon\Carbon::parse($size->created_at)->toDateTimeString() ?? '' }}</td>
-                                            <td class="text-center">{{ \Carbon\Carbon::parse($size->updated_at)->toDateTimeString() ?? '' }}</td>
+                                            <td class="text-center">{{ $category->id }}</td>
+                                            <td class="text-center">{{ $category->name }}</td>
+                                            <td class="text-center">
+                                                <div class="product-img">
+                                                    @php
+                                                        $categoryImage = \Storage::disk('public')->exists(\App\Models\Categories::DIRECTORY.'/'.$category->image) ?  Storage::disk(config('filesystems.public_disk'))->url(\App\Models\Categories::DIRECTORY.'/'.$category->image) : asset('admin_lte/dist/img/default-50x50.gif');
+                                                    @endphp
+                                                    <img style="width: 50px; height: 50px;" src="{{ $categoryImage }}" alt="Product Image">
+                                                </div>
+                                            </td>
+                                            <td class="text-center">{{ $category->description }}</td>
+                                            <td class="text-center">{{ \Carbon\Carbon::parse($category->created_at)->toDateTimeString() ?? '' }}</td>
+                                            <td class="text-center">{{ \Carbon\Carbon::parse($category->updated_at)->toDateTimeString() ?? '' }}</td>
                                             <td class="text-center">
                                                 <div>
-                                                    <a style="display: inline-block;" href="{{ route('size.edit', $size->id) }}" class="btn btn-info btn-sm">Edit</a>
-                                                    {!! Form::open(['url' => route('size.destroy', $size->id),'method' => 'DELETE', 'class' => 'form-delete', 'style' => 'display: inline-block;']) !!}
-                                                        <button type="button" class="btn btn-danger btn-sm btn-delete" data-id="1" data-table="notifications" style="display: inline-block;">Delete</button>
+                                                    <a style="display: inline-block;" href="{{ route('category.edit', $category->id) }}" class="btn btn-info btn-sm">Edit</a>
+                                                    <a style="display: inline-block;" href="{{ route('category.show', $category->id) }}" class="btn btn-primary btn-sm">Show</a>
+                                                    {!! Form::open(['url' => route('category.destroy', $category->id),'method' => 'DELETE', 'class' => 'form-delete', 'style' => 'display: inline-block;']) !!}
+                                                        <button type="button" class="btn btn-danger btn-sm btn-delete" data-id="{{ $category->id}}" data-table="notifications" style="display: inline-block;">Delete</button>
                                                     {!! Form::close() !!}
                                                 </div>
                                             </td>
@@ -85,7 +97,7 @@
                         <!-- /.box-body -->
                         <div class="box-footer clearfix float-right">
                             <div style="float: right;">
-                                {!! $sizes->appends(request()->query())->links() !!}
+                                {!! $categories->appends(request()->query())->links() !!}
                             </div>
                         </div>
                     </div>
