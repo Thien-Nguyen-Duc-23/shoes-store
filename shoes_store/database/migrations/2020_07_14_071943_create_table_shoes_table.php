@@ -26,7 +26,8 @@ class CreateTableShoesTable extends Migration
             $table->string('image');
             $table->string('sort_description', 255);
             $table->text('long_description');
-            $table->boolean('status')->default(1)->comment('1: active| 0: not active');;
+            $table->boolean('status')->default(1)->comment('1: active| 0: not active');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

@@ -1,5 +1,5 @@
 @extends('admin.layout.admin')
-
+@section('title', 'Color List')
 @section('content')
     <div class="content-wrapper">
         <section class="content">

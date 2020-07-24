@@ -20,6 +20,7 @@ class CreateTableShoesImagesTable extends Migration
                 ->references('id')->on('shoes')
                 ->onDelete('cascade');
             $table->string('image');
+            $table->softDeletes();
             $table->timestamps();
         });
     }
