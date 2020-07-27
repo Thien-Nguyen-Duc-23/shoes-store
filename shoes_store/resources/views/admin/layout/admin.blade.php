@@ -30,6 +30,8 @@
         {{-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script> --}}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.0.1/js/fileinput.min.js"></script>
         <link href="{{ asset('libs/fileinput/fileinput.min.css') }}" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{{ asset('admin_lte/plugins/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/bootstrap-datetimepicker.css') }}" />
         @stack('styles')
     </head>
     <body class="hold-transition skin-blue sidebar-mini">
@@ -76,6 +78,8 @@
         <!-- AdminLTE for demo purposes -->
         <script src="{{ asset('admin_lte/dist/js/demo.js') }}"></script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script type="text/javascript" src="{{ asset('js/bootstrap-datetimepicker.js') }}"></script>
+        <script src="{{ asset('admin_lte/plugins/bootstrap-switch/dist/js/bootstrap-switch.min.js') }}"></script>
         <script src="{{ asset('js/admin.js') }}"></script>
         <script src="{{ asset('libs/fileinput/fileinput.min.js') }}"></script>
         <script src="{{ asset('libs/bootstrap-notify/bootstrap-notify.min.js') }}"></script>
