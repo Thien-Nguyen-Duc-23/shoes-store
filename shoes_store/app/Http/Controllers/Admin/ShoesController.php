@@ -5,6 +5,9 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Shoes;
+use App\Models\Categories;
+use App\Models\Colors;
+use App\Models\Sizes;
 
 class ShoesController extends Controller
 {
@@ -35,7 +38,11 @@ class ShoesController extends Controller
      */
     public function create()
     {
-        return view('admin.shoes.create');
+        $colors = Colors::all()->pluck('name', 'id')->toArray();
+        $sizes = Sizes::all()->pluck('name', 'id')->toArray();
+        $categories = Categories::all()->pluck('name', 'id')->toArray();
+        // dd($categories);
+        return view('admin.shoes.create', compact('categories', 'sizes', 'colors'));
     }
 
     /**

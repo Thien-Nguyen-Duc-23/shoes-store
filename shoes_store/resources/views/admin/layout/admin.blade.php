@@ -8,6 +8,9 @@
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <!-- Bootstrap 3.3.7 -->
         <link rel="stylesheet" href="{{ asset('admin_lte/bower_components/bootstrap/dist/css/bootstrap.min.css') }}">
+        
+        <!-- Select2 -->
+        <link rel="stylesheet" href="{{ asset('admin_lte/bower_components/select2/dist/css/select2.min.css') }}">
         <!-- Font Awesome -->
         <link rel="stylesheet" href="{{ asset('admin_lte/bower_components/font-awesome/css/font-awesome.min.css') }}">
         <!-- Ionicons -->
@@ -58,6 +61,9 @@
         </script>
         <!-- Bootstrap 3.3.7 -->
         <script src="{{ asset('admin_lte/bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+        
+        <!-- Select2 -->
+        <script src="{{ asset('admin_lte/bower_components/select2/dist/js/select2.full.min.js') }}"></script>
         <!-- jQuery Knob Chart -->
         <script src="{{ asset('admin_lte/bower_components/jquery-knob/dist/jquery.knob.min.js') }}"></script>
         <!-- daterangepicker -->
@@ -83,6 +89,29 @@
         <script src="{{ asset('js/admin.js') }}"></script>
         <script src="{{ asset('libs/fileinput/fileinput.min.js') }}"></script>
         <script src="{{ asset('libs/bootstrap-notify/bootstrap-notify.min.js') }}"></script>
+        <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
+        <script>
+            CKEDITOR.replace( 'editor1', {
+                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}'
+            } );
+        </script>
+        <script>
+            $(document).ready(function () {
+                //Initialize Select2 Elements
+                $('.select2').select2()
+                //Initialize Select2 Elements
+
+                // Active Menu
+                if ($(".nav-link").hasClass("active")) {
+                    $(".active").parents(".has-treeview").addClass("menu-open")
+                }
+            });
+        </script>
         @stack('scripts')
     </body>
 </html>
