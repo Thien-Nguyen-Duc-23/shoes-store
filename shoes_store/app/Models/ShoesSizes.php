@@ -14,7 +14,7 @@ class ShoesSizes extends Model
 
     protected $fillable = [
         'shoes_id',
-        'size_id',
+        'size_id',
         'created_at',
         'updated_at',
     ];
