@@ -10,7 +10,7 @@
                 <div class="box">
                     <!-- /.box-header -->
                     <!-- form start -->
-                    @includeIf('admin.category.form')
+                    @includeIf('admin.shoes.form')
                 </div>
             </div>
         </div>

@@ -12,6 +12,8 @@ class ShoesImages extends Model
     protected $table = 'shoes_images';
     protected $dates = ['deleted_at'];
 
+    const DIRECTORY = 'shoes_image';
+
     protected $fillable = [
         'shoes_id',
         'image',

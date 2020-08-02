@@ -18,32 +18,31 @@ class Controller extends BaseController
      *
      * @return file_name
      */
-    // public function uploadImage($path, $file, $id, $old_image = '')
-    // {
-    //     try {
-    //         $filesystemPutOptions = [
-    //             'disk' => config('filesystems.default'),
-    //         ];
-    //         $file = $request->file('image');
-    //         $path = $path.'/'.$id;
-    //         $extension  = $file->getClientOriginalExtension();
-    //         $filename   = uniqid().'_'.time().'_'.date('Ymd').'.'.$extension;
+    public function uploadImage($path, $file, $old_image = '')
+    {
+        // try {
+            $filesystemPutOptions = [
+                'disk' => config('filesystems.public_disk'),
+            ];
+            $path = $path;
+            $extension  = $file->getClientOriginalExtension();
+            $filename   = uniqid().'_'.time().'_'.date('Ymd').'.'.$extension;
 
-    //         if (!\Storage::disk('public')->exists($path)) {
-    //             \Storage::disk('public')->makeDirectory($path);
-    //         }
+            if (!\Storage::disk('public')->exists($path)) {
+                \Storage::disk('public')->makeDirectory($path);
+            }
 
-    //         // In the case update image
-    //         if ($old_image) {
-    //             \Storage::disk($filesystemPutOptions)->delete($path.'/'.$old_image);
-    //         }
+            // In the case update image
+            if ($old_image) {
+                \Storage::disk($filesystemPutOptions)->delete($path.'/'.$old_image);
+            }
 
-    //         $file->storeAs($path, $filename, config('filesystems.disks.public'));
+            $file->storeAs($path, $filename, config('filesystems.public_disk'));
 
-    //         return true;
-    //     } catch (\Exception $e) {
-    //         \Log::error($e->getMessage());
-    //         return false;
-    //     }
-    // }
+            return $filename;
+        // } catch (\Exception $e) {
+        //     // \Log::error($e->getMessage());
+        //     return false;
+        // }
+    }
 }

@@ -28,7 +28,7 @@ class CreateTableShoesTable extends Migration
             $table->string('sort_description', 255);
             $table->text('long_description');
             $table->boolean('status')->default(1)->comment('1: active| 0: not active');
-            $table->boolean('is_sale')->default(1)->comment('1: sale| 0: not sale');
+            $table->boolean('is_sale')->default(0)->comment('1: sale| 0: not sale');
             $table->date('start_date_sale')->nullable();
             $table->date('end_date_sale')->nullable();
             $table->string('sku', 255);
