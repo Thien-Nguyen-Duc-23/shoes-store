@@ -26,7 +26,6 @@ class ShoesEditRequest extends FormRequest
     {
         define('GET_ID_URL', 3);
 
-        // dd($this);
         return [
             'name'  =>  'required|max:255',
             'sku'   =>  'required|max:255|unique:shoes,sku,'. $this->segment(GET_ID_URL) .',id,deleted_at,NULL',

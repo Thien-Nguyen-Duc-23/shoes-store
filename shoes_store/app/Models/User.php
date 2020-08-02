@@ -15,6 +15,8 @@ class User extends Authenticatable
     protected $table = 'users';
     protected $dates = ['deleted_at'];
 
+    const DIRECTORY = 'customer';
+
     /**
      * The attributes that are mass assignable.
      *
