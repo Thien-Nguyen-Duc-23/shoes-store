@@ -69,13 +69,13 @@
                                 <tbody>
                                     @foreach($shoes as $sh)
                                         <tr>
-                                            <td class="text-center">{{ $category->id }}</td>
+                                            <td class="text-center">{{ $sh->id }}</td>
                                             <td class="text-center">
                                                 <div class="product-img">
                                                     @php
-                                                        $shImage = \Storage::disk('public')->exists(\App\Models\Shoes::DIRECTORY.'/'.$sh->image) ?  Storage::disk(config('filesystems.public_disk'))->url(\App\Models\Categories::DIRECTORY.'/'.$sh->image) : asset('admin_lte/dist/img/default-50x50.gif');
+                                                        $shImage = \Storage::disk('public')->exists(\App\Models\Shoes::DIRECTORY.'/'.$sh->image) ?  Storage::disk(config('filesystems.public_disk'))->url(\App\Models\Shoes::DIRECTORY.'/'.$sh->image) : asset('admin_lte/dist/img/default-50x50.gif');
                                                     @endphp
-                                                    <img style="width: 50px; height: 50px;" src="{{ $categoryImage }}" alt="Product Image">
+                                                    <img style="width: 50px; height: 50px;" src="{{ $shImage }}" alt="Product Image">
                                                 </div>
                                             </td>
                                             <td class="text-center">{{ $sh->sku }}</td>

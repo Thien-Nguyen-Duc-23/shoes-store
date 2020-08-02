@@ -12,6 +12,8 @@ class Shoes extends Model
     protected $table = 'shoes';
     protected $dates = ['deleted_at'];
 
+    const DIRECTORY = 'shoes';
+
     protected $fillable = [
         'category_id',
         'slug',
