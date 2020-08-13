@@ -20,7 +20,7 @@ class Controller extends BaseController
      */
     public function uploadImage($path, $file, $old_image = '')
     {
-        // try {
+        try {
             $filesystemPutOptions = [
                 'disk' => config('filesystems.public_disk'),
             ];
@@ -34,15 +34,15 @@ class Controller extends BaseController
 
             // In the case update image
             if ($old_image) {
-                \Storage::disk($filesystemPutOptions)->delete($path.'/'.$old_image);
+                \Storage::disk(config('filesystems.public_disk'))->delete($path.'/'.$old_image);
             }
 
             $file->storeAs($path, $filename, config('filesystems.public_disk'));
 
             return $filename;
-        // } catch (\Exception $e) {
-        //     // \Log::error($e->getMessage());
-        //     return false;
-        // }
+        } catch (\Exception $e) {
+            // \Log::error($e->getMessage());
+            return false;
+        }
     }
 }

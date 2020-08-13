@@ -90,6 +90,18 @@
           <li><a href="{{ route('customer.create') }}"><i class="fa fa-circle-o"></i> New </a></li>
         </ul>
       </li>
+      <li class="treeview">
+        <a href="#">
+          <i class="fa fa-ticket"></i> <span>Banner</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+        </a>
+        <ul class="treeview-menu">
+          <li class="active"><a href="{{ route('banner.index') }}"><i class="fa fa-circle-o"></i> List Banners </a></li>
+          <li><a href="{{ route('banner.create') }}"><i class="fa fa-circle-o"></i> New </a></li>
+        </ul>
+      </li>
     </ul>
   </section>
   <!-- /.sidebar -->

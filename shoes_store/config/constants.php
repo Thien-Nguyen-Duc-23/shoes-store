@@ -11,4 +11,8 @@ return [
     'superAdmin' => 3,
     'paginate' => 15,
     'lengthTitle' => 6,
+    'status' => [
+        '0' => 'Deactivate',
+        '1' => 'Active'
+    ],
 ];
