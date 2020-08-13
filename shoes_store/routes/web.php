@@ -19,6 +19,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
         Route::resource('color', 'ColorController');
         Route::resource('category', 'CategoryController');
         Route::resource('shoes', 'ShoesController');
-        Route::resource('customer', 'CustomerController'); 
+        Route::resource('customer', 'CustomerController');
+        Route::resource('banner', 'BannerController'); 
     });
 });
