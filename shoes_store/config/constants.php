@@ -15,4 +15,30 @@ return [
         '0' => 'Deactivate',
         '1' => 'Active'
     ],
+    'order_status' => [
+        '1' => 'New', 
+        '2' => 'Processing',
+        '3' => 'Hold',
+        '4' => 'Canceled',
+        '5' => 'Done',
+        '99' => 'Failed'
+    ],
+    'shipping_status' => [
+        '1' => 'Not sent',
+        '2' => 'Sending',
+        '3' => 'Shipping done',
+    ],
+    'payment_status' => [
+        '1' => 'Unpaid',
+        '2' => 'Paid'
+    ],
+    'shipping_method' => [
+        '1' => 'Shipping Standard',
+        '99' => 'Orther'
+    ],
+    'payment_method' => [
+        '1' => 'Cash on delivery',
+        '2' => 'Paypal',
+        '99' => 'Orther'
+    ]
 ];

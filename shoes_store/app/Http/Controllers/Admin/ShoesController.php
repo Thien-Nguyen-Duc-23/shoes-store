@@ -75,7 +75,7 @@ class ShoesController extends Controller
                 'category_id' => $request->category_id,
                 'price_cost' => $request->price_cost,
                 'price' => $request->price,
-                'is_sale' => $request->is_sale ?? 0,
+                'is_sale' => $request->is_sale ? 1 : 0,
                 'price_sale' => $request->price_sale ?? null,
                 'start_date_sale' => $request->start_date_sale ? Carbon::parse($request->start_date_sale)->format('Y-m-d') : null,
                 'end_date_sale' => $request->end_date_sale ? Carbon::parse($request->end_date_sale)->format('Y-m-d') : null,
@@ -264,7 +264,7 @@ class ShoesController extends Controller
             }
 
             \DB::commit();
-            flash('Created Successfully!', ['name' => 'Update successfully'])->success();
+            flash('Update Successfully!', ['name' => 'Update successfully'])->success();
             return redirect()->route('shoes.index');
         } catch (\Exception $e) {
             \DB::rollBack();

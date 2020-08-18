@@ -9,7 +9,7 @@ class OrderDetails extends Model
 {
     use SoftDeletes;
 
-    protected $table = 'orders';
+    protected $table = 'order_details';
     protected $dates = ['deleted_at'];
 
     protected $fillable = [
@@ -28,6 +28,6 @@ class OrderDetails extends Model
 
     public function shoes()
     {
-        return $this->hasMany(Shoes::class, 'shoes_id');
+        return $this->belongsTo(Shoes::class, 'shoes_id');
     }
 }

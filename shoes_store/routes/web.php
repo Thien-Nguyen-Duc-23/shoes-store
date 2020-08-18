@@ -20,6 +20,13 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
         Route::resource('category', 'CategoryController');
         Route::resource('shoes', 'ShoesController');
         Route::resource('customer', 'CustomerController');
-        Route::resource('banner', 'BannerController'); 
+        Route::resource('banner', 'BannerController');
+/****************************** Order **********************************/
+        Route::get('order/get-product-shoes', 'OrderController@getProductShoes')->name('order.get_product_shoes');
+        Route::get('order/get-infor-user', 'OrderController@getInforCustomer')->name('order.get_infor_user');
+        Route::get('order/get-list-product-shoes-HTML', 'OrderController@getListProductShoesHTML')->name('order.get_list_product_shoes_HTML');
+        Route::post('order/delete-product-shoes', 'OrderController@deleteProductShoes')->name('order.delete_product_shoes');
+        Route::resource('order', 'OrderController');
+/****************************** End Order ******************************/
     });
 });
