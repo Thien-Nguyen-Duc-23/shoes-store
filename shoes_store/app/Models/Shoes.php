@@ -50,7 +50,7 @@ class Shoes extends Model
 
     public function orderDetails()
     {
-        return $this->belongsTo(OrderDetails::class, 'shoes_id');
+        return $this->hasMany(OrderDetails::class, 'shoes_id');
     }
 
     public function categories()
