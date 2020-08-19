@@ -24,6 +24,9 @@ class CustomerController extends Controller
         if ($request->name) {
             $customers = $customers->where('name', 'like', '%' . $request->name . '%');
         }
+        if ($request->status) {
+            $customers = $customers->where('status', $request->status);
+        }
 
         $customers = $customers->orderBy('created_at', 'asc')->paginate(15);
 

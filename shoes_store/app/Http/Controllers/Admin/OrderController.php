@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\Order\OrderCreateRequest;
 use App\Http\Requests\Admin\Order\OrderEditRequest;
+use App\Http\Requests\Admin\Order\OrderSearchRequest;
 use App\Models\Shoes;
 use App\Models\Orders;
 use App\Models\User;
@@ -19,14 +20,27 @@ class OrderController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(Request $request)
+    public function index(OrderSearchRequest $request)
     {
         $orders = new Orders;
-        if ($request->id) {
-            $orders = $orders->where('id', $request->id);
+        if ($request->email) {
+            $orders = $orders->whereHas('users', function ($query) use ($request) {
+                $query->where('email',  'like', '%' . $request->email . '%');
+            });
         }
-        if ($request->name) {
-            $orders = $orders->where('name', 'like', '%' . $request->name . '%');
+        if ($request->order_status) {
+            $orders = $orders->where('order_status', $request->order_status);
+        }
+        if ($request->shipping_status) {
+            $orders = $orders->where('shipping_status', $request->shipping_status);
+        }
+        if ($request->date_order) {
+            $dates = explode(' - ', $request->date_order);
+            $start_date = Carbon::parse($dates[0])->format('Y-m-d');
+            $end_date = Carbon::parse($dates[1])->format('Y-m-d');
+
+            $orders = $orders->whereDate('date_order', '>=', $start_date)
+                ->whereDate('date_order', '<=', $end_date);
         }
 
         $orders = $orders->with('users', 'orderDetails')->orderBy('created_at', 'desc')->paginate(15);

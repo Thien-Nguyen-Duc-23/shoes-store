@@ -7,6 +7,11 @@
     @endif
     <div class="box-header with-border">
         <h3 class="box-title">{{ $isEdit ? 'Edit' . ' #' . $size->id :'New' }}</h3>
+        <div class="box-tools pull-right">
+            <a href="{{ route('size.index') }}" class="btn btn-sm btn-default">
+                <i class="fa fa-list"></i> List
+            </a>
+        </div>
     </div>
     {{-- @include('flash::message') --}}
     <div class="box-body">

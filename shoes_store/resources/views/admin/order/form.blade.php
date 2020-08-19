@@ -29,6 +29,14 @@
 {!! Form::open(['method' => $method, 'url' => $route, 'class' => 'form-horizontal', 'enctype' => 'multipart/form-data']) !!}
     @include('admin.overlay_loading.overlay_loading')
     @include('flash::message')
+    <div class="box-header with-border">
+        <h3 class="box-title"></h3>
+        <div class="box-tools pull-right">
+            <a href="{{ route('order.index') }}" class="btn btn-sm btn-default">
+                <i class="fa fa-list"></i> List
+            </a>
+        </div>
+    </div>
     <div class="box-body content-body">
         <div class="row" id="order-body">
             <div class="col-sm-6">
@@ -106,7 +114,7 @@
                         <tr>
                             <td class="td-title">Order status:</td>
                             <td>
-                                {{ Form::select('order_status', config('constants.order_status'),  $check ? $order->order_status : null, ['class' => 'form-control select2 input-radius', 'style: withd:100%', $isDetail ? 'disabled' : '']) }}
+                                {{ Form::select('order_status', config('constants.order_status'),  $check ? $order->order_status : null, ['class' => 'form-control select2 input-radius', 'style: width:100%', $isDetail ? 'disabled' : '']) }}
                                 @if ($errors->has('order_status'))
                                     <span class="text-danger" role="alert">
                                         {{ $errors->first('order_status') }}
@@ -181,7 +189,7 @@
                             </tr>
                             </thead>
                             <tbody id="container-list-product-shoes">
-                                @include('admin.order.list_product_shoes.list_product', ['order' => $order, 'check' => $check])
+                                @include('admin.order.list_product_shoes.list_product', ['order' => $order ?? null, 'check' => $check])
                             </tbody>
                         </table>
                     </div>

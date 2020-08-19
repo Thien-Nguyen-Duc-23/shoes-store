@@ -34,6 +34,19 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label">Status</label>
+                                            <div class="col-sm-8">
+                                                {!! Form::select('status', config('constants.status'), request('status'), ['class' => 'form-control select2 input-radius plan_id', 'placeholder' => 'Please Select']) !!}
+                                                @if ($errors->has('status'))
+                                                    <span class="text-danger invalid-feedback">{{ $errors->first('status') }}</span>
+                                                @endif
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- /.box-body -->
                             <div class="box-footer text-center">
@@ -82,7 +95,13 @@
                                             </td>
                                             <td class="text-center">{{ $customer->phone }}</td>
                                             <td class="text-center">{{ $customer->address }}</td>
-                                            <td class="text-center">{{ $customer->status }}</td>
+                                            <td class="text-center">
+                                                @if ($customer->status == \App\Models\User::ACTIVE)
+                                                    <span class="label label-success">{{ config('constants.status')[\App\Models\User::ACTIVE] }}</span>
+                                                @else
+                                                    <span class="label label-danger">{{ config('constants.status')[\App\Models\User::DEACTIVATE] }}</span>
+                                                @endif
+                                            </td>
                                             <td class="text-center">{{ \Carbon\Carbon::parse($customer->created_at)->toDateTimeString() ?? '' }}</td>
                                             <td class="text-center">
                                                 <div>
@@ -110,3 +129,14 @@
         </section>
     </div>
 @endsection
+@push('scripts')
+    <script>
+        $(function() {
+            $(".select2").select2({
+                placeholder: " Please select ",
+                closeOnSelect : true,
+                allowClear: true,
+            });
+        });
+    </script>
+@endpush
