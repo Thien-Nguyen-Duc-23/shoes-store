@@ -28,8 +28,8 @@ class CustomerEditRequest extends FormRequest
         return [
             'name'          => 'required|max:255',
             'email'         => 'required|max:255|email|unique:users,email,'. $this->segment(GET_ID_URL) .',id,deleted_at,NULL',
-            'password'      => 'required|max:20|min:8|confirmed',
-            'birthday'      => 'required',
+            'password'      => 'nullable|max:20|min:8|confirmed',
+            'birthday'      => 'nullable',
             'status'        => 'required',
         ];
     }

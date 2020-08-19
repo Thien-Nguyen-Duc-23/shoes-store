@@ -34,6 +34,19 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label">Status</label>
+                                            <div class="col-sm-8">
+                                                {!! Form::select('status', config('constants.status'), request('status'), ['class' => 'form-control select2 input-radius plan_id', 'placeholder' => 'Please Select']) !!}
+                                                @if ($errors->has('status'))
+                                                    <span class="text-danger invalid-feedback">{{ $errors->first('status') }}</span>
+                                                @endif
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- /.box-body -->
                             <div class="box-footer text-center">
@@ -114,3 +127,14 @@
         </section>
     </div>
 @endsection
+@push('scripts')
+    <script>
+        $(function() {
+            $(".select2").select2({
+                placeholder: " Please select ",
+                closeOnSelect : true,
+                allowClear: true,
+            });
+        });
+    </script>
+@endpush

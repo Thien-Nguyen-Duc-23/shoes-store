@@ -24,6 +24,9 @@ class BannerController extends Controller
         if ($request->name) {
             $banners = $banners->where('name', 'like', '%' . $request->name . '%');
         }
+        if ($request->status) {
+            $banners = $banners->where('status', $request->status);
+        }
 
         $banners = $banners->orderBy('created_at', 'asc')->paginate(15);
 

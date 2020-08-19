@@ -24,7 +24,7 @@
         <!-- Date Picker -->
         <link rel="stylesheet" href="{{ asset('admin_lte/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css') }}">
         <!-- Daterange picker -->
-        <link rel="stylesheet" href="{{ asset('admin_lte/bower_components/bootstrap-daterangepicker/daterangepicker.css') }}">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
         <!-- bootstrap wysihtml5 - text editor -->
         <link rel="stylesheet" href="{{ asset('admin_lte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css') }}">
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -36,6 +36,11 @@
         <link href="{{ asset('libs/fileinput/fileinput.min.css') }}" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="{{ asset('admin_lte/plugins/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/bootstrap-datetimepicker.css') }}" />
+        <style>
+            .select2-container {
+                min-width: 100%;
+            }
+        </style>
         @stack('styles')
     </head>
     <body class="hold-transition skin-blue sidebar-mini">
@@ -69,7 +74,7 @@
         <script src="{{ asset('admin_lte/bower_components/jquery-knob/dist/jquery.knob.min.js') }}"></script>
         <!-- daterangepicker -->
         <script src="{{ asset('admin_lte/bower_components/moment/min/moment.min.js') }}"></script>
-        <script src="{{ asset('admin_lte/bower_components/bootstrap-daterangepicker/daterangepicker.js') }}"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
         <!-- datepicker -->
         <script src="{{ asset('admin_lte/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js') }}"></script>
         <!-- Bootstrap WYSIHTML5 -->
@@ -93,8 +98,27 @@
         <script>
             $(document).ready(function () {
                 //Initialize Select2 Elements
-                $('.select2').select2()
+                $('.select2').select2({
+                    placeholder: " Please select ",
+                    closeOnSelect : false
+                });
                 //Initialize Select2 Elements
+
+                //Date range picker with time picker
+                $('.reservationtime').daterangepicker({
+                    autoUpdateInput: false,
+                    locale: {
+                        format: 'YYYY-MM-DD',
+                        cancelLabel: 'Clear'
+                    }
+                });
+                $('.reservationtime').on('apply.daterangepicker', function(ev, picker) {
+                    $(this).val(picker.startDate.format('YYYY-MM-DD') + ' - ' + picker.endDate.format('YYYY-MM-DD'));
+                });
+
+                $('.reservationtime').on('cancel.daterangepicker', function(ev, picker) {
+                    $(this).val('');
+                });
 
                 // Active Menu
                 if ($(".nav-link").hasClass("active")) {

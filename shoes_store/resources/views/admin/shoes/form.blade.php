@@ -57,11 +57,15 @@
             }
         }
     }
-    // dd($pathArray);
 @endphp
 {!! Form::open(['method' => $method, 'url' => $route, 'class' => 'form-horizontal', 'enctype' => 'multipart/form-data']) !!}
     <div class="box-header with-border">
         <h3 class="box-title">{{ $isEdit ? 'Edit' . ' #' . $shoes->id : 'New' }}</h3>
+        <div class="box-tools pull-right">
+            <a href="{{ route('shoes.index') }}" class="btn btn-sm btn-default">
+                <i class="fa fa-list"></i> List
+            </a>
+        </div>
     </div>
     @include('flash::message')
     <div class="box-body">

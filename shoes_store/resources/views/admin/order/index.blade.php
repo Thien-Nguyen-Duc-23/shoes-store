@@ -17,9 +17,12 @@
                                 <div class="row">
                                     <div class="col-md-8">
                                         <div class="form-group">
-                                            {!! Form::label('title', 'ID:', ['class'=> 'col-sm-4 control-label']) !!}
+                                            <label class="col-sm-4 control-label">Email</label>
                                             <div class="col-sm-8">
-                                                {!! Form::text('id', request('id'), ['class' => 'form-control name']) !!}
+                                                <input type="email" class="form-control" name="email" placeholder="Please input email" value="{{ request('email') }}">
+                                                @if ($errors->has('email'))
+                                                    <span class="text-danger invalid-feedback">{{ $errors->first('email') }}</span>
+                                                @endif
                                             </div>
                                         </div>
                                     </div>
@@ -27,9 +30,44 @@
                                 <div class="row">
                                     <div class="col-md-8">
                                         <div class="form-group">
-                                            {!! Form::label('title', 'Name', ['class'=> 'col-sm-4 control-label']) !!}
+                                            <label class="col-sm-4 control-label">Order Status</label>
                                             <div class="col-sm-8">
-                                                {!! Form::text('name', request('name'), ['class' => 'form-control']) !!}
+                                                {!! Form::select('order_status', config('constants.order_status'), request('order_status'), ['class' => 'form-control select2 input-radius student_id', 'placeholder' => 'Please Select']) !!}
+                                                @if ($errors->has('order_status'))
+                                                    <span class="text-danger invalid-feedback">{{ $errors->first('order_status') }}</span>
+                                                @endif
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label">Shipping Status</label>
+                                            <div class="col-sm-8">
+                                                {!! Form::select('shipping_status', config('constants.shipping_status'), request('shipping_status'), ['class' => 'form-control select2 input-radius plan_id', 'placeholder' => 'Please Select']) !!}
+                                                @if ($errors->has('shipping_status'))
+                                                    <span class="text-danger invalid-feedback">{{ $errors->first('shipping_status') }}</span>
+                                                @endif
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <label class="col-sm-4 control-label">Date Order</label>
+                                            <div class="col-sm-8">
+                                                <div class='input-group {{ $errors->has('date_order') ? 'is-invalid' : '' }}'>
+                                                    <div class="input-group-addon open-reservationtime">
+                                                        <i class="fa fa-calendar"></i>
+                                                    </div>
+                                                    <input type="text" class="form-control reservationtime" id="search_term"
+                                                        name="date_order" value="{{ request('date_order') }}" readonly style="background-color: #ffffff">
+                                                </div>
+                                                @if ($errors->has('date_order'))
+                                                    <span class="text-danger invalid-feedback">{{ $errors->first('date_order') }}</span>
+                                                @endif
                                             </div>
                                         </div>
                                     </div>
@@ -60,7 +98,7 @@
                                         <th class="text-center">Quantity</th>
                                         <th class="text-center">Dicount</th>
                                         <th class="text-center">Subtotal</th>
-                                        <th class="text-center">Created At</th>
+                                        <th class="text-center">Date Order</th>
                                         <th class="text-center">Shipping Status</th>
                                         <th class="text-center">Order Status</th>
                                         <th class="text-center">Action</th>
@@ -140,3 +178,14 @@
         </section>
     </div>
 @endsection
+@push('scripts')
+    <script>
+        $(function() {
+            $(".select2").select2({
+                placeholder: " Please select ",
+                closeOnSelect : true,
+                allowClear: true,
+            });
+        });
+    </script>
+@endpush

@@ -26,6 +26,11 @@
 {!! Form::open(['method' => $method, 'url' => $route, 'class' => 'form-horizontal', 'enctype' => 'multipart/form-data']) !!}
     <div class="box-header with-border">
         <h3 class="box-title">{{ $isEdit ? 'Edit' . ' #' . $category->id :'New' }}</h3>
+        <div class="box-tools pull-right">
+            <a href="{{ route('category.index') }}" class="btn btn-sm btn-default">
+                <i class="fa fa-list"></i> List
+            </a>
+        </div>
     </div>
     @include('flash::message')
     <div class="box-body">
