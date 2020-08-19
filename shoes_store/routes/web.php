@@ -30,3 +30,11 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
 /****************************** End Order ******************************/
     });
 });
+
+
+
+
+/****************************** ROUTE CLIENT ******************************/
+Route::group(['prefix' => '/', 'namespace' => 'Client'], function () {
+    Route::get('/', 'HomePage@homePage');
+});
