@@ -500,10 +500,13 @@
       </style>
     </noscript>
   </head>
-  <body class="home page-template-default page page-id-572 page-child parent-pageid-564 wp-embed-responsive theme-the-hanger woocommerce-no-js wpb-js-composer js-comp-ver-6.2.0 vc_responsive site-main-font header-layout-full content-layout-full page-without-title footer-layout-full">
+  @if (url()->current() == config('app.url'))
+    <body class="home page-template-default page page-id-572 page-child parent-pageid-564 wp-embed-responsive theme-the-hanger woocommerce-js wpb-js-composer js-comp-ver-6.2.0 vc_responsive site-main-font header-layout-full content-layout-full page-without-title footer-layout-full">
+  @else
+    <body class="archive tax-product_cat term-jackets-coats term-45 wp-embed-responsive theme-the-hanger woocommerce woocommerce-page woocommerce-js wpb-js-composer js-comp-ver-6.2.0 vc_responsive site-main-font header-layout-full content-layout-full  woocommerce-shop shop-pagination-infinite_scroll shop-sidebar-active shop-sidebar-left blog-pagination-infinite_scroll footer-layout-full">
+  @endif
     <div class="site-wrapper">	
         <div class="hover_overlay_body"></div>
-        
         <!-- include header PC-->
         @includeIf('client.partials.header.header_pc')
 
