@@ -40,6 +40,21 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="form-group">
+                    {!! Form::label('title', 'Parent:', ['class'=> 'col-sm-3 control-label'], false) !!}
+                    <div class="col-sm-8">
+                        {{ Form::select('parent_id', $parentId,  $check ? $category->parent_id : null, ['class' => 'form-control select2 input-radius', 'style: withd:100%', $isDetail ? 'disabled' : '']) }}
+                        @if ($errors->has('parent_id'))
+                            <span class="text-danger" role="alert">
+                                {{ $errors->first('parent_id') }}
+                            </span>
+                        @endif
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
                     {!! Form::label('title', 'Name:<span class="text-red">*</span>', ['class'=> 'col-sm-3 control-label'], false) !!}
                     <div class="col-sm-8">
                         {!! Form::text('name', $check ? $category->name : null, ['class' => 'form-control input-radius name '.($errors->has('name') ? 'text-danger' : ''), $isDetail ? 'readonly' : '']) !!}
@@ -79,7 +94,7 @@
     </div>
     <!-- /.box-body -->
     <div class="box-footer text-center">
-        <button type="submit" class="btn btn-primary">Save</button>
+        <button type="submit" class="btn btn-primary" {{ $isDetail ? 'disabled' : '' }}>Save</button>
     </div>
     <!-- /.box-footer -->
 {!! Form::close () !!}

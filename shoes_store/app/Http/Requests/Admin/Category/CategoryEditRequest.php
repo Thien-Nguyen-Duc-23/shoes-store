@@ -3,6 +3,7 @@
 namespace App\Http\Requests\Admin\Category;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Support\Str;
 
 class CategoryEditRequest extends FormRequest
 {
@@ -28,5 +29,17 @@ class CategoryEditRequest extends FormRequest
             'image' => 'required',
             'description' => 'required|max:1000|min:3',
         ];
+    }
+
+    /**
+     * Prepare the data for validation.
+     *
+     * @return void
+     */
+    protected function prepareForValidation()
+    {
+        $this->merge([
+            'slug' => Str::slug($this->name),
+        ]);
     }
 }

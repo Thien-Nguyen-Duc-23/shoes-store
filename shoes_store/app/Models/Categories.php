@@ -17,6 +17,8 @@ class Categories extends Model
     const DIRECTORY = 'category';
 
     protected $fillable = [
+        'parent_id',
+        'slug',
         'name',
         'description',
         'image',
@@ -27,5 +29,10 @@ class Categories extends Model
     public function shoes()
     {
         return $this->hasMany(Shoes::class, 'category_id');
+    }
+
+    public function scopeParent($query)
+    {
+        return $query->whereNull('parent_id');
     }
 }

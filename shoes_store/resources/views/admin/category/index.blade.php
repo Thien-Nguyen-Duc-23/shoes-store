@@ -57,6 +57,7 @@
                                     <tr>
                                         <th class="text-center">ID</th>
                                         <th class="text-center">Name</th>
+                                        <th class="text-center">Parent</th>
                                         <th class="text-center">Image</th>
                                         <th class="text-center">Description</th>
                                         <th class="text-center">Created At</th>
@@ -69,6 +70,13 @@
                                         <tr>
                                             <td class="text-center">{{ $category->id }}</td>
                                             <td class="text-center">{{ $category->name }}</td>
+                                            <td class="text-center">
+                                                @if ($category->parent_id == 0 || $category == null)
+                                                    <span class="label label-success">Parent</span>
+                                                @else
+                                                    <span class="label label-primary">Children</span>
+                                                @endif
+                                            </td>
                                             <td class="text-center">
                                                 <div class="product-img">
                                                     @php
