@@ -37,7 +37,14 @@ class CategoryController extends Controller
      */
     public function create()
     {
-        return view('admin.category.create');
+        $parentId = Categories::whereNull('parent_id')
+            ->orWhere('parent_id', 0)
+            ->get()
+            ->pluck('name', 'id')
+            ->prepend('Please select', '')
+            ->toArray();
+
+        return view('admin.category.create', compact('parentId'));
     }
 
     /**
@@ -60,6 +67,8 @@ class CategoryController extends Controller
             }
 
             $data = [
+                'slug' => $request->slug,
+                'parent_id' => $request->parent_id ?? 0,
                 'name' => $request->name,
                 'image' => $filename,
                 'description' => $request->description,
@@ -92,7 +101,14 @@ class CategoryController extends Controller
             return redirect()->back();
         }
 
-        return view('admin.category.show', compact('category'));
+        $parentId = Categories::whereNull('parent_id')
+            ->orWhere('parent_id', 0)
+            ->get()
+            ->pluck('name', 'id')
+            ->prepend('Please select', '')
+            ->toArray();
+
+        return view('admin.category.show', compact('category', 'parentId'));
     }
 
     /**
@@ -108,8 +124,14 @@ class CategoryController extends Controller
             flash('Not find category!')->warning();
             return redirect()->back();
         }
+        $parentId = Categories::whereNull('parent_id')
+            ->orWhere('parent_id', 0)
+            ->get()
+            ->pluck('name', 'id')
+            ->prepend('Please select', '')
+            ->toArray();
 
-        return view('admin.category.edit', compact('category'));
+        return view('admin.category.edit', compact('category', 'parentId'));
     }
 
     /**
@@ -144,6 +166,8 @@ class CategoryController extends Controller
             }
 
             $data = [
+                'slug' => $request->slug,
+                'parent_id' => $request->parent_id ?? 0,
                 'name' => $request->name,
                 'image' => $filename ?? $category->image,
                 'description' => $request->description,
