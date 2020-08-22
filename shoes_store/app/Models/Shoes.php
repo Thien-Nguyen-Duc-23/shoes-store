@@ -13,6 +13,9 @@ class Shoes extends Model
     protected $dates = ['deleted_at'];
 
     const DIRECTORY = 'shoes';
+    const ACTIVE = 1;
+    const DEACTIVATE = 0;
+    const IS_SALE = 1;
 
     protected $fillable = [
         'category_id',
