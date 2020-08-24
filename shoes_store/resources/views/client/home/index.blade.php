@@ -100,6 +100,7 @@
                                     <div class="main-container">
                                       <div class="product_image_wrapper">
                                         <div class="product_badges_wrapper">
+                                          <span class="onsale">Sale!</span>
                                         </div>
                                         <div class="product_image with_second_image second_image_loaded">
                                           <a href="#">
@@ -176,7 +177,7 @@
                           <div class="woocommerce columns-1">
                             <ul class="products columns-1 js_animated">
                               <li class="product-category product first visible animation_ready animated">
-                                <a href="#">
+                                <a href="{{ route('product_category', $shoesOfCategory->slug) }}">
                                   <span class="getbowtied-subcategory-image" style="background-image :url({{ $shoesOfCategoryImage }});">
                                   </span>			
                                   <h2 class="woocommerce-loop-category__title">
@@ -202,6 +203,9 @@
                                     <div class="main-container">
                                       <div class="product_image_wrapper">
                                         <div class="product_badges_wrapper">
+                                          @if ($itemShoes->is_sale == \App\Models\Shoes::IS_SALE && \Carbon\Carbon::now()->gte(\Carbon\Carbon::parse($itemShoes->start_date_sale)->format('Y-m-d H:i:s')) && \Carbon\Carbon::now()->lte(\Carbon\Carbon::parse($itemShoes->end_date_sale)->format('Y-m-d H:i:s')))
+                                            <span class="onsale">Sale!</span>
+                                          @endif
                                         </div>
                                         <div class="product_image with_second_image second_image_loaded">
                                           <a href="#">
@@ -224,12 +228,15 @@
                                             <span class="woocommerce-Price-amount amount">
                                               <span class="woocommerce-Price-currencySymbol">$ </span> {{ $shoesSale->price_sale }}
                                               @if ($itemShoes->is_sale == \App\Models\Shoes::IS_SALE && \Carbon\Carbon::now()->gte(\Carbon\Carbon::parse($itemShoes->start_date_sale)->format('Y-m-d H:i:s')) && \Carbon\Carbon::now()->lte(\Carbon\Carbon::parse($itemShoes->end_date_sale)->format('Y-m-d H:i:s')))
+                                                <span class="woocommerce-Price-currencySymbol">$ </span> {{ $shoesSale->price_sale }}
                                                 <del>
                                                   <span class="woocommerce-Price-amount amount" style="color: red">
                                                     <span class="woocommerce-Price-currencySymbol" style="color: red">$</span>
                                                     {{ $shoesSale->price }}
                                                   </span>
                                                 </del>
+                                              @else
+                                                <span class="woocommerce-Price-currencySymbol">$ </span> {{ $shoesSale->price }}
                                               @endif
                                             </span>
                                           </span>
@@ -278,6 +285,9 @@
                                     <div class="main-container">
                                       <div class="product_image_wrapper">
                                         <div class="product_badges_wrapper">
+                                          @if ($itemShoesCate->is_sale == \App\Models\Shoes::IS_SALE && \Carbon\Carbon::now()->gte(\Carbon\Carbon::parse($itemShoesCate->start_date_sale)->format('Y-m-d H:i:s')) && \Carbon\Carbon::now()->lte(\Carbon\Carbon::parse($itemShoesCate->end_date_sale)->format('Y-m-d H:i:s')))  
+                                            <span class="onsale">Sale!</span>
+                                          @endif
                                         </div>
                                         <div class="product_image with_second_image second_image_loaded">
                                           <a href="#">
@@ -298,14 +308,16 @@
                                           </a>
                                           <span class="price">
                                             <span class="woocommerce-Price-amount amount">
-                                              <span class="woocommerce-Price-currencySymbol">$ </span> {{ $shoesSale->price_sale }}
-                                              @if ($itemShoesCate->is_sale == \App\Models\Shoes::IS_SALE && \Carbon\Carbon::now()->gte(\Carbon\Carbon::parse($itemShoesCate->start_date_sale)->format('Y-m-d H:i:s')) && \Carbon\Carbon::now()->lte(\Carbon\Carbon::parse($itemShoesCate->end_date_sale)->format('Y-m-d H:i:s')))
+                                              @if ($itemShoesCate->is_sale == \App\Models\Shoes::IS_SALE && \Carbon\Carbon::now()->gte(\Carbon\Carbon::parse($itemShoesCate->start_date_sale)->format('Y-m-d H:i:s')) && \Carbon\Carbon::now()->lte(\Carbon\Carbon::parse($itemShoesCate->end_date_sale)->format('Y-m-d H:i:s'))) 
+                                                <span class="woocommerce-Price-currencySymbol">$ </span> {{ $shoesSale->price_sale }}
                                                 <del>
                                                   <span class="woocommerce-Price-amount amount" style="color: red">
                                                     <span class="woocommerce-Price-currencySymbol" style="color: red">$</span>
                                                     {{ $shoesSale->price }}
                                                   </span>
                                                 </del>
+                                              @else
+                                                <span class="woocommerce-Price-currencySymbol">$ </span> {{ $shoesSale->price }}
                                               @endif
                                             </span>
                                           </span>
@@ -341,7 +353,7 @@
                           <div class="woocommerce columns-1">
                             <ul class="products columns-1 js_animated">
                               <li class="product-category product first visible animation_ready animated">
-                                <a href="#">
+                                <a href="{{ route('product_category', $shoesOfCategory->slug) }}">
                                   <span class="getbowtied-subcategory-image" style="background-image :url({{ $shoesOfCategoryImage }});">
                                   </span>			
                                   <h2 class="woocommerce-loop-category__title">

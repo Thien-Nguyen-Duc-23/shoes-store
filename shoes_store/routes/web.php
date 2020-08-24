@@ -37,5 +37,5 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
 /****************************** ROUTE CLIENT ******************************/
 Route::group(['prefix' => '/', 'namespace' => 'Client'], function () {
     Route::get('/', 'HomePage@homePage');
-    Route::get('/product-category', 'CategoryController@productCategory')->name('product_category');
+    Route::get('/product-category/{slug}', 'CategoryController@index')->name('product_category');
 });
