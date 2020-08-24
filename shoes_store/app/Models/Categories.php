@@ -35,4 +35,17 @@ class Categories extends Model
     {
         return $query->whereNull('parent_id');
     }
+
+    public function parent()
+    {
+        return $this->hasOne('App\Models\Categories', 'id', 'parent_id');
+    }
+
+    public function children()
+    {
+        return $this->hasMany('App\Models\Categories', 'parent_id', 'id')->with(['shoes' => function($query) {
+            $query->where('status', Shoes::ACTIVE)
+                ->orderBy('created_at', 'desc');
+        }]);
+    }
 }
