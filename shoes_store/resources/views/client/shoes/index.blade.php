@@ -2,528 +2,1184 @@
 
 @section('content-client')
 <div class="site-content-wrapper" style="margin-top: 0px;">
-    <div class="row small-collapse">
-      <div class="small-12 columns">
-        <div class="site-content">
-          <div id="primary" class="content-area">
-            <main id="main" class="site-main" role="main">
-                <div class="woocommerce-notices-wrapper"></div> 
-              <div id="product-248" class="product type-product post-248 status-publish first instock product_cat-women product_cat-bottoms product_cat-biker-jackets has-post-thumbnail featured shipping-taxable purchasable product-type-simple">
-                <div class="product_infos">
+  <div class="site-content">
+    <div class="details-product">
+      <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+          <div class="rows">
+              <div class="product-detail-left product-images col-xs-12 col-sm-6 col-md-5 col-lg-5">
                   <div class="row">
-                    <div class="small-12 large-7 columns">
-                      <div class="before-product-summary-wrapper" id="sticky_bottom_anchor">
-                        <div class="woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-6 images" data-columns="4" style="opacity: 1; transition: opacity 0.25s ease-in-out 0s;">
-                          <a href="#" class="woocommerce-product-gallery__trigger">🔍
+                      <div class="col_large_default large-image">
+                          <a href="https://bizweb.dktcdn.net/thumb/1024x1024/100/347/923/products/vn0a4bv3tbq-5.jpg?v=1584680507310" data-rel="prettyPhoto[product-gallery]">
+                              <img class="checkurl img-responsive" id="img_01" src="https://bizweb.dktcdn.net/thumb/1024x1024/100/347/923/products/vn0a4bv3tbq-5.jpg?v=1584680507310" alt="Giày Vans Slip-On Jawbones - VN0A4BV3TBQ" />
                           </a>
-                          <div class="flex-viewport" style="overflow: hidden; position: relative; height: 812px;">
-                            <figure class="woocommerce-product-gallery__wrapper" style="width: 800%; transition-duration: 0s; transform: translate3d(-1899px, 0px, 0px);">
-                              <div data-thumb="https://thehanger.wp-theme.design/wp-content/uploads/8303969428_1_1_1-100x100.jpg" data-thumb-alt="" class="woocommerce-product-gallery__image" style="width: 633px; float: left; display: block; position: relative; overflow: hidden;">
-                                <a href="https://thehanger.wp-theme.design/wp-content/uploads/8303969428_1_1_1.jpg">
-                                  <img width="768" height="985" src="https://thehanger.wp-theme.design/wp-content/uploads/8303969428_1_1_1-768x985.jpg" class="wp-post-image" alt="" loading="lazy" title="8303969428_1_1_1.jpg" data-caption="" data-src="https://thehanger.wp-theme.design/wp-content/uploads/8303969428_1_1_1.jpg" data-large_image="https://thehanger.wp-theme.design/wp-content/uploads/8303969428_1_1_1.jpg" data-large_image_width="1300" data-large_image_height="1667" srcset="https://thehanger.wp-theme.design/wp-content/uploads/8303969428_1_1_1-768x985.jpg 768w, https://thehanger.wp-theme.design/wp-content/uploads/8303969428_1_1_1-234x300.jpg 234w, https://thehanger.wp-theme.design/wp-content/uploads/8303969428_1_1_1-799x1024.jpg 799w, https://thehanger.wp-theme.design/wp-content/uploads/8303969428_1_1_1-660x846.jpg 660w, https://thehanger.wp-theme.design/wp-content/uploads/8303969428_1_1_1.jpg 1300w" sizes="(max-width: 768px) 100vw, 768px" draggable="false">
-                                </a>
-                                <img role="presentation" alt="" src="https://thehanger.wp-theme.design/wp-content/uploads/8303969428_1_1_1.jpg" class="zoomImg" style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 1300px; height: 1667px; border: none; max-width: none; max-height: none;">
+
+                          <div class="hidden">
+                              <div class="item">
+                                  <a
+                                      href="https://bizweb.dktcdn.net/100/347/923/products/vn0a4bv3tbq-5.jpg?v=1584680507310"
+                                      data-image="https://bizweb.dktcdn.net/100/347/923/products/vn0a4bv3tbq-5.jpg?v=1584680507310"
+                                      data-zoom-image="https://bizweb.dktcdn.net/100/347/923/products/vn0a4bv3tbq-5.jpg?v=1584680507310"
+                                      data-rel="prettyPhoto[product-gallery]"
+                                  >
+                                  </a>
                               </div>
-                              <div data-thumb="https://thehanger.wp-theme.design/wp-content/uploads/8303969428_2_4_1-100x100.jpg" data-thumb-alt="" class="woocommerce-product-gallery__image" style="width: 633px; float: left; display: block; position: relative; overflow: hidden;">
-                                <a href="https://thehanger.wp-theme.design/wp-content/uploads/8303969428_2_4_1.jpg">
-                                  <img width="768" height="985" src="https://thehanger.wp-theme.design/wp-content/uploads/8303969428_2_4_1-768x985.jpg" class="" alt="" loading="lazy" title="8303969428_2_4_1.jpg" data-caption="" data-src="https://thehanger.wp-theme.design/wp-content/uploads/8303969428_2_4_1.jpg" data-large_image="https://thehanger.wp-theme.design/wp-content/uploads/8303969428_2_4_1.jpg" data-large_image_width="1300" data-large_image_height="1667" srcset="https://thehanger.wp-theme.design/wp-content/uploads/8303969428_2_4_1-768x985.jpg 768w, https://thehanger.wp-theme.design/wp-content/uploads/8303969428_2_4_1-234x300.jpg 234w, https://thehanger.wp-theme.design/wp-content/uploads/8303969428_2_4_1-799x1024.jpg 799w, https://thehanger.wp-theme.design/wp-content/uploads/8303969428_2_4_1-660x846.jpg 660w, https://thehanger.wp-theme.design/wp-content/uploads/8303969428_2_4_1.jpg 1300w" sizes="(max-width: 768px) 100vw, 768px" draggable="false">
-                                </a>
-                                <img role="presentation" alt="" src="https://thehanger.wp-theme.design/wp-content/uploads/8303969428_2_4_1.jpg" class="zoomImg" style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 1300px; height: 1667px; border: none; max-width: none; max-height: none;">
+
+                              <div class="item">
+                                  <a
+                                      href="https://bizweb.dktcdn.net/100/347/923/products/vn0a4bv3tbq-1.jpg?v=1584680510390"
+                                      data-image="https://bizweb.dktcdn.net/100/347/923/products/vn0a4bv3tbq-1.jpg?v=1584680510390"
+                                      data-zoom-image="https://bizweb.dktcdn.net/100/347/923/products/vn0a4bv3tbq-1.jpg?v=1584680510390"
+                                      data-rel="prettyPhoto[product-gallery]"
+                                  >
+                                  </a>
                               </div>
-                              <div data-thumb="https://thehanger.wp-theme.design/wp-content/uploads/8303969428_2_1_1-100x100.jpg" data-thumb-alt="" class="woocommerce-product-gallery__image" style="width: 633px; float: left; display: block; position: relative; overflow: hidden;">
-                                <a href="https://thehanger.wp-theme.design/wp-content/uploads/8303969428_2_1_1.jpg">
-                                  <img width="768" height="985" src="https://thehanger.wp-theme.design/wp-content/uploads/8303969428_2_1_1-768x985.jpg" class="" alt="" loading="lazy" title="8303969428_2_1_1.jpg" data-caption="" data-src="https://thehanger.wp-theme.design/wp-content/uploads/8303969428_2_1_1.jpg" data-large_image="https://thehanger.wp-theme.design/wp-content/uploads/8303969428_2_1_1.jpg" data-large_image_width="1300" data-large_image_height="1667" srcset="https://thehanger.wp-theme.design/wp-content/uploads/8303969428_2_1_1-768x985.jpg 768w, https://thehanger.wp-theme.design/wp-content/uploads/8303969428_2_1_1-234x300.jpg 234w, https://thehanger.wp-theme.design/wp-content/uploads/8303969428_2_1_1-799x1024.jpg 799w, https://thehanger.wp-theme.design/wp-content/uploads/8303969428_2_1_1-660x846.jpg 660w, https://thehanger.wp-theme.design/wp-content/uploads/8303969428_2_1_1.jpg 1300w" sizes="(max-width: 768px) 100vw, 768px" draggable="false">
-                                </a>
-                                <img role="presentation" alt="" src="https://thehanger.wp-theme.design/wp-content/uploads/8303969428_2_1_1.jpg" class="zoomImg" style="position: absolute; top: 0px; left: 0px; opacity: 0; width: 1300px; height: 1667px; border: none; max-width: none; max-height: none;">
+
+                              <div class="item">
+                                  <a
+                                      href="https://bizweb.dktcdn.net/100/347/923/products/vn0a4bv3tbq-3.jpg?v=1584680513073"
+                                      data-image="https://bizweb.dktcdn.net/100/347/923/products/vn0a4bv3tbq-3.jpg?v=1584680513073"
+                                      data-zoom-image="https://bizweb.dktcdn.net/100/347/923/products/vn0a4bv3tbq-3.jpg?v=1584680513073"
+                                      data-rel="prettyPhoto[product-gallery]"
+                                  >
+                                  </a>
                               </div>
-                              <div data-thumb="https://thehanger.wp-theme.design/wp-content/uploads/8303969428_2_2_1-100x100.jpg" data-thumb-alt="" class="woocommerce-product-gallery__image flex-active-slide" style="width: 633px; float: left; display: block; position: relative; overflow: hidden;">
-                                <a href="https://thehanger.wp-theme.design/wp-content/uploads/8303969428_2_2_1.jpg">
-                                  <img width="768" height="985" src="https://thehanger.wp-theme.design/wp-content/uploads/8303969428_2_2_1-768x985.jpg" class="" alt="" loading="lazy" title="8303969428_2_2_1.jpg" data-caption="" data-src="https://thehanger.wp-theme.design/wp-content/uploads/8303969428_2_2_1.jpg" data-large_image="https://thehanger.wp-theme.design/wp-content/uploads/8303969428_2_2_1.jpg" data-large_image_width="1300" data-large_image_height="1667" srcset="https://thehanger.wp-theme.design/wp-content/uploads/8303969428_2_2_1-768x985.jpg 768w, https://thehanger.wp-theme.design/wp-content/uploads/8303969428_2_2_1-234x300.jpg 234w, https://thehanger.wp-theme.design/wp-content/uploads/8303969428_2_2_1-799x1024.jpg 799w, https://thehanger.wp-theme.design/wp-content/uploads/8303969428_2_2_1-660x846.jpg 660w, https://thehanger.wp-theme.design/wp-content/uploads/8303969428_2_2_1.jpg 1300w" sizes="(max-width: 768px) 100vw, 768px" draggable="false">
-                                </a>
-                                <img role="presentation" alt="" src="https://thehanger.wp-theme.design/wp-content/uploads/8303969428_2_2_1.jpg" class="zoomImg" style="position: absolute; top: -424.16px; left: -37.9336px; opacity: 0; width: 1300px; height: 1667px; border: none; max-width: none; max-height: none;">
-                              </div>	
-                            </figure>
+
+                              <div class="item">
+                                  <a
+                                      href="https://bizweb.dktcdn.net/100/347/923/products/vn0a4bv3tbq-4.jpg?v=1584680515800"
+                                      data-image="https://bizweb.dktcdn.net/100/347/923/products/vn0a4bv3tbq-4.jpg?v=1584680515800"
+                                      data-zoom-image="https://bizweb.dktcdn.net/100/347/923/products/vn0a4bv3tbq-4.jpg?v=1584680515800"
+                                      data-rel="prettyPhoto[product-gallery]"
+                                  >
+                                  </a>
+                              </div>
+
+                              <div class="item">
+                                  <a
+                                      href="https://bizweb.dktcdn.net/100/347/923/products/vn0a4bv3tbq-2.jpg?v=1584680518817"
+                                      data-image="https://bizweb.dktcdn.net/100/347/923/products/vn0a4bv3tbq-2.jpg?v=1584680518817"
+                                      data-zoom-image="https://bizweb.dktcdn.net/100/347/923/products/vn0a4bv3tbq-2.jpg?v=1584680518817"
+                                      data-rel="prettyPhoto[product-gallery]"
+                                  >
+                                  </a>
+                              </div>
                           </div>
-                          <ol class="flex-control-nav flex-control-thumbs">
-                            <li>
-                              <img src="https://thehanger.wp-theme.design/wp-content/uploads/8303969428_1_1_1-100x100.jpg" class="" draggable="false">
-                            </li>
-                            <li>
-                              <img src="https://thehanger.wp-theme.design/wp-content/uploads/8303969428_2_4_1-100x100.jpg" draggable="false" class="">
-                            </li>
-                            <li>
-                              <img src="https://thehanger.wp-theme.design/wp-content/uploads/8303969428_2_1_1-100x100.jpg" draggable="false" class="">
-                            </li>
-                            <li>
-                              <img src="https://thehanger.wp-theme.design/wp-content/uploads/8303969428_2_2_1-100x100.jpg" draggable="false" class="flex-active">
-                            </li>
-                          </ol>
-                        </div>
-                        <div class="product_badges_wrapper">
-                        </div>
-                        <div class="product_tool_buttons_placeholder loaded">
-                          <div class="single_product_gallery_trigger">
-                            <span class="tooltip">Zoom
-                            </span>
-                          </div>
-                          <div class="single_product_video_trigger">
-                            <span class="tooltip">Play Video
-                            </span>
-                          </div>
-                        </div>
                       </div>
-                    </div>
-                    <div class="small-12 large-5 columns">
-                      <div class="summary entry-summary">
-                        <nav class="woocommerce-breadcrumb">
-                          <a href="https://thehanger.wp-theme.design">Home
-                          </a>
-                          <span class="delimiter">/
-                          </span>
-                          <a href="https://thehanger.wp-theme.design/shop/">Shop
-                          </a>
-                          <span class="delimiter">/
-                          </span>
-                          <a href="https://thehanger.wp-theme.design/product-category/bottoms/">Bottoms
-                          </a>
-                          <span class="delimiter">/
-                          </span>
-                          <a href="https://thehanger.wp-theme.design/product-category/bottoms/biker-jackets/">Biker Jackets
-                          </a>
-                          <span class="delimiter">/
-                          </span>High Waist Denim Shorts
-                        </nav>					
-                        <h1 class="product_title entry-title">
-                          High Waist Denim Shorts
-                        </h1>
-                        <p class="price">
-                          <span class="woocommerce-Price-amount amount">
-                            <bdi>
-                              <span class="woocommerce-Price-currencySymbol">$
-                              </span>65
-                            </bdi>
-                          </span>
-                        </p>
-                        <div class="woocommerce-product-details__short-description">
-                          <p>Constructed in cotton sweat fabric,&nbsp;this lovely piece, lacus eu mattis auctor, dolor lectus venenatis nulla, at tristique eros sem vel ante. Sed leo enim, iaculis ornare tristique non, vulputate sit amet ante.
-                          </p>
-                          <p>Class aptent taciti sociosqu ad litora torquent per conubia. Purchase this product on&nbsp;
-                            <a href="https://www.bershka.com/us/woman/new/back-to-school/high-waist-denim-shorts-with-rips-c1010240144p101097858.html?colorId=428" target="_blank" rel="noopener">bershka.com
-                            </a>.
-                          </p>
-                        </div>
-                        <form class="cart" action="https://thehanger.wp-theme.design/shop/bottoms/biker-jackets/high-waist-denim-shorts/" method="post" enctype="multipart/form-data">
-                          <div class="add_to_cart_wrapper">
-                            <div class="quantity">
-                              <label class="screen-reader-text" for="quantity_5f43e024e1fa6">High Waist Denim Shorts quantity
-                              </label>
-                              <input type="number" id="quantity_5f43e024e1fa6" class="input-text qty text" step="1" min="1" max="" name="quantity" value="1" title="Qty" size="4" placeholder="" inputmode="numeric">
-                            </div>
-                            <button type="submit" name="add-to-cart" value="248" class="single_add_to_cart_button button alt">Add to cart
-                            </button>
+
+                      <div id="gallery_02" class="owl-carousel owl-theme thumbnail-product thumb_product_details not-dqowl" data-loop="false" data-lg-items="3" data-md-items="3" data-sm-items="3" data-xs-items="3" data-xxs-items="3">
+                          <div class="item">
+                              <a
+                                  href="javascript:void(0)"
+                                  data-image="https://bizweb.dktcdn.net/100/347/923/products/vn0a4bv3tbq-5.jpg?v=1584680507310"
+                                  data-zoom-image="https://bizweb.dktcdn.net/thumb/1024x1024/100/347/923/products/vn0a4bv3tbq-5.jpg?v=1584680507310"
+                              >
+                                  <img
+                                      data-img="https://bizweb.dktcdn.net/thumb/1024x1024/100/347/923/products/vn0a4bv3tbq-5.jpg?v=1584680507310"
+                                      src="https://bizweb.dktcdn.net/thumb/small/100/347/923/products/vn0a4bv3tbq-5.jpg?v=1584680507310"
+                                      alt="Giày Vans Slip-On Jawbones - VN0A4BV3TBQ"
+                                  />
+                              </a>
                           </div>
-                          <input type="hidden" name="lPyfaicJWN" value="Vhsl07tdok">
-                          <input type="hidden" name="dQSIJVoz-hWqNi" value="nVFXBuCzS@oc_M">
-                          <input type="hidden" name="UzkEGumLhel" value="tFQCp518S_U">
-                        </form>
-                        <div class="getbowtied-single-product-share-wrapper">
-                          <span class="getbowtied-single-product-share">Share
-                          </span>
-                          <a href="//www.facebook.com/sharer/sharer.php?u=https://thehanger.wp-theme.design/shop/bottoms/biker-jackets/high-waist-denim-shorts/" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="18" height="18" viewBox="0 0 50 50">
-                              <path d="M32,11h5c0.552,0,1-0.448,1-1V3.263c0-0.524-0.403-0.96-0.925-0.997C35.484,2.153,32.376,2,30.141,2C24,2,20,5.68,20,12.368 V19h-7c-0.552,0-1,0.448-1,1v7c0,0.552,0.448,1,1,1h7v19c0,0.552,0.448,1,1,1h7c0.552,0,1-0.448,1-1V28h7.222 c0.51,0,0.938-0.383,0.994-0.89l0.778-7C38.06,19.518,37.596,19,37,19h-8v-5C29,12.343,30.343,11,32,11z">
-                              </path>
-                            </svg>
-                          </a>
-                          <a href="//twitter.com/share?url=https://thehanger.wp-theme.design/shop/bottoms/biker-jackets/high-waist-denim-shorts/" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="18" height="18" viewBox="0 0 50 50">
-                              <path d="M 50.0625 10.4375 C 48.214844 11.257813 46.234375 11.808594 44.152344 12.058594 C 46.277344 10.785156 47.910156 8.769531 48.675781 6.371094 C 46.691406 7.546875 44.484375 8.402344 42.144531 8.863281 C 40.269531 6.863281 37.597656 5.617188 34.640625 5.617188 C 28.960938 5.617188 24.355469 10.21875 24.355469 15.898438 C 24.355469 16.703125 24.449219 17.488281 24.625 18.242188 C 16.078125 17.8125 8.503906 13.71875 3.429688 7.496094 C 2.542969 9.019531 2.039063 10.785156 2.039063 12.667969 C 2.039063 16.234375 3.851563 19.382813 6.613281 21.230469 C 4.925781 21.175781 3.339844 20.710938 1.953125 19.941406 C 1.953125 19.984375 1.953125 20.027344 1.953125 20.070313 C 1.953125 25.054688 5.5 29.207031 10.199219 30.15625 C 9.339844 30.390625 8.429688 30.515625 7.492188 30.515625 C 6.828125 30.515625 6.183594 30.453125 5.554688 30.328125 C 6.867188 34.410156 10.664063 37.390625 15.160156 37.472656 C 11.644531 40.230469 7.210938 41.871094 2.390625 41.871094 C 1.558594 41.871094 0.742188 41.824219 -0.0585938 41.726563 C 4.488281 44.648438 9.894531 46.347656 15.703125 46.347656 C 34.617188 46.347656 44.960938 30.679688 44.960938 17.09375 C 44.960938 16.648438 44.949219 16.199219 44.933594 15.761719 C 46.941406 14.3125 48.683594 12.5 50.0625 10.4375 Z ">
-                              </path>
-                            </svg>
-                          </a>
-                          <a href="//pinterest.com/pin/create/button/?url=https://thehanger.wp-theme.design/shop/bottoms/biker-jackets/high-waist-denim-shorts/&amp;media=https://thehanger.wp-theme.design/wp-content/uploads/8303969428_1_1_1.jpg&amp;description=High+Waist+Denim+Shorts">
-                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="18" height="18" viewBox="0 0 50 50">
-                              <path d="M25,2C12.318,2,2,12.317,2,25s10.318,23,23,23s23-10.317,23-23S37.682,2,25,2z M27.542,32.719 c-3.297,0-4.516-2.138-4.516-2.138s-0.588,2.309-1.021,3.95s-0.507,1.665-0.927,2.591c-0.471,1.039-1.626,2.674-1.966,3.177 c-0.271,0.401-0.607,0.735-0.804,0.696c-0.197-0.038-0.197-0.245-0.245-0.678c-0.066-0.595-0.258-2.594-0.166-3.946 c0.06-0.88,0.367-2.371,0.367-2.371l2.225-9.108c-1.368-2.807-0.246-7.192,2.871-7.192c2.211,0,2.79,2.001,2.113,4.406 c-0.301,1.073-1.246,4.082-1.275,4.224c-0.029,0.142-0.099,0.442-0.083,0.738c0,0.878,0.671,2.672,2.995,2.672 c3.744,0,5.517-5.535,5.517-9.237c0-2.977-1.892-6.573-7.416-6.573c-5.628,0-8.732,4.283-8.732,8.214 c0,2.205,0.87,3.091,1.273,3.577c0.328,0.395,0.162,0.774,0.162,0.774l-0.355,1.425c-0.131,0.471-0.552,0.713-1.143,0.368 C15.824,27.948,13,26.752,13,21.649C13,16.42,17.926,11,25.571,11C31.64,11,37,14.817,37,21.001 C37,28.635,32.232,32.719,27.542,32.719z">
-                              </path>
-                            </svg>
-                          </a>
-                        </div>
-                        <div class="yith-wcwl-add-to-wishlist add-to-wishlist-248  wishlist-fragment on-first-load" data-fragment-ref="248" data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:true,&quot;show_exists&quot;:false,&quot;product_id&quot;:248,&quot;parent_product_id&quot;:248,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:true,&quot;browse_wishlist_text&quot;:&quot;Browse Wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in the wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:false,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
-                          <!-- ADD TO WISHLIST -->
-                          <div class="yith-wcwl-add-button">
-                            <a href="?add_to_wishlist=248" rel="nofollow" data-product-id="248" data-product-type="simple" data-original-product-id="248" class="add_to_wishlist single_add_to_wishlist" data-title="Add to Wishlist">
-                              <span>Add to Wishlist
-                              </span>
-                            </a>
+
+                          <div class="item">
+                              <a
+                                  href="javascript:void(0)"
+                                  data-image="https://bizweb.dktcdn.net/100/347/923/products/vn0a4bv3tbq-1.jpg?v=1584680510390"
+                                  data-zoom-image="https://bizweb.dktcdn.net/thumb/1024x1024/100/347/923/products/vn0a4bv3tbq-1.jpg?v=1584680510390"
+                              >
+                                  <img
+                                      data-img="https://bizweb.dktcdn.net/thumb/1024x1024/100/347/923/products/vn0a4bv3tbq-1.jpg?v=1584680510390"
+                                      src="https://bizweb.dktcdn.net/thumb/small/100/347/923/products/vn0a4bv3tbq-1.jpg?v=1584680510390"
+                                      alt="Giày Vans Slip-On Jawbones - VN0A4BV3TBQ"
+                                  />
+                              </a>
                           </div>
-                          <!-- COUNT TEXT -->
-                        </div>
-                        <div class="woocommerce-gb_accordion">
-                          <ul class="accordion" data-accordion="" data-allow-all-closed="true" role="tablist" data-e="7nhs88-e">
-                            <li class="accordion-item" id="tab-title-description" role="tab" aria-controls="tab-description" data-accordion-item="" aria-expanded="false" aria-selected="false">
-                              <a class="accordion-title description_tab" href="#tab-description" aria-controls="tab-description" role="tab" id="tab-title-description" aria-expanded="false" aria-selected="false">
-                                Description				
+
+                          <div class="item">
+                              <a
+                                  href="javascript:void(0)"
+                                  data-image="https://bizweb.dktcdn.net/100/347/923/products/vn0a4bv3tbq-3.jpg?v=1584680513073"
+                                  data-zoom-image="https://bizweb.dktcdn.net/thumb/1024x1024/100/347/923/products/vn0a4bv3tbq-3.jpg?v=1584680513073"
+                              >
+                                  <img
+                                      data-img="https://bizweb.dktcdn.net/thumb/1024x1024/100/347/923/products/vn0a4bv3tbq-3.jpg?v=1584680513073"
+                                      src="https://bizweb.dktcdn.net/thumb/small/100/347/923/products/vn0a4bv3tbq-3.jpg?v=1584680513073"
+                                      alt="Giày Vans Slip-On Jawbones - VN0A4BV3TBQ"
+                                  />
                               </a>
-                              <div class="accordion-content woocommerce-Tabs-panel woocommerce-Tabs-panel--description panel entry-content wc-tab" id="tab-description" role="tabpanel" aria-labelledby="tab-title-description" data-tab-content="" aria-hidden="true" style="display: none;">
-                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
-                                </p>
-                              </div>
-                            </li>
-                            <li class="accordion-item" id="tab-title-additional_information" role="tab" aria-controls="tab-additional_information" data-accordion-item="">
-                              <a class="accordion-title additional_information_tab" href="#tab-additional_information" aria-controls="tab-additional_information" role="tab" id="tab-title-additional_information" aria-expanded="false" aria-selected="false">
-                                Additional information				
+                          </div>
+
+                          <div class="item">
+                              <a
+                                  href="javascript:void(0)"
+                                  data-image="https://bizweb.dktcdn.net/100/347/923/products/vn0a4bv3tbq-4.jpg?v=1584680515800"
+                                  data-zoom-image="https://bizweb.dktcdn.net/thumb/1024x1024/100/347/923/products/vn0a4bv3tbq-4.jpg?v=1584680515800"
+                              >
+                                  <img
+                                      data-img="https://bizweb.dktcdn.net/thumb/1024x1024/100/347/923/products/vn0a4bv3tbq-4.jpg?v=1584680515800"
+                                      src="https://bizweb.dktcdn.net/thumb/small/100/347/923/products/vn0a4bv3tbq-4.jpg?v=1584680515800"
+                                      alt="Giày Vans Slip-On Jawbones - VN0A4BV3TBQ"
+                                  />
                               </a>
-                              <div class="accordion-content woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab" id="tab-additional_information" role="tabpanel" aria-labelledby="tab-title-additional_information" data-tab-content="" aria-hidden="true">
-                                <table class="woocommerce-product-attributes shop_attributes">
-                                  <tbody>
-                                    <tr class="woocommerce-product-attributes-item woocommerce-product-attributes-item--attribute_pa_color">
-                                      <th class="woocommerce-product-attributes-item__label">Color
-                                      </th>
-                                      <td class="woocommerce-product-attributes-item__value">
-                                        <p>Denim
-                                        </p>
-                                      </td>
-                                    </tr>
-                                    <tr class="woocommerce-product-attributes-item woocommerce-product-attributes-item--attribute_pa_size">
-                                      <th class="woocommerce-product-attributes-item__label">Size
-                                      </th>
-                                      <td class="woocommerce-product-attributes-item__value">
-                                        <p>S, L, XL
-                                        </p>
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </div>
-                            </li>
-                            <li class="accordion-item" id="tab-title-reviews" role="tab" aria-controls="tab-reviews" data-accordion-item="">
-                              <a class="accordion-title reviews_tab" href="#tab-reviews" aria-controls="tab-reviews" role="tab" id="tab-title-reviews" aria-expanded="false" aria-selected="false">
-                                Reviews (0)				
+                          </div>
+
+                          <div class="item">
+                              <a
+                                  href="javascript:void(0)"
+                                  data-image="https://bizweb.dktcdn.net/100/347/923/products/vn0a4bv3tbq-2.jpg?v=1584680518817"
+                                  data-zoom-image="https://bizweb.dktcdn.net/thumb/1024x1024/100/347/923/products/vn0a4bv3tbq-2.jpg?v=1584680518817"
+                              >
+                                  <img
+                                      data-img="https://bizweb.dktcdn.net/thumb/1024x1024/100/347/923/products/vn0a4bv3tbq-2.jpg?v=1584680518817"
+                                      src="https://bizweb.dktcdn.net/thumb/small/100/347/923/products/vn0a4bv3tbq-2.jpg?v=1584680518817"
+                                      alt="Giày Vans Slip-On Jawbones - VN0A4BV3TBQ"
+                                  />
                               </a>
-                              <div class="accordion-content woocommerce-Tabs-panel woocommerce-Tabs-panel--reviews panel entry-content wc-tab" id="tab-reviews" role="tabpanel" aria-labelledby="tab-title-reviews" data-tab-content="" aria-hidden="true">
-                                <div id="reviews" class="woocommerce-Reviews">
-                                  <div id="comments">
-                                    <h2 class="woocommerce-Reviews-title">
-                                      Reviews		
-                                    </h2>
-                                    <p class="woocommerce-noreviews">There are no reviews yet.
-                                    </p>
-                                  </div>
-                                  <div id="review_form_wrapper">
-                                    <div id="review_form">
-                                      <div id="respond" class="comment-respond">
-                                        <span id="reply-title" class="comment-reply-title">Be the first to review “High Waist Denim Shorts” 
-                                          <small>
-                                            <a rel="nofollow" id="cancel-comment-reply-link" href="/shop/bottoms/biker-jackets/high-waist-denim-shorts/#respond" style="display:none;">Cancel reply
-                                            </a>
-                                          </small>
-                                        </span>
-                                        <form action="https://thehanger.wp-theme.design/wp-comments-post.php?wpe-comment-post=thehangerprod" method="post" id="commentform" class="comment-form" novalidate="">
-                                          <p class="comment-notes">
-                                            <span id="email-notes">Your email address will not be published.
-                                            </span> Required fields are marked 
-                                            <span class="required">*
-                                            </span>
-                                          </p>
-                                          <div class="comment-form-rating">
-                                            <label for="rating">Your rating&nbsp;
-                                              <span class="required">*
-                                              </span>
-                                            </label>
-                                            <p class="stars">						
-                                              <span>							
-                                                <a class="star-1" href="#">1
-                                                </a>							
-                                                <a class="star-2" href="#">2
-                                                </a>							
-                                                <a class="star-3" href="#">3
-                                                </a>							
-                                                <a class="star-4" href="#">4
-                                                </a>							
-                                                <a class="star-5" href="#">5
-                                                </a>						
-                                              </span>					
-                                            </p>
-                                            <select name="rating" id="rating" required="" style="display: none;">
-                                              <option value="">Rate…
-                                              </option>
-                                              <option value="5">Perfect
-                                              </option>
-                                              <option value="4">Good
-                                              </option>
-                                              <option value="3">Average
-                                              </option>
-                                              <option value="2">Not that bad
-                                              </option>
-                                              <option value="1">Very poor
-                                              </option>
-                                            </select>
-                                          </div>
-                                          <p class="comment-form-comment">
-                                            <label for="comment">Your review&nbsp;
-                                              <span class="required">*
-                                              </span>
-                                            </label>
-                                            <textarea id="comment" name="comment" cols="45" rows="8" required="">
-                                            </textarea>
-                                          </p>
-                                          <p class="comment-form-author">
-                                            <label for="author">Name&nbsp;
-                                              <span class="required">*
-                                              </span>
-                                            </label>
-                                            <input id="author" name="author" type="text" value="" size="30" required="">
-                                          </p>
-                                          <p class="comment-form-email">
-                                            <label for="email">Email&nbsp;
-                                              <span class="required">*
-                                              </span>
-                                            </label>
-                                            <input id="email" name="email" type="email" value="" size="30" required="">
-                                          </p>
-                                          <p class="form-submit">
-                                            <input name="submit" type="submit" id="submit" class="submit" value="Submit"> 
-                                            <input type="hidden" name="comment_post_ID" value="248" id="comment_post_ID">
-                                            <input type="hidden" name="comment_parent" id="comment_parent" value="0">
-                                          </p>
-                                          <input type="hidden" name="lPyfaicJWN" value="Vhsl07tdok">
-                                          <input type="hidden" name="dQSIJVoz-hWqNi" value="nVFXBuCzS@oc_M">
-                                          <input type="hidden" name="UzkEGumLhel" value="tFQCp518S_U">
-                                        </form>	
-                                      </div>
-                                      <!-- #respond -->
-                                    </div>
-                                  </div>
-                                  <div class="clear">
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-7 col-lg-7 details-pro">
+                  <h1 class="title-product">Giày Vans Slip-On Jawbones</h1>
+                  <div class="group-status">
+                      <span class="hidden first_status">Thương hiệu: <span class="status_name">Đang cập nhật</span></span>
+                      <span class="first_status">SKU: <span class="status_name">VN0A4BV3TBQ </span></span>
+                      <span class="first_status">
+                          &nbsp;|&nbsp; Tình trạng:
+                          <span class="status_name availabel">
+                              Còn hàng
+                          </span>
+                      </span>
+                  </div>
+                  <div class="reviews_details_product">
+                      <div class="sapo-product-reviews-badge sapo-product-reviews-badge-detail" data-id="16208530"></div>
+                  </div>
+
+                  <div class="price-box">
+                      <span class="special-price">
+                          <span class="price product-price">950.000₫</span>
+                      </span>
+                      <!-- Giá Khuyến mại -->
+                      <span class="old-price">
+                          <del class="price product-price-old">
+                              1.900.000₫
+                          </del>
+                      </span>
+                      <!-- Giá gốc -->
+                  </div>
+
+                  <div class="product-summary product_description margin-bottom-0">
+                      <div class="rte description rte-summary">
+                          <p>
+                              Sản phẩm là một thiết kế hoàn hảo bất kể vào dịp lễ hội hay ngày thường, bạn đều có thể tự tin đi&nbsp;<strong><em>Vans Slip-On&nbsp;</em></strong><em>Jawbone&nbsp;</em>và chắc hẳn item này sẽ đem lại cho
+                              bạn một vẻ ngoài nổi bật, hút mắt hơn.
+                          </p>
+                      </div>
+                  </div>
+
+                  <div class="thongtinkhuyenmai">
+                      <div class="content rte rte-summary">
+                          <ul>
+                              <li>
+                                  <span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: 12px;">Tặng thêm Tote bag + Freeship với đơn hàng từ 3.000.000đ</span></span>
+                              </li>
+                              <li>
+                                  <span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: 12px;">Freeship cho đơn hàng từ 2.000.000đ</span></span>
+                              </li>
+                              <li>
+                                  <span style="font-family: Tahoma, Geneva, sans-serif;"><span style="font-size: 12px;">Bảo hành chính hãng 1 tháng với giày dép</span></span>
+                              </li>
+                              <li>
+                                  <span style="font-family: Tahoma, Geneva, sans-serif;">
+                                      <span style="font-size: 12px;">
+                                          Freeship cho đơn hàng từ 600k với Hà Nội, Hải Phòng, Quảng Ninh,&nbsp;Hải Dương, Đà Nẵng, TP Hồ Chí Minh<br />
+                                          <span style="color: #ff0000;">(Không áp dụng đồng thời các chương trình&nbsp;khuyến mãi khác)</span>
+                                      </span>
+                                  </span>
+                              </li>
                           </ul>
-                        </div>
-                        <div class="product_meta">
-                          <span class="posted_in">Categories: 
-                            <a href="https://thehanger.wp-theme.design/product-category/women/" rel="tag">Women
-                            </a>, 
-                            <a href="https://thehanger.wp-theme.design/product-category/bottoms/" rel="tag">Bottoms
-                            </a>, 
-                            <a href="https://thehanger.wp-theme.design/product-category/bottoms/biker-jackets/" rel="tag">Biker Jackets
-                            </a>
-                          </span>
-                        </div>
+                          <div class="nhapnhap">
+                              <i class="fa fa-arrow-up"></i><i class="fa fa-arrow-up"></i><strong><a href="https://www.wear.com.vn/huong-dan-chon-size">Nhấp vào đây xem hướng dẫn đo size</a></strong><i class="fa fa-arrow-up"></i>
+                              <i class="fa fa-arrow-up"></i>
+                          </div>
                       </div>
-                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="large-12 columns">
-                  <div class="after-product-summary">
-                    <section class="related products">
-                      <h2>Related products
-                      </h2>
-                      <ul class="products columns-4 js_animated">
-                        <li class="product type-product post-147 status-publish first instock product_cat-women product_cat-jumpers-cardigans product_cat-men product_cat-junior product_cat-toys-games has-post-thumbnail downloadable shipping-taxable purchasable product-type-simple visible animation_ready animated">
-                          <div class="main-container">
-                            <div class="product_image_wrapper">
-                              <div class="product_badges_wrapper">
-                              </div>
-                              <div class="product_image with_second_image second_image_loaded">
-                                <a href="https://thehanger.wp-theme.design/shop/junior/toys-games/t-shirt-with-slogan/">
-                                  <span class="product_second_image" style="background-image:url(https://thehanger.wp-theme.design/wp-content/uploads/7957900250_2_1_1-330x413.jpg)">
-                                  </span>
-                                  <img width="330" height="413" src="https://thehanger.wp-theme.design/wp-content/uploads/7957900250_1_1_1-330x413.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy">				
-                                </a>
-                              </div>
-                            </div>
-                            <div class="second-container">
-                              <div class="product_info">
-                                <a href="https://thehanger.wp-theme.design/shop/junior/toys-games/t-shirt-with-slogan/" class="title">
-                                  <h2 class="woocommerce-loop-product__title">T-shirt With Slogan
-                                  </h2>
-                                </a>
-                                <span class="price">
-                                  <span class="woocommerce-Price-amount amount">
-                                    <bdi>
-                                      <span class="woocommerce-Price-currencySymbol">$
-                                      </span>44
-                                    </bdi>
-                                  </span>
-                                </span>
-                              </div>
-                              <div class="buttons" style="height: 335px;">
-                                <a href="/shop/bottoms/biker-jackets/high-waist-denim-shorts/?add_to_wishlist=147" data-product-id="147" data-product-type="simple" data-wishlist-url="https://thehanger.wp-theme.design/wishlist/" data-browse-wishlist-text="Browse Wishlist" class="getbowtied_product_wishlist_button add_to_wishlist" rel="nofollow">
-                                  <span class="tooltip">
-                                    Add to Wishlist				
-                                  </span>
-                                </a>			
-                                <a href="#" class="getbowtied_product_quick_view_button" data-product_id="147" rel="nofollow">
-                                  <span class="tooltip">Quick View
-                                  </span>
-                                </a>
-                                <a href="?add-to-cart=147" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="147" data-product_sku="" aria-label="Add “T-shirt With Slogan” to your cart" rel="nofollow">
-                                  <span class="tooltip">Add to cart
-                                  </span>
-                                </a>			
-                              </div>
-                            </div>
+
+                  <div class="form-product col-sm-12">
+                      <form enctype="multipart/form-data" id="add-to-cart-form" action="/cart/add" method="post" class="form-inline margin-bottom-0">
+                          <div class="box-variant clearfix">
+                              <fieldset class="form-group">
+                                <div class="selector-wrapper" style="text-align: left; margin-bottom: 10px;">
+                                  <label>Size</label>
+                                  <select class="single-option-selector" data-option="option1" id="product-selectors-option-0">
+                                      <option value="Size 3.5US - Size 34.5VN - 21.5CM">Size 3.5US - Size 34.5VN - 21.5CM</option>
+                                      <option value="Size 4.0US - Size 35.0VN - 22.0CM">Size 4.0US - Size 35.0VN - 22.0CM</option>
+                                      <option value="Size 4.5US - Size 36.0VN - 22.5CM">Size 4.5US - Size 36.0VN - 22.5CM</option>
+                                      <option value="Size 5.0US - Size 36.5VN - 23.0CM">Size 5.0US - Size 36.5VN - 23.0CM</option>
+                                      <option value="Size 5.5US - Size 37.0VN - 23.5CM">Size 5.5US - Size 37.0VN - 23.5CM</option>
+                                      <option value="Size 6.0US - Size 38.0VN - 24.0CM">Size 6.0US - Size 38.0VN - 24.0CM</option>
+                                      <option value="Size 6.5US - Size 38.5VN - 24.5CM">Size 6.5US - Size 38.5VN - 24.5CM</option>
+                                      <option value="Size 7.0US - Size 39.0VN - 25.0CM">Size 7.0US - Size 39.0VN - 25.0CM</option>
+                                      <option value="Size 7.5US - Size 40.0VN - 25.5CM">Size 7.5US - Size 40.0VN - 25.5CM</option>
+                                      <option value="Size 8.0US - Size 40.5VN - 26.0CM">Size 8.0US - Size 40.5VN - 26.0CM</option>
+                                      <option value="Size 8.5US - Size 41.0VN - 26.5CM">Size 8.5US - Size 41.0VN - 26.5CM</option>
+                                      <option value="Size 9.0US - Size 42.0VN - 27.0CM">Size 9.0US - Size 42.0VN - 27.0CM</option>
+                                      <option value="Size 9.5US - Size 42.5VN - 27.5CM">Size 9.5US - Size 42.5VN - 27.5CM</option>
+                                      <option value="Size 10 US - Size 43.0VN - 28.0CM">Size 10 US - Size 43.0VN - 28.0CM</option>
+                                  </select>
+                                </div>
+                              </fieldset>
                           </div>
-                        </li>
-                        <li class="product type-product post-131 status-publish instock product_cat-women product_cat-men product_cat-accessories has-post-thumbnail shipping-taxable product-type-external visible animation_ready animated">
-                          <div class="main-container">
-                            <div class="product_image_wrapper">
-                              <div class="product_badges_wrapper">
-                              </div>
-                              <div class="product_image with_second_image second_image_loaded">
-                                <a href="https://thehanger.wp-theme.design/shop/women/external-affiliate-product/">
-                                  <span class="product_second_image" style="background-image:url(https://thehanger.wp-theme.design/wp-content/uploads/9882266800_2_3_1-330x413.jpg)">
-                                  </span>
-                                  <img width="330" height="413" src="https://thehanger.wp-theme.design/wp-content/uploads/9882266800_1_1_1-330x413.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy">				
-                                </a>
-                              </div>
-                            </div>
-                            <div class="second-container">
-                              <div class="product_info">
-                                <a href="https://thehanger.wp-theme.design/shop/women/external-affiliate-product/" class="title">
-                                  <h2 class="woocommerce-loop-product__title">External / Affiliate Product
-                                  </h2>
-                                </a>
-                                <span class="price">
-                                  <span class="woocommerce-Price-amount amount">
-                                    <bdi>
-                                      <span class="woocommerce-Price-currencySymbol">$
-                                      </span>59
-                                    </bdi>
-                                  </span>
-                                </span>
-                              </div>
-                              <div class="buttons" style="height: 335px;">
-                                <a href="/shop/bottoms/biker-jackets/high-waist-denim-shorts/?add_to_wishlist=131" data-product-id="131" data-product-type="external" data-wishlist-url="https://thehanger.wp-theme.design/wishlist/" data-browse-wishlist-text="Browse Wishlist" class="getbowtied_product_wishlist_button add_to_wishlist" rel="nofollow">
-                                  <span class="tooltip">
-                                    Add to Wishlist				
-                                  </span>
-                                </a>			
-                                <a href="#" class="getbowtied_product_quick_view_button" data-product_id="131" rel="nofollow">
-                                  <span class="tooltip">Quick View
-                                  </span>
-                                </a>
-                                <a href="https://www.bershka.com/us/man/accessories/backpacks/duffel-handbag-c1010193173p101138328.html?colorId=800" data-quantity="1" class="button product_type_external" data-product_id="131" data-product_sku="" aria-label="Buy on bershka.com" rel="nofollow">
-                                  <span class="tooltip">Buy on bershka.com
-                                  </span>
-                                </a>			
-                              </div>
-                            </div>
+                          <div class="nhapnhap">
+                              <i class="fa fa-arrow-up"></i><i class="fa fa-arrow-up"></i>
+                              Nhấp vào ô trên để chọn size
+                              <i class="fa fa-arrow-up"></i><i class="fa fa-arrow-up"></i>
                           </div>
-                        </li>
-                        <li class="product type-product post-128 status-publish instock product_cat-women product_cat-bottoms product_cat-tops has-post-thumbnail featured shipping-taxable product-type-grouped visible animation_ready animated">
-                          <div class="main-container">
-                            <div class="product_image_wrapper">
-                              <div class="product_badges_wrapper">
+                          <div class="form-group form_button_details margin-top-5">
+                              <div class="form_product_content">
+                                  <div class="soluong show">
+                                      <div class="label_sl margin-bottom-10">Số lượng:</div>
+                                      <div class="custom input_number_product custom-btn-number form-control">
+                                          <button
+                                              class="btn_num num_1 button button_qty"
+                                              onClick="var result = document.getElementById('qtym'); var qtypro = result.value; if( !isNaN( qtypro ) &amp;&amp; qtypro &gt; 1 ) result.value--;return false;"
+                                              type="button"
+                                          >
+                                              -
+                                          </button>
+                                          <input type="text" id="qtym" name="quantity" value="1" onkeyup="valid(this,'numbers')" onkeypress="validate(event)" class="form-control prd_quantity" />
+                                          <button
+                                              class="btn_num num_2 button button_qty"
+                                              onClick="var result = document.getElementById('qtym'); var qtypro = result.value; if( !isNaN( qtypro )) result.value++;return false;"
+                                              type="button"
+                                          >
+                                              +
+                                          </button>
+                                      </div>
+                                  </div>
+
+                                  <div class="button_actions clearfix">
+                                      <button type="submit" class="btn btn_base btn_add_cart btn-cart add_to_cart">
+                                          <span class="text_1">MUA NGAY</span>
+                                          <span class="text_2">Giao hàng COD tận nơi</span>
+                                      </button>
+
+                                      <a class="btn btn_base btn_call" href="tel:02477702777">
+                                          <span class="text_1">GỌI ĐẶT HÀNG</span>
+
+                                          <span class="text_2">Vui lòng gọi ngay 02477702777</span>
+                                      </a>
+                                  </div>
                               </div>
-                              <div class="product_image ">
-                                <a href="https://thehanger.wp-theme.design/shop/women/grouped-product/">
-                                  <span class="product_second_image" style="">
-                                  </span>
-                                  <img width="330" height="413" src="https://thehanger.wp-theme.design/wp-content/uploads/4721918902_1_1_1-330x413.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy">				
-                                </a>
-                              </div>
-                            </div>
-                            <div class="second-container">
-                              <div class="product_info">
-                                <a href="https://thehanger.wp-theme.design/shop/women/grouped-product/" class="title">
-                                  <h2 class="woocommerce-loop-product__title">Grouped Product
-                                  </h2>
-                                </a>
-                                <span class="price">
-                                  <span class="woocommerce-Price-amount amount">
-                                    <bdi>
-                                      <span class="woocommerce-Price-currencySymbol">$
-                                      </span>49
-                                    </bdi>
-                                  </span> – 
-                                  <span class="woocommerce-Price-amount amount">
-                                    <bdi>
-                                      <span class="woocommerce-Price-currencySymbol">$
-                                      </span>136
-                                    </bdi>
-                                  </span>
-                                </span>
-                              </div>
-                              <div class="buttons" style="height: 335px;">
-                                <a href="/shop/bottoms/biker-jackets/high-waist-denim-shorts/?add_to_wishlist=128" data-product-id="128" data-product-type="grouped" data-wishlist-url="https://thehanger.wp-theme.design/wishlist/" data-browse-wishlist-text="Browse Wishlist" class="getbowtied_product_wishlist_button add_to_wishlist" rel="nofollow">
-                                  <span class="tooltip">
-                                    Add to Wishlist				
-                                  </span>
-                                </a>			
-                                <a href="#" class="getbowtied_product_quick_view_button" data-product_id="128" rel="nofollow">
-                                  <span class="tooltip">Quick View
-                                  </span>
-                                </a>
-                                <a href="https://thehanger.wp-theme.design/shop/women/grouped-product/" data-quantity="1" class="button product_type_grouped" data-product_id="128" data-product_sku="" aria-label="View products in the “Grouped Product” group" rel="nofollow">
-                                  <span class="tooltip">View products
-                                  </span>
-                                </a>			
-                              </div>
-                            </div>
                           </div>
-                        </li>
-                        <li class="product type-product post-188 status-publish last instock product_cat-women product_cat-shorts product_cat-tops has-post-thumbnail shipping-taxable purchasable product-type-simple visible animation_ready animated">
-                          <div class="main-container">
-                            <div class="product_image_wrapper">
-                              <div class="product_badges_wrapper">
-                              </div>
-                              <div class="product_image with_second_image second_image_loaded">
-                                <a href="https://thehanger.wp-theme.design/shop/bottoms/shorts/printed-blouse-with-lace-trims-on-the-sleeves/">
-                                  <span class="product_second_image" style="background-image:url(https://thehanger.wp-theme.design/wp-content/uploads/5902494500_2_1_1-330x413.jpg)">
-                                  </span>
-                                  <img width="330" height="413" src="https://thehanger.wp-theme.design/wp-content/uploads/5902494500_1_1_1-330x413.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy">				
-                                </a>
-                              </div>
-                            </div>
-                            <div class="second-container">
-                              <div class="product_info">
-                                <a href="https://thehanger.wp-theme.design/shop/bottoms/shorts/printed-blouse-with-lace-trims-on-the-sleeves/" class="title">
-                                  <h2 class="woocommerce-loop-product__title">Printed blouse with lace trims on the sleeves
-                                  </h2>
-                                </a>
-                                <span class="price">
-                                  <span class="woocommerce-Price-amount amount">
-                                    <bdi>
-                                      <span class="woocommerce-Price-currencySymbol">$
-                                      </span>79
-                                    </bdi>
-                                  </span>
-                                </span>
-                              </div>
-                              <div class="buttons" style="height: 335px;">
-                                <a href="/shop/bottoms/biker-jackets/high-waist-denim-shorts/?add_to_wishlist=188" data-product-id="188" data-product-type="simple" data-wishlist-url="https://thehanger.wp-theme.design/wishlist/" data-browse-wishlist-text="Browse Wishlist" class="getbowtied_product_wishlist_button add_to_wishlist" rel="nofollow">
-                                  <span class="tooltip">
-                                    Add to Wishlist				
-                                  </span>
-                                </a>			
-                                <a href="#" class="getbowtied_product_quick_view_button" data-product_id="188" rel="nofollow">
-                                  <span class="tooltip">Quick View
-                                  </span>
-                                </a>
-                                <a href="?add-to-cart=188" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="188" data-product_sku="" aria-label="Add “Printed blouse with lace trims on the sleeves” to your cart" rel="nofollow">
-                                  <span class="tooltip">Add to cart
-                                  </span>
-                                </a>			
-                              </div>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </section>
+                      </form>
+                      <div class="md-discount-box-inform" id="md-discount-box-inform"></div>
                   </div>
-                </div>
               </div>
-            </main>
           </div>
-        </div>
+          <div class="tab_h">
+              <div class="col-xs-12 col-lg-12 col-sm-12 col-md-12 no-padding">
+                  <!-- Nav tabs -->
+                  <div class="product-tab e-tabs">
+                      <ul class="tabs tabs-title clearfix">
+                          <li class="tab-link" data-tab="tab-1">
+                              <h3><span>Mô tả sản phẩm</span></h3>
+                          </li>
+
+                          <li class="tab-link" data-tab="tab-2">
+                              <h3><span>Hướng dẫn chọn size</span></h3>
+                          </li>
+
+                          <li class="tab-link" data-tab="tab-3">
+                              <h3><span>Đánh giá</span></h3>
+                          </li>
+                      </ul>
+
+                      <div id="tab-1" class="tab-content">
+                          <div class="rte">
+                              <div class="product-well">
+                                  <div class="ba-text-fpt">
+                                      <p><strong>THÔNG TIN SẢN PHẨM</strong></p>
+                                      <table cellspacing="0" class="table table-bordered table-detail table-striped" id="chi-tiet">
+                                          <colgroup>
+                                              <col style="width: 25%;" />
+                                              <col />
+                                          </colgroup>
+                                          <tbody>
+                                              <tr>
+                                                  <td rel="brand">Thương hiệu</td>
+                                                  <td class="last" style="text-align: justify;"><a href="https://www.wear.com.vn/vans">Vans</a></td>
+                                              </tr>
+                                              <tr>
+                                                  <td rel="brand_country">Xuất xứ thương hiệu</td>
+                                                  <td class="last" style="text-align: justify;">Mỹ</td>
+                                              </tr>
+                                              <tr>
+                                                  <td rel="origin">Sản xuất tại</td>
+                                                  <td class="last" style="text-align: justify;">Việt Nam/ Ấn Độ/ Trung Quốc</td>
+                                              </tr>
+                                              <tr>
+                                                  <td rel="sku">SKU</td>
+                                                  <td class="last" style="text-align: justify;">
+                                                      <em>
+                                                          <strong><span style="color: #000000;">VN0A4BV3TBQ</span></strong>
+                                                      </em>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td rel="item_model_number">Model</td>
+                                                  <td class="last" style="text-align: justify;">Slip On</td>
+                                              </tr>
+                                              <tr>
+                                                  <td rel="chat_lieu">Chất liệu</td>
+                                                  <td class="last" style="text-align: justify;">Da lộn</td>
+                                              </tr>
+                                              <tr>
+                                                  <td rel="huong_dan_bao_quan">Hướng dẫn bảo quản</td>
+                                                  <td class="last" style="text-align: justify;">
+                                                      <ul>
+                                                          <li>Tránh mang sản phẩm khi trời mưa hoặc thời tiết xấu để chúng không bị ướt dẫn đến bong tróc.</li>
+                                                          <li>Cất giữ sản phẩm ở nơi thoáng mát để giữ gìn chất lượng của sản phẩm ở mức tốt nhất.</li>
+                                                          <li>Lau chùi sản phẩm thường xuyên để tránh bụi.</li>
+                                                      </ul>
+                                                  </td>
+                                              </tr>
+                                              <tr>
+                                                  <td rel="item_model_number">Chế độ bảo hành</td>
+                                                  <td class="last" style="text-align: justify;">&nbsp;Bảo hành chính hãng 1 tháng theo phiếu bảo hành</td>
+                                              </tr>
+                                              <tr>
+                                                  <td rel="huong_dan_bao_quan">Quy cách đóng gói</td>
+                                                  <td class="last" style="text-align: justify;">
+                                                      <ul>
+                                                          <li>Giày</li>
+                                                          <li>Hộp giày</li>
+                                                          <li>Túi đựng Vans</li>
+                                                          <li>Phiếu bảo hành chính hãng</li>
+                                                      </ul>
+                                                  </td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                      <p><strong>MÔ TẢ SẢN PHẨM</strong></p>
+                                      <p>
+                                          <span style="color: #000000;">
+                                              <em><strong>Vans Slip-On Jawbones</strong></em>
+                                          </span>
+                                      </p>
+                                      <p style="text-align: center;">
+                                          <span style="color: #000000;"><img alt="Giày Vans Slip-On Jawbones - VN0A4BV3TBQ" src="https://bizweb.dktcdn.net/thumb/grande/100/347/923/products/vn0a4bv3tbq-5.jpg?v=1572891464797" /></span>
+                                      </p>
+                                      <p style="text-align: center;">
+                                          <span style="color: #000000;">SKU:&nbsp;<em>VN0A4BV3TBQ</em></span>
+                                      </p>
+                                      <p>
+                                          <span style="color: #000000;">
+                                              <em>Vừa kịp lúc ngày lễ kinh dị - Halloween đang đến gần, nhà Vans cho ra mắt mẫu giày&nbsp;</em><strong><em>Vans Slip-On&nbsp;</em></strong>
+                                              <em>Jawbones với thiết kế vừa đủ để bạn diện trong đêm hóa trang hoặc cũng nổi bật khi kết hợp với outfit thường ngày. Cùng xem </em><strong><em>Vans Slip-On&nbsp;</em></strong>
+                                              <em>Jawbones có những đặc trưng gì nhé!&nbsp;</em>
+                                          </span>
+                                      </p>
+                                      <p style="text-align: center;">
+                                          <span style="color: #000000;"><img alt="Giày Vans Slip-On Jawbones - VN0A4BV3TBQ" src="https://bizweb.dktcdn.net/thumb/grande/100/347/923/products/vn0a4bv3tbq-1.jpg?v=1572891464797" /></span>
+                                      </p>
+                                      <p style="text-align: center;">
+                                          <span style="color: #000000;">SKU:&nbsp;<em>VN0A4BV3TBQ</em></span>
+                                      </p>
+                                      <p>
+                                          <span style="color: #000000;">
+                                              Mẫu&nbsp;<strong><em>Vans Slip-On&nbsp;</em></strong><em>Jawbone </em>được thiết kế bằng hình ảnh những chiếc xe trượt có in hình hộp sọ trên phần upper tạo cảm giác kinh dị và độc đáo khi
+                                              nhìn vào. Ngoài ra, giày vẫn giữ nguyên phần đệm lót ở cổ chân, các điểm nhấn đàn hồi cũng như đế ngoài bánh quế đặc trưng của&nbsp;<strong><em>Vans Slip-On </em></strong>cổ điển.
+                                          </span>
+                                      </p>
+                                      <p style="text-align: center;">
+                                          <span style="color: #000000;"><img alt="Giày Vans Slip-On Jawbones - VN0A4BV3TBQ" src="https://bizweb.dktcdn.net/thumb/grande/100/347/923/products/vn0a4bv3tbq-2.jpg?v=1572891464797" /></span>
+                                      </p>
+                                      <p style="text-align: center;">
+                                          <span style="color: #000000;">SKU:&nbsp;<em>VN0A4BV3TBQ</em></span>
+                                      </p>
+                                      <p>
+                                          <span style="color: #000000;">
+                                              Sản phẩm là một thiết kế hoàn hảo bất kể vào dịp lễ hội hay ngày thường, bạn đều có thể tự tin đi&nbsp;<strong><em>Vans Slip-On&nbsp;</em></strong><em>Jawbone&nbsp;</em>và chắc hẳn item
+                                              này sẽ đem lại cho bạn một vẻ ngoài nổi bật, hút mắt hơn.
+                                          </span>
+                                      </p>
+                                      <p style="text-align: center;">
+                                          <span style="color: #000000;"><img alt="Giày Vans Slip-On Jawbones - VN0A4BV3TBQ" src="https://bizweb.dktcdn.net/thumb/grande/100/347/923/products/vn0a4bv3tbq-3.jpg?v=1572891464797" /></span>
+                                      </p>
+                                      <p style="text-align: center;">
+                                          <span style="color: #000000;">SKU:&nbsp;<em>VN0A4BV3TBQ</em></span>
+                                      </p>
+                                      <p>
+                                          <span style="color: #000000;">
+                                              Mẫu&nbsp;<strong><em>Vans Slip-On&nbsp;</em></strong><em>Jawbone</em>&nbsp;lần này có 2 phối màu là đỏ và đen&nbsp;cho bạn thỏa sức lựa chọn.
+                                          </span>
+                                      </p>
+                                      <p>
+                                          <span style="color: #000000;">
+                                              Chế độ bảo hành: Bảo hành chính hãng Vans 1 tháng&nbsp;(không bảo hành với hàng giảm giá từ 20% trở lên)<br />
+                                              Phụ kiện đi kèm:&nbsp;
+                                          </span>
+                                      </p>
+                                      <p>
+                                          <span style="color: #000000;">
+                                              &nbsp; + Giày<br />
+                                              &nbsp; + Túi Vans<br />
+                                              &nbsp; + Phiếu bảo hành chính hãng (trừ hàng giảm giá từ 20% trở lên)
+                                          </span>
+                                      </p>
+                                      <p style="text-align: center;">
+                                          <span style="color: #000000;"><img alt="Giày Vans Slip-On Jawbones - VN0A4BV3TBQ" src="https://bizweb.dktcdn.net/thumb/grande/100/347/923/products/vn0a4bv3tbq-4.jpg?v=1572891464797" /></span>
+                                      </p>
+                                      <p style="text-align: center;">
+                                          <span style="color: #000000;">SKU:&nbsp;<em>VN0A4BV3TBQ</em></span>
+                                      </p>
+                                      <p>
+                                          <meta charset="utf-8" />Đặt hàng trực tiếp trên website hoặc liên hệ <a href="https://www.wear.com.vn/">WEAR Vietnam</a> để được tư vấn và sở hữu ngay
+                                          <a href="https://www.wear.com.vn/all-shoes-vans">Mẫu giày Vans</a>&nbsp; này bạn nhé!
+                                      </p>
+                                  </div>
+
+                                  <div class="show-more">
+                                      <a class="btn btn-default btn--view-more">
+                                          <span class="more-text">Xem đầy đủ</span>
+                                          <span class="less-text">Thu gọn</span>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div id="tab-2" class="tab-content">
+                          <div class="rte">
+                              <p><img data-thumb="original" original-height="1121" original-width="750" src="https://bizweb.dktcdn.net/100/347/923/files/chon-size.png?v=1552355241936" /></p>
+                          </div>
+                      </div>
+
+                      <div id="tab-3" class="tab-content">
+                          <div class="rte">
+                              <div id="sapo-product-reviews" class="sapo-product-reviews" data-id="16208530">
+                                  <div id="sapo-product-reviews-noitem" style="display: none;">
+                                      <div class="content">
+                                          <p data-content-text="language.suggest_noitem"></p>
+                                          <div class="product-reviews-summary-actions">
+                                              <button type="button" class="btn-new-review" onclick="BPR.newReview(this); return false;" data-content-str="language.newreview"></button>
+                                          </div>
+                                          <div id="noitem-bpr-form_" data-id="formId" class="noitem-bpr-form" style="display: none;"><div class="sapo-product-reviews-form"></div></div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
-    </div>
-    <div class="hover_overlay_content">
-    </div>
-  </div>  
+      <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 hidden-xs hidden-sm hidden-md">
+          <div class="right_module margin-bottom-50">
+              <div class="module_service_details">
+                  <div class="wrap_module_service">
+                      <div class="item_service">
+                          <div class="wrap_item_">
+                              <div class="content_service">
+                                  <p>Giao hàng siêu tốc</p>
+                                  <span>Nhận hàng trong 24-72h</span>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="item_service">
+                          <div class="wrap_item_">
+                              <div class="content_service">
+                                  <p>7 ngày đổi hàng dễ dàng</p>
+                                  <span>Đổi nhanh chóng và dễ dàng</span>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="item_service">
+                          <div class="wrap_item_">
+                              <div class="content_service">
+                                  <p>Bảo hành chính hãng</p>
+                                  <span>Bảo hành chính hãng 1 tháng</span>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="item_service">
+                          <div class="wrap_item_">
+                              <div class="content_service">
+                                  <p>Giá tốt nhất</p>
+                                  <span>Tích điểm với 5% với Wear</span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="module_best_sale_product">
+                      <div class="title_module_">
+                          <h2 class="title"><a href="san-pham-noi-bat" title="Có thể bạn thích">Có thể bạn thích</a></h2>
+                      </div>
+                      <div class="sale_off_today">
+                          <div class="not-dqowl wrp_list_product">
+                              <div class="item_small">
+                                  <div class="product-mini-item clearfix on-sale">
+                                      <a href="/converse-chuck-taylor-all-star-madison-566275c" class="product-img">
+                                          <img src="https://bizweb.dktcdn.net/thumb/small/100/347/923/products/566275c-1.jpg?v=1584452069000" alt="Giày Converse Chuck Taylor All Star VLTG Chevron" />
+                                      </a>
+
+                                      <div class="product-info">
+                                          <h3>
+                                              <a href="/converse-chuck-taylor-all-star-madison-566275c" title="Giày Converse Chuck Taylor All Star VLTG Chevron" class="product-name text3line">
+                                                  Giày Converse Chuck Taylor All Star VLTG Chevron
+                                              </a>
+                                          </h3>
+                                          <div class="price-box">
+                                              <span class="price"><span class="price product-price">1.350.000₫</span> </span>
+                                              <!-- Giá Khuyến mại -->
+
+                                              <span class="old-price"><del class="sale-price">1.500.000₫</del> </span>
+                                              <!-- Giá gốc -->
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <div class="item_small">
+                                  <div class="product-mini-item clearfix on-sale">
+                                      <a href="/converse-star-chevron-logo-t-shirt-10018234467" class="product-img">
+                                          <img src="https://bizweb.dktcdn.net/thumb/small/100/347/923/products/10018234467-1.jpg?v=1584452489000" alt="Áo Converse Star Chevron Logo T Shirt" />
+                                      </a>
+
+                                      <div class="product-info">
+                                          <h3><a href="/converse-star-chevron-logo-t-shirt-10018234467" title="Áo Converse Star Chevron Logo T Shirt" class="product-name text3line">Áo Converse Star Chevron Logo T Shirt</a></h3>
+                                          <div class="price-box">
+                                              <span class="price"><span class="price product-price">540.000₫</span> </span>
+                                              <!-- Giá Khuyến mại -->
+
+                                              <span class="old-price"><del class="sale-price">600.000₫</del> </span>
+                                              <!-- Giá gốc -->
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <div class="item_small">
+                                  <div class="product-mini-item clearfix on-sale">
+                                      <a href="/converse-chuck-taylor-all-star-madison-566130c" class="product-img">
+                                          <img src="https://bizweb.dktcdn.net/thumb/small/100/347/923/products/566130c-3.jpg?v=1584452138000" alt="Giày Converse Chuck Taylor All Star VLTG Leather And Chevron" />
+                                      </a>
+
+                                      <div class="product-info">
+                                          <h3>
+                                              <a href="/converse-chuck-taylor-all-star-madison-566130c" title="Giày Converse Chuck Taylor All Star VLTG Leather And Chevron" class="product-name text3line">
+                                                  Giày Converse Chuck Taylor All Star VLTG Leathe...
+                                              </a>
+                                          </h3>
+                                          <div class="price-box">
+                                              <span class="price"><span class="price product-price">1.710.000₫</span> </span>
+                                              <!-- Giá Khuyến mại -->
+
+                                              <span class="old-price"><del class="sale-price">1.900.000₫</del> </span>
+                                              <!-- Giá gốc -->
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <div class="item_small">
+                                  <div class="product-mini-item clearfix on-sale">
+                                      <a href="/converse-swap-out-sling-10017940001" class="product-img">
+                                          <img src="https://bizweb.dktcdn.net/thumb/small/100/347/923/products/10017940-001.jpg?v=1584452332000" alt="Balo Converse Swap Out Sling" />
+                                      </a>
+
+                                      <div class="product-info">
+                                          <h3><a href="/converse-swap-out-sling-10017940001" title="Balo Converse Swap Out Sling" class="product-name text3line">Balo Converse Swap Out Sling</a></h3>
+                                          <div class="price-box">
+                                              <span class="price"><span class="price product-price">630.000₫</span> </span>
+                                              <!-- Giá Khuyến mại -->
+
+                                              <span class="old-price"><del class="sale-price">700.000₫</del> </span>
+                                              <!-- Giá gốc -->
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <div class="item_small">
+                                  <div class="product-mini-item clearfix on-sale">
+                                      <a href="/vans-check-bess-ni-shoes-vn0a4btht7z" class="product-img">
+                                          <img src="https://bizweb.dktcdn.net/thumb/small/100/347/923/products/vn0a4btht7z-7.jpg?v=1584680730000" alt="Giày Vans Check Bess NI Shoes" />
+                                      </a>
+
+                                      <div class="product-info">
+                                          <h3><a href="/vans-check-bess-ni-shoes-vn0a4btht7z" title="Giày Vans Check Bess NI Shoes" class="product-name text3line">Giày Vans Check Bess NI Shoes</a></h3>
+                                          <div class="price-box">
+                                              <span class="price"><span class="price product-price">1.710.000₫</span> </span>
+                                              <!-- Giá Khuyến mại -->
+
+                                              <span class="old-price"><del class="sale-price">1.900.000₫</del> </span>
+                                              <!-- Giá gốc -->
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+
+                              <div class="item_small">
+                                  <div class="product-mini-item clearfix on-sale">
+                                      <a href="/vans-early-departure-t-shirt-vn0a49l1wht" class="product-img">
+                                          <img src="https://bizweb.dktcdn.net/thumb/small/100/347/923/products/vn0a49l1wht-2.jpg?v=1584592290000" alt="Áo Vans Early Departure T-shirt" />
+                                      </a>
+
+                                      <div class="product-info">
+                                          <h3><a href="/vans-early-departure-t-shirt-vn0a49l1wht" title="Áo Vans Early Departure T-shirt" class="product-name text3line">Áo Vans Early Departure T-shirt</a></h3>
+                                          <div class="price-box">
+                                              <span class="price"><span class="price product-price">630.000₫</span> </span>
+                                              <!-- Giá Khuyến mại -->
+
+                                              <span class="old-price"><del class="sale-price">700.000₫</del> </span>
+                                              <!-- Giá gốc -->
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-lg-12 related-product margin-top-20 xs-margin-top-0 margin-bottom-30">
+          <div class="section_prd_feature section_base">
+              <div class="border_bottom_title clearfix"></div>
+              <div class="title_top_menu">
+                  <h3 class="title-head"><a href="/40">Sản phẩm cùng loại</a></h3>
+              </div>
+              <div
+                  class="products product_related products-view-grid-bb owl-carousel owl-theme products-view-grid not-dot2"
+                  data-dot="false"
+                  data-nav="false"
+                  data-lg-items="5"
+                  data-md-items="4"
+                  data-sm-items="3"
+                  data-xs-items="2"
+                  data-margin="15"
+              >
+                  <div class="item saler_item">
+                      <div class="owl_item_product product-col-1">
+                          <div class="product-box-h">
+                              <div class="product-thumbnail">
+                                  <a class="image_link display_flex" href="/vans-sk8-hi-alien-ghosts-vn0a4bv6tb1" title="Giày Vans SK8-Hi  Alien Ghosts">
+                                      <img                                                
+                                          src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/vn0a4bv6tb1-2.jpg?v=1584451872000"
+                                          alt="Giày Vans SK8-Hi  Alien Ghosts"
+                                      />
+                                  </a>
+
+                                  <div class="sale-flash new">Mới</div>
+
+                                  <!-- Tag giá sốc -->
+
+                                  <div class="tagdacbiet_sale sale-flash">
+                                      Giá sốc<br />
+                                      <div class="font16">
+                                          - 30%
+                                      </div>
+                                  </div>
+
+                                  <!-- End tag giá sốc -->
+                                  <!-- Tag Mã KM -->
+
+                                  <!-- End Tag Mã KM -->
+                              </div>
+                              <div class="product-info a-left">
+                                  <h3 class="product-name"><a class="height_name text2line" href="/vans-sk8-hi-alien-ghosts-vn0a4bv6tb1" title="Giày Vans SK8-Hi  Alien Ghosts">Giày Vans SK8-Hi Alien Ghosts</a></h3>
+                                  <div class="sapo-product-reviews-badge" data-id="16303202"></div>
+                                  <div class="group-status">
+                                      <span class="first_status">SKU: <span class="status_name">VN0A4BV6TB1 </span></span>
+                                  </div>
+
+                                  <div class="product-hides">
+                                      <div class="product-hide">
+                                          <div class="price-box clearfix">
+                                              <div class="special-price">
+                                                  <span class="price product-price">1.435.000₫</span>
+                                              </div>
+
+                                              <div class="old-price">
+                                                  <span class="price product-price-old">
+                                                      2.050.000₫
+                                                  </span>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="product-action clearfix hidden-xs">
+                                      <form action="/cart/add" method="post" class="variants form-nut-grid" data-id="product-actions-16303202" enctype="multipart/form-data">
+                                          <div>
+                                              <input class="hidden" type="hidden" name="variantId" value="28947461" />
+                                              <button class="btn btn-cart btn btn-circle left-to" title="Chọn sản phẩm" type="button" onclick="window.location.href='/vans-sk8-hi-alien-ghosts-vn0a4bv6tb1'">
+                                                  <i class="fa fa-shopping-basket"></i>Tùy chọn
+                                              </button>
+
+                                              <a
+                                                  title="Xem nhanh"
+                                                  href="/vans-sk8-hi-alien-ghosts-vn0a4bv6tb1"
+                                                  data-handle="vans-sk8-hi-alien-ghosts-vn0a4bv6tb1"
+                                                  class="xem_nhanh btn-circle btn_view btn right-to quick-view hidden-xs hidden-sm hidden-md"
+                                              >
+                                                  <i class="fa fa-eye"></i>
+                                              </a>
+                                          </div>
+                                      </form>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="item saler_item">
+                      <div class="owl_item_product product-col-1">
+                          <div class="product-box-h">
+                              <div class="product-thumbnail">
+                                  <a class="image_link display_flex" href="/vans-slip-on-jawbones-vn0a4bv3tbu" title="Giày Vans Slip-On Jawbones">
+                                      <img                                                
+                                          src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/vn0a4bv3tbu-3.jpg?v=1584596638000"
+                                          alt="Giày Vans Slip-On Jawbones"
+                                      />
+                                  </a>
+
+                                  <div class="sale-flash sale">Sale</div>
+
+                                  <!-- Tag giá sốc -->
+
+                                  <div class="tagdacbiet_sale sale-flash">
+                                      Giá sốc<br />
+                                      <div class="font16">
+                                          - 50%
+                                      </div>
+                                  </div>
+
+                                  <!-- End tag giá sốc -->
+                                  <!-- Tag Mã KM -->
+
+                                  <!-- End Tag Mã KM -->
+                              </div>
+                              <div class="product-info a-left">
+                                  <h3 class="product-name"><a class="height_name text2line" href="/vans-slip-on-jawbones-vn0a4bv3tbu" title="Giày Vans Slip-On Jawbones">Giày Vans Slip-On Jawbones</a></h3>
+                                  <div class="sapo-product-reviews-badge" data-id="16208531"></div>
+                                  <div class="group-status">
+                                      <span class="first_status">SKU: <span class="status_name">VN0A4BV3TBU </span></span>
+                                  </div>
+
+                                  <div class="product-hides">
+                                      <div class="product-hide">
+                                          <div class="price-box clearfix">
+                                              <div class="special-price">
+                                                  <span class="price product-price">950.000₫</span>
+                                              </div>
+
+                                              <div class="old-price">
+                                                  <span class="price product-price-old">
+                                                      1.900.000₫
+                                                  </span>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="product-action clearfix hidden-xs">
+                                      <form action="/cart/add" method="post" class="variants form-nut-grid" data-id="product-actions-16208531" enctype="multipart/form-data">
+                                          <div>
+                                              <input class="hidden" type="hidden" name="variantId" value="28668321" />
+                                              <button class="btn btn-cart btn btn-circle left-to" title="Chọn sản phẩm" type="button" onclick="window.location.href='/vans-slip-on-jawbones-vn0a4bv3tbu'">
+                                                  <i class="fa fa-shopping-basket"></i>Tùy chọn
+                                              </button>
+
+                                              <a
+                                                  title="Xem nhanh"
+                                                  href="/vans-slip-on-jawbones-vn0a4bv3tbu"
+                                                  data-handle="vans-slip-on-jawbones-vn0a4bv3tbu"
+                                                  class="xem_nhanh btn-circle btn_view btn right-to quick-view hidden-xs hidden-sm hidden-md"
+                                              >
+                                                  <i class="fa fa-eye"></i>
+                                              </a>
+                                          </div>
+                                      </form>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="item saler_item">
+                      <div class="owl_item_product product-col-1">
+                          <div class="product-box-h">
+                              <div class="product-thumbnail">
+                                  <a class="image_link display_flex" href="/converse-nova-baseball-10017414039" title="Mũ Converse Nova Baseball">
+                                      <img                                              
+                                          src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/10017414039.png?v=1584763617000"
+                                          alt="Mũ Converse Nova Baseball"
+                                      />
+                                  </a>
+
+                                  <div class="sale-flash sale">Sale</div>
+
+                                  <!-- Tag giá sốc -->
+
+                                  <div class="tagdacbiet_sale sale-flash">
+                                      Giá sốc<br />
+                                      <div class="font16">
+                                          - 10%
+                                      </div>
+                                  </div>
+
+                                  <!-- End tag giá sốc -->
+                                  <!-- Tag Mã KM -->
+
+                                  <!-- End Tag Mã KM -->
+                              </div>
+                              <div class="product-info a-left">
+                                  <h3 class="product-name"><a class="height_name text2line" href="/converse-nova-baseball-10017414039" title="Mũ Converse Nova Baseball">Mũ Converse Nova Baseball</a></h3>
+                                  <div class="sapo-product-reviews-badge" data-id="16039701"></div>
+                                  <div class="group-status">
+                                      <span class="first_status">SKU: <span class="status_name">10017414039</span></span>
+                                  </div>
+
+                                  <div class="product-hides">
+                                      <div class="product-hide">
+                                          <div class="price-box clearfix">
+                                              <div class="special-price">
+                                                  <span class="price product-price">450.000₫</span>
+                                              </div>
+
+                                              <div class="old-price">
+                                                  <span class="price product-price-old">
+                                                      500.000₫
+                                                  </span>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="product-action clearfix hidden-xs">
+                                      <form action="/cart/add" method="post" class="variants form-nut-grid" data-id="product-actions-16039701" enctype="multipart/form-data">
+                                          <div>
+                                              <input type="hidden" name="variantId" value="28295510" />
+                                              <button class="btn-buy btn-cart btn btn-circle left-to add_to_cart" title="Thêm vào giỏ hàng"><i class="fa fa-shopping-basket"></i>Mua ngay</button>
+
+                                              <a
+                                                  title="Xem nhanh"
+                                                  href="/converse-nova-baseball-10017414039"
+                                                  data-handle="converse-nova-baseball-10017414039"
+                                                  class="xem_nhanh btn-circle btn_view btn right-to quick-view hidden-xs hidden-sm hidden-md"
+                                              >
+                                                  <i class="fa fa-eye"></i>
+                                              </a>
+                                          </div>
+                                      </form>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="item saler_item">
+                      <div class="owl_item_product product-col-1">
+                          <div class="product-box-h">
+                              <div class="product-thumbnail">
+                                  <a class="image_link display_flex" href="/converse-chuck-taylor-all-star-renew-canvas-166373c" title="Giày Converse Chuck Taylor All Star Renew Canvas">
+                                      <img                                              
+                                          src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/166142c-6.png?v=1584779151000"
+                                          alt="Giày Converse Chuck Taylor All Star Renew Canvas"
+                                      />
+                                  </a>
+
+                                  <div class="sale-flash sale">Sale</div>
+
+                                  <!-- Tag giá sốc -->
+
+                                  <div class="tagdacbiet_sale sale-flash">
+                                      Giá sốc<br />
+                                      <div class="font16">
+                                          - 10%
+                                      </div>
+                                  </div>
+
+                                  <!-- End tag giá sốc -->
+                                  <!-- Tag Mã KM -->
+
+                                  <!-- End Tag Mã KM -->
+                              </div>
+                              <div class="product-info a-left">
+                                  <h3 class="product-name">
+                                      <a class="height_name text2line" href="/converse-chuck-taylor-all-star-renew-canvas-166373c" title="Giày Converse Chuck Taylor All Star Renew Canvas">
+                                          Giày Converse Chuck Taylor All Star Renew Canvas
+                                      </a>
+                                  </h3>
+                                  <div class="sapo-product-reviews-badge" data-id="15992142"></div>
+                                  <div class="group-status">
+                                      <span class="first_status">SKU: <span class="status_name">166373C </span></span>
+                                  </div>
+
+                                  <div class="product-hides">
+                                      <div class="product-hide">
+                                          <div class="price-box clearfix">
+                                              <div class="special-price">
+                                                  <span class="price product-price">1.530.000₫</span>
+                                              </div>
+
+                                              <div class="old-price">
+                                                  <span class="price product-price-old">
+                                                      1.700.000₫
+                                                  </span>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="product-action clearfix hidden-xs">
+                                      <form action="/cart/add" method="post" class="variants form-nut-grid" data-id="product-actions-15992142" enctype="multipart/form-data">
+                                          <div>
+                                              <input class="hidden" type="hidden" name="variantId" value="28136148" />
+                                              <button class="btn btn-cart btn btn-circle left-to" title="Chọn sản phẩm" type="button" onclick="window.location.href='/converse-chuck-taylor-all-star-renew-canvas-166373c'">
+                                                  <i class="fa fa-shopping-basket"></i>Tùy chọn
+                                              </button>
+
+                                              <a
+                                                  title="Xem nhanh"
+                                                  href="/converse-chuck-taylor-all-star-renew-canvas-166373c"
+                                                  data-handle="converse-chuck-taylor-all-star-renew-canvas-166373c"
+                                                  class="xem_nhanh btn-circle btn_view btn right-to quick-view hidden-xs hidden-sm hidden-md"
+                                              >
+                                                  <i class="fa fa-eye"></i>
+                                              </a>
+                                          </div>
+                                      </form>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="item saler_item">
+                      <div class="owl_item_product product-col-1">
+                          <div class="product-box-h">
+                              <div class="product-thumbnail">
+                                  <a class="image_link display_flex" href="/converse-baseball-cap-black-10017414001" title="Mũ Converse Nova Baseball Cap - Black">
+                                      <img                                             
+                                          src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/10017414001-6.png?v=1586071658000"
+                                          alt="Mũ Converse Nova Baseball Cap - Black"
+                                      />
+                                  </a>
+
+                                  <div class="sale-flash sale">Sale</div>
+
+                                  <!-- Tag giá sốc -->
+
+                                  <div class="tagdacbiet_sale sale-flash">
+                                      Giá sốc<br />
+                                      <div class="font16">
+                                          - 10%
+                                      </div>
+                                  </div>
+
+                                  <!-- End tag giá sốc -->
+                                  <!-- Tag Mã KM -->
+
+                                  <!-- End Tag Mã KM -->
+                              </div>
+                              <div class="product-info a-left">
+                                  <h3 class="product-name"><a class="height_name text2line" href="/converse-baseball-cap-black-10017414001" title="Mũ Converse Nova Baseball Cap - Black">Mũ Converse Nova Baseball Cap - Black</a></h3>
+                                  <div class="sapo-product-reviews-badge" data-id="15474419"></div>
+                                  <div class="group-status">
+                                      <span class="first_status">SKU: <span class="status_name">10017414001</span></span>
+                                  </div>
+
+                                  <div class="product-hides">
+                                      <div class="product-hide">
+                                          <div class="price-box clearfix">
+                                              <div class="special-price">
+                                                  <span class="price product-price">450.000₫</span>
+                                              </div>
+
+                                              <div class="old-price">
+                                                  <span class="price product-price-old">
+                                                      500.000₫
+                                                  </span>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="product-action clearfix hidden-xs">
+                                      <form action="/cart/add" method="post" class="variants form-nut-grid" data-id="product-actions-15474419" enctype="multipart/form-data">
+                                          <div>
+                                              <input type="hidden" name="variantId" value="26746985" />
+                                              <button class="btn-buy btn-cart btn btn-circle left-to add_to_cart" title="Thêm vào giỏ hàng"><i class="fa fa-shopping-basket"></i>Mua ngay</button>
+
+                                              <a
+                                                  title="Xem nhanh"
+                                                  href="/converse-baseball-cap-black-10017414001"
+                                                  data-handle="converse-baseball-cap-black-10017414001"
+                                                  class="xem_nhanh btn-circle btn_view btn right-to quick-view hidden-xs hidden-sm hidden-md"
+                                              >
+                                                  <i class="fa fa-eye"></i>
+                                              </a>
+                                          </div>
+                                      </form>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="item saler_item">
+                      <div class="owl_item_product product-col-1">
+                          <div class="product-box-h">
+                              <div class="product-thumbnail">
+                                  <a class="image_link display_flex" href="/converse-truckers-snapback-enamel-red-10017293613" title="Mũ Converse Truckers Snapback - Enamel Red">
+                                      <img                                              
+                                          src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/10017293613-6.png?v=1584692063000"
+                                          alt="Mũ Converse Truckers Snapback - Enamel Red"
+                                      />
+                                  </a>
+
+                                  <div class="sale-flash sale">Sale</div>
+
+                                  <!-- Tag giá sốc -->
+
+                                  <div class="tagdacbiet_sale sale-flash">
+                                      Giá sốc<br />
+                                      <div class="font16">
+                                          - 10%
+                                      </div>
+                                  </div>
+
+                                  <!-- End tag giá sốc -->
+                                  <!-- Tag Mã KM -->
+
+                                  <!-- End Tag Mã KM -->
+                              </div>
+                              <div class="product-info a-left">
+                                  <h3 class="product-name">
+                                      <a class="height_name text2line" href="/converse-truckers-snapback-enamel-red-10017293613" title="Mũ Converse Truckers Snapback - Enamel Red">Mũ Converse Truckers Snapback - Enamel Red</a>
+                                  </h3>
+                                  <div class="sapo-product-reviews-badge" data-id="15474418"></div>
+                                  <div class="group-status">
+                                      <span class="first_status">SKU: <span class="status_name">10017293613</span></span>
+                                  </div>
+
+                                  <div class="product-hides">
+                                      <div class="product-hide">
+                                          <div class="price-box clearfix">
+                                              <div class="special-price">
+                                                  <span class="price product-price">450.000₫</span>
+                                              </div>
+
+                                              <div class="old-price">
+                                                  <span class="price product-price-old">
+                                                      500.000₫
+                                                  </span>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="product-action clearfix hidden-xs">
+                                      <form action="/cart/add" method="post" class="variants form-nut-grid" data-id="product-actions-15474418" enctype="multipart/form-data">
+                                          <div>
+                                              <input type="hidden" name="variantId" value="26746984" />
+                                              <button class="btn-buy btn-cart btn btn-circle left-to add_to_cart" title="Thêm vào giỏ hàng"><i class="fa fa-shopping-basket"></i>Mua ngay</button>
+
+                                              <a
+                                                  title="Xem nhanh"
+                                                  href="/converse-truckers-snapback-enamel-red-10017293613"
+                                                  data-handle="converse-truckers-snapback-enamel-red-10017293613"
+                                                  class="xem_nhanh btn-circle btn_view btn right-to quick-view hidden-xs hidden-sm hidden-md"
+                                              >
+                                                  <i class="fa fa-eye"></i>
+                                              </a>
+                                          </div>
+                                      </form>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="item saler_item">
+                      <div class="owl_item_product product-col-1">
+                          <div class="product-box-h">
+                              <div class="product-thumbnail">
+                                  <a class="image_link display_flex" href="/vans-slip-on-garden-floral-vn0a4bv3v8x" title="Giày Vans Slip-On Garden Floral">
+                                      <img                                             
+                                          src="https://bizweb.dktcdn.net/thumb/medium/100/347/923/products/vn0a4bv3v8x-2.png?v=1586076107000"
+                                          alt="Giày Vans Slip-On Garden Floral"
+                                      />
+                                  </a>
+
+                                  <div class="sale-flash sale">Sale</div>
+
+                                  <!-- Tag giá sốc -->
+
+                                  <div class="tagdacbiet_sale sale-flash">
+                                      Giá sốc<br />
+                                      <div class="font16">
+                                          - 10%
+                                      </div>
+                                  </div>
+
+                                  <!-- End tag giá sốc -->
+                                  <!-- Tag Mã KM -->
+
+                                  <!-- End Tag Mã KM -->
+                              </div>
+                              <div class="product-info a-left">
+                                  <h3 class="product-name"><a class="height_name text2line" href="/vans-slip-on-garden-floral-vn0a4bv3v8x" title="Giày Vans Slip-On Garden Floral">Giày Vans Slip-On Garden Floral</a></h3>
+                                  <div class="sapo-product-reviews-badge" data-id="15310877"></div>
+                                  <div class="group-status">
+                                      <span class="first_status">SKU: <span class="status_name">VN0A4BV3V8X </span></span>
+                                  </div>
+
+                                  <div class="product-hides">
+                                      <div class="product-hide">
+                                          <div class="price-box clearfix">
+                                              <div class="special-price">
+                                                  <span class="price product-price">1.305.000₫</span>
+                                              </div>
+
+                                              <div class="old-price">
+                                                  <span class="price product-price-old">
+                                                      1.450.000₫
+                                                  </span>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="product-action clearfix hidden-xs">
+                                      <form action="/cart/add" method="post" class="variants form-nut-grid" data-id="product-actions-15310877" enctype="multipart/form-data">
+                                          <div>
+                                              <input class="hidden" type="hidden" name="variantId" value="26435370" />
+                                              <button class="btn btn-cart btn btn-circle left-to" title="Chọn sản phẩm" type="button" onclick="window.location.href='/vans-slip-on-garden-floral-vn0a4bv3v8x'">
+                                                  <i class="fa fa-shopping-basket"></i>Tùy chọn
+                                              </button>
+
+                                              <a
+                                                  title="Xem nhanh"
+                                                  href="/vans-slip-on-garden-floral-vn0a4bv3v8x"
+                                                  data-handle="vans-slip-on-garden-floral-vn0a4bv3v8x"
+                                                  class="xem_nhanh btn-circle btn_view btn right-to quick-view hidden-xs hidden-sm hidden-md"
+                                              >
+                                                  <i class="fa fa-eye"></i>
+                                              </a>
+                                          </div>
+                                      </form>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div> 
+    </div> <!-- /.related-product -->
+  </div>
+</div>  
 @endsection
