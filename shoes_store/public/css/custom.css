@@ -3,7 +3,9 @@
 .col-lg-5,
 .col-lg-7,
 .col-lg-3,
-.col-lg-9 {
+.col-lg-9,
+.col-md-5,
+.col-md-7 {
 	float: left;
 	position: relative;
 	padding-right: 15px;
@@ -25,9 +27,21 @@
 	}
 }
 
+@media (min-width: 992px) {
+	.col-md-5 {
+		width: 41.66666667%;
+	}
+	.col-md-7 {
+		width: 58.33333333%;
+	}
+}
+
+.details-product {
+	margin: 0 -15px;
+}
 .details-product .large-image { text-align: center; width: 100%; margin-bottom: 15px }
-.details-product .large-image a { display: block; border: solid 1px #ebebeb }
-.details-product .large-image a img { margin: 0 auto; left: 0;top: 0; }
+.details-product .large-image a { display: block; }
+.details-product .large-image a img { margin: 0 auto; left: 0;top: 0; border: solid 1px #ebebeb }
 .details-product .tab_h { display: block; width: 100%; float: left; margin-top: 50px; margin-bottom: 30px }
 @media (max-width:767px) {
 	.details-product .tab_h { margin-top: 25px }
@@ -48,7 +62,7 @@
 .details-product .details-pro .custom-btn-number #qty { height: 32px; font-size: 1.28571em; margin: 0 }
 .details-product .details-pro .custom-btn-number .qtyminus { position: absolute; left: 25px; top: 4px; font-size: 1.42857em }
 .details-product .details-pro .custom-btn-number .qtyplus { position: absolute; right: 25px; top: 4px; font-size: 1.42857em }
-.thumb_product_details { width: 70%; margin: 0 auto }
+.thumb_product_details { width: 70%; margin: 0 auto;    margin-top: 35px; }
 .thumb_product_details .owl-height { height: 100px !important }
 @media (min-width:544px) and (max-width:767px) {
 	.thumb_product_details { width: 65% }
@@ -139,8 +153,8 @@
 .details-pro .thongtinkhuyenmai { border: 1px dashed #000; border-radius: 0px; padding: 15px 35px 15px 20px; margin-bottom: 15px; position: relative; clear: left; margin-top: 20px; display: block; float: left; width: 100% }
 .box-variant .form-group { width: 100% }
 .box-variant .form-group .selector-wrapper { margin-bottom: 10px !important }
-.box-variant .form-group .selector-wrapper label { font-weight: 400; width: 85px; font-size: 14px; float: left; color: #636363; line-height: 40px; font-family: "Open+Sans", "HelveticaNeue", "Helvetica Neue", sans-serif }
-.box-variant .form-group .selector-wrapper .single-option-selector { width: calc(100% - 85px); border-radius: 3px; font-family: "Open+Sans", "HelveticaNeue", "Helvetica Neue", sans-serif }
+.box-variant .form-group .selector-wrapper label, .form-group .soluong  .label_sl  { font-weight: 400; width: 85px; font-size: 14px; float: left; color: #636363; line-height: 40px;}
+.box-variant .form-group .selector-wrapper .single-option-selector { width: calc(100% - 85px); border-radius: 3px; font-family: "Open+Sans", "HelveticaNeue", "Helvetica Neue", sans-serif; margin-bottom: 0; }
 @media (min-width:1200px) {
 	.box-variant .form-group .selector-wrapper .single-option-selector { width: 60% }
 }
@@ -454,7 +468,7 @@
 #popup-cart-desktop .content-popup-cart .tfoot-popup .tfoot-popup-2 .button.buy_ { background: #000; color: #fff; border-color: #000; margin-right: 0px }
 .popup-cart { position: fixed; top: 0; right: 0; bottom: 0; left: 0; z-index: 1050; display: none; overflow: hidden; -webkit-overflow-scrolling: touch; outline: 0; }
 .close-window { position: absolute; top: 10px; right: 10px; width: 25px; height: 25px; cursor: pointer; z-index: 8040; color: #fff !important; text-align: center; line-height: 25px; border-radius: 0; }
-.section_base .title_top_menu h3 { margin: 0; padding: 10px 28px 10px 28px; font-size: 24px; line-height: 24px; border-top-left-radius: 3px; border-top-right-radius: 3px; font-weight: 400; background: #000; text-transform: uppercase; display: inline-block; }
+.section_base .title_top_menu h3 { margin: 0; padding: 10px 28px 10px 28px; font-size: 17px; line-height: 24px; border-top-left-radius: 3px; border-top-right-radius: 3px; font-weight: 400; background: #000; text-transform: uppercase; display: inline-block; }
 .section_base .title_top_menu h3 a { color: #fff !important; }
 .section_base .border_bottom_title { position: relative; }
 .section_base .border_bottom_title:before { position: absolute; bottom: -46px; left: 0; width: 100%; border-bottom: 2px solid #000; content: ''; }

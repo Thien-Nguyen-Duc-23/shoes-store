@@ -66,7 +66,7 @@
                           </div>
                       </div>
 
-                      <div id="gallery_02" class="owl-carousel owl-theme thumbnail-product thumb_product_details not-dqowl" data-loop="false" data-lg-items="3" data-md-items="3" data-sm-items="3" data-xs-items="3" data-xxs-items="3">
+                      <div id="gallery_02" class="owl-carousel owl-theme thumbnail-product thumb_product_details not-dqowl" data-loop="false" data-lg-items="3" data-md-items="3" data-sm-items="3" data-xs-items="3" data-xxs-items="3" data-margin="15">
                           <div class="item">
                               <a
                                   href="javascript:void(0)"
@@ -229,12 +229,7 @@
                                   </select>
                                 </div>
                               </fieldset>
-                          </div>
-                          <div class="nhapnhap">
-                              <i class="fa fa-arrow-up"></i><i class="fa fa-arrow-up"></i>
-                              Nhấp vào ô trên để chọn size
-                              <i class="fa fa-arrow-up"></i><i class="fa fa-arrow-up"></i>
-                          </div>
+                          </div>                          
                           <div class="form-group form_button_details margin-top-5">
                               <div class="form_product_content">
                                   <div class="soluong show">
