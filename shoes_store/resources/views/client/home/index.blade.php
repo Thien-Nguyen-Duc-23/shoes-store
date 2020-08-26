@@ -142,7 +142,7 @@
                                             <span class="tooltip">Quick View
                                             </span>
                                           </a>
-                                          <a href="?add-to-cart=656" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="656" data-product_sku="" aria-label="Add “Stretch camouflage sneakers” to your cart" rel="nofollow">
+                                            <a href="#" class="button product_type_simple add_to_cart_button  add_cart_check" data-product_cart_price = "{{ $shoesSale->price_sale }}" data-product_cart_name = "{{ $shoesSale->name }}" data-product_cart_image = "{{ $itemImage }}" data-product_cart_id="{{ $shoesSale->id }}" rel="nofollow">
                                             <span class="tooltip">Add to cart
                                             </span>
                                           </a>			
@@ -251,7 +251,7 @@
                                             <span class="tooltip">Quick View
                                             </span>
                                           </a>
-                                          <a href="?add-to-cart=612" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="612" data-product_sku="" aria-label="Add “Black mesh sock sneakers” to your cart" rel="nofollow">
+                                          <a href="#" class="button product_type_simple add_to_cart_button ajax_add_to_cart add_cart_check" rel="nofollow">
                                             <span class="tooltip">Add to cart
                                             </span>
                                           </a>			
@@ -388,3 +388,37 @@
     </div>
   </div>
 @endsection
+@push('scripts-client')
+  <script>
+    jQuery(document).ready(function ($) {
+      // init cart
+      // $.session.set('cartProductArray', []);
+      var cartProductArray = [];
+
+      $('.add_cart_check').click(function(e) {
+        e.preventDefault();
+        console.log(cartProductArray);
+        // $('.add_cart_check').removeClass("added"),
+        // $(this).addClass("loading")
+        var idProduct = $(this).attr("data-product_cart_id");
+        var priceProduct = $(this).attr("data-product_cart_price");
+        var nameProduct = $(this).attr("data-product_cart_name");
+        var imageProduct = $(this).attr("data-product_cart_image");
+        
+        cartProductArray.push({
+          idProduct : idProduct,
+          priceProduct : priceProduct,
+          nameProduct : nameProduct,
+          imageProduct : imageProduct,
+          quantilyProduct : 1,
+        })
+
+        $(this).removeClass("loading")
+        console.log(cartProductArray);
+        // $.session.set('cartProductArray', cartProductArray);
+        // console.log('dhdhd');
+        e.stopPropagation();
+      });
+    });
+  </script>
+@endpush

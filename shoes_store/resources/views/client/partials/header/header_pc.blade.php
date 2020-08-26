@@ -2,78 +2,78 @@
   <div class="row small-collapse">
       <div class="small-12 columns">
           <div class="topbar-content">
-          <div class="topbar-wrapper-left">
-              <div class="topbar-socials">
-              <ul class="shortcode_socials left">
-                  <li class="th_social_icon icon_facebook">
-                  <a class="th_social_icon_link" target="_blank"
-                      href="#">
-                      <svg
-                          class=""
-                          xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                          width="12" height="12"
-                          viewBox="0 0 50 50"
-                          >
-                      <path d="M32,11h5c0.552,0,1-0.448,1-1V3.263c0-0.524-0.403-0.96-0.925-0.997C35.484,2.153,32.376,2,30.141,2C24,2,20,5.68,20,12.368 V19h-7c-0.552,0-1,0.448-1,1v7c0,0.552,0.448,1,1,1h7v19c0,0.552,0.448,1,1,1h7c0.552,0,1-0.448,1-1V28h7.222 c0.51,0,0.938-0.383,0.994-0.89l0.778-7C38.06,19.518,37.596,19,37,19h-8v-5C29,12.343,30.343,11,32,11z">
-                      </path>
-                      </svg>
-                  </a>
-                  </li>
-                  <li class="th_social_icon icon_facebook-messenger">
-                  <a class="th_social_icon_link" target="_blank"
-                      href="#">
-                      <svg
-                          class=""
-                          xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                          width="12" height="12"
-                          viewBox="0 0 50 50"
-                          >
-                      <path d="M 25 2 C 12.300781 2 2 11.601563 2 23.5 C 2 29.800781 4.898438 35.699219 10 39.800781 L 10 48.601563 L 18.601563 44.101563 C 20.699219 44.699219 22.800781 44.898438 25 44.898438 C 37.699219 44.898438 48 35.300781 48 23.398438 C 48 11.601563 37.699219 2 25 2 Z M 27.300781 30.601563 L 21.5 24.398438 L 10.699219 30.5 L 22.699219 17.800781 L 28.601563 23.699219 L 39.101563 17.800781 Z ">
-                      </path>
-                      </svg>
-                  </a>
-                  </li>
-              </ul>
-              </div>
-              <div class="topbar-info-1">Call +40 123 456 789
-              </div>
-          </div>
-          <div class="topbar-info-2">Free shipping on all orders over $75
-          </div>
-          <div class="topbar-navigation">
-              <nav class="navigation-foundation">
-              <ul id="menu-top-bar-menu-1" class="dropdown menu" data-dropdown-menu data-hover-delay="250" data-closing-time="250">
-                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-15">
-                  <a href="#">
-                      <span>$ US
-                      </span>
-                  </a>
-                  <ul class="vertical menu site-main-font" data-submenu>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16">
-                      <a href="#">
-                          <span>€ Euro
-                          </span>
-                      </a>
-                      </li>
-                  </ul>
-                  </li>
-                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-17">
-                  <a href="#">
-                      <span>English
-                      </span>
-                  </a>
-                  <ul class="vertical menu site-main-font" data-submenu>
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18">
-                      <a href="#">
-                          <span>Spanish
-                          </span>
-                      </a>
-                      </li>
-                  </ul>
-                  </li>
-              </ul>						
-              </nav>
-          </div>
+            <div class="topbar-wrapper-left">
+                <div class="topbar-socials">
+                <ul class="shortcode_socials left">
+                    <li class="th_social_icon icon_facebook">
+                    <a class="th_social_icon_link" target="_blank"
+                        href="#">
+                        <svg
+                            class=""
+                            xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                            width="12" height="12"
+                            viewBox="0 0 50 50"
+                            >
+                        <path d="M32,11h5c0.552,0,1-0.448,1-1V3.263c0-0.524-0.403-0.96-0.925-0.997C35.484,2.153,32.376,2,30.141,2C24,2,20,5.68,20,12.368 V19h-7c-0.552,0-1,0.448-1,1v7c0,0.552,0.448,1,1,1h7v19c0,0.552,0.448,1,1,1h7c0.552,0,1-0.448,1-1V28h7.222 c0.51,0,0.938-0.383,0.994-0.89l0.778-7C38.06,19.518,37.596,19,37,19h-8v-5C29,12.343,30.343,11,32,11z">
+                        </path>
+                        </svg>
+                    </a>
+                    </li>
+                    <li class="th_social_icon icon_facebook-messenger">
+                    <a class="th_social_icon_link" target="_blank"
+                        href="#">
+                        <svg
+                            class=""
+                            xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                            width="12" height="12"
+                            viewBox="0 0 50 50"
+                            >
+                        <path d="M 25 2 C 12.300781 2 2 11.601563 2 23.5 C 2 29.800781 4.898438 35.699219 10 39.800781 L 10 48.601563 L 18.601563 44.101563 C 20.699219 44.699219 22.800781 44.898438 25 44.898438 C 37.699219 44.898438 48 35.300781 48 23.398438 C 48 11.601563 37.699219 2 25 2 Z M 27.300781 30.601563 L 21.5 24.398438 L 10.699219 30.5 L 22.699219 17.800781 L 28.601563 23.699219 L 39.101563 17.800781 Z ">
+                        </path>
+                        </svg>
+                    </a>
+                    </li>
+                </ul>
+                </div>
+                <div class="topbar-info-1">Call +40 123 456 789
+                </div>
+            </div>
+            <div class="topbar-info-2">Free shipping on all orders over $75
+            </div>
+            <div class="topbar-navigation">
+                <nav class="navigation-foundation">
+                <ul id="menu-top-bar-menu-1" class="dropdown menu" data-dropdown-menu data-hover-delay="250" data-closing-time="250">
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-15">
+                    <a href="#">
+                        <span>$ US
+                        </span>
+                    </a>
+                    <ul class="vertical menu site-main-font" data-submenu>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-16">
+                        <a href="#">
+                            <span>€ Euro
+                            </span>
+                        </a>
+                        </li>
+                    </ul>
+                    </li>
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-17">
+                    <a href="#">
+                        <span>English
+                        </span>
+                    </a>
+                    <ul class="vertical menu site-main-font" data-submenu>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18">
+                        <a href="#">
+                            <span>Spanish
+                            </span>
+                        </a>
+                        </li>
+                    </ul>
+                    </li>
+                </ul>						
+                </nav>
+            </div>
           </div>
       </div>
   </div>
@@ -226,18 +226,20 @@
                     </a>
                   </li>
                   <li class="header-cart">
-                    <a href="cart/index.html" data-toggle="header-normal-minicart">
+                    <a href="https://thehanger.wp-theme.design/cart/" data-toggle="header-normal-minicart" aria-controls="header-normal-minicart" data-is-focus="false" data-yeti-box="header-normal-minicart" aria-haspopup="true" aria-expanded="false" class="">
                       <i class="thehanger-icons-shopping-bag">
                       </i>
-                      <div class="tools_badge shopping_bag_items_number">0
+                      <div class="tools_badge shopping_bag_items_number animate">0
                       </div>
                     </a>
                     <div class="header-minicart-placeholder">
-                      <div class="dropdown-pane minicart" id="header-normal-minicart" data-dropdown data-hover="true" data-hover-pane="true" data-alignment="right">
+                      <div class="dropdown-pane minicart" id="header-normal-minicart" data-dropdown="" data-hover="true" data-hover-pane="true" data-alignment="right" aria-hidden="true" data-yeti-box="header-normal-minicart" data-resize="header-normal-minicart" aria-labelledby="i4wfla-dd-anchor" data-e="rmfpnn-e" data-events="resize" style="top: 84.2344px; left: 893.5px;">
                         <div class="widget woocommerce widget_shopping_cart">
                           <h2 class="widgettitle">Cart
                           </h2>
                           <div class="widget_shopping_cart_content">
+                            <p class="woocommerce-mini-cart__empty-message">No products in the cart.
+                            </p>
                           </div>
                         </div>														
                         <div class="minicart_infos">Free shipping on all orders over $75
