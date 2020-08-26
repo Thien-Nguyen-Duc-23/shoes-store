@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="{{ asset('admin_lte/bower_components/select2/dist/css/select2.min.css') }}">
 
     <link rel='stylesheet' id='wp-block-library-css'  href="{{ asset('client/wp-includes/css/dist/block-library/style.min7661.css') }}" type='text/css' media='all' />
-    <link rel='stylesheet' id='wp-block-library-theme-css'  href="{{ asset('client/wp-includes/css/dist/block-library/theme.min7661.css') }}" type='text/css' media='all' />
+    {{-- <link rel='stylesheet' id='wp-block-library-theme-css'  href="{{ asset('client/wp-includes/css/dist/block-library/theme.min7661.css') }}" type='text/css' media='all' /> --}}
     
     <script type='text/javascript' src="{{ asset('client/wp-includes/js/jquery/jquery4a5f.js') }}"></script>
-    <script type='text/javascript' src="{{ asset('client/wp-includes/js/jquery/jquery-migrate.min330a.js') }}"></script>
+    {{-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> --}}
+    {{-- <script type='text/javascript' src="{{ asset('client/wp-includes/js/jquery/jquery-migrate.min330a.js') }}"></script> --}}
     <link rel='stylesheet' id='wc-block-vendors-style-css'  href="{{ asset('client/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/vendors-style653d.css') }}" type='text/css' media='all' />
     <link rel='stylesheet' id='wc-block-style-css'  href="{{ asset('client/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/style653d.css') }}" type='text/css' media='all' />
     <link rel='stylesheet' id='jquery-selectBox-css'  href="{{ asset('client/wp-content/plugins/yith-woocommerce-wishlist/assets/css/jquery.selectBox7359.css') }}" type='text/css' media='all' />
@@ -23,6 +24,7 @@
     <link rel='stylesheet' id='getbowtied-th-widget-styles-css'  href="{{ asset('client/wp-content/plugins/the-hanger-extender/includes/widgets/assets/css/widget-product-categories-with-icon7661.css') }}" type='text/css' media='all' />
     <link rel='stylesheet' id='th-social-media-styles-css'  href="{{ asset('client/wp-content/plugins/the-hanger-extender/includes/social-media/assets/css/social-media7661.css') }}" type='text/css' media='all' />
     <link rel='stylesheet' id='th-social-sharing-styles-css'  href="{{ asset('client/wp-content/plugins/the-hanger-extender/includes/social-sharing/assets/css/social-sharing7661.css') }}" type='text/css' media='all' />
+    
     <style id='woocommerce-inline-inline-css' type='text/css'>
       .woocommerce form .form-row .required {
         visibility: visible;
@@ -34,6 +36,8 @@
     <link rel='stylesheet' id='motion-ui-css'  href="{{ asset('client/wp-content/themes/the-hanger/inc/_vendor/motion-ui/css/motion-uib95e.css') }}" type='text/css' media='all' />
     <link rel='stylesheet' id='swiper-css'  href="{{ asset('client/wp-content/themes/the-hanger/inc/_vendor/swiper/css/swiper4f24.css') }}" type='text/css' media='all' />
     <link rel='stylesheet' id='thehanger-styles-css'  href="{{ asset('client/wp-content/themes/the-hanger/css/styles905d.css') }}" type='text/css' media='all' />
+    
+    
     <style id='thehanger-styles-inline-css' type='text/css'>
       .row{
         max-width:1340px}
@@ -386,14 +390,15 @@
     </script>
     <script type='text/javascript' src="{{ asset('client/wp-content/plugins/the-hanger-extender/includes/widgets/assets/js/widget-product-categories-with-icon7661.js') }}">
     </script>
+    {{-- <script type='text/javascript' src='https://thehanger.wp-theme.design/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp' id='jquery-js'></script> --}}
     <script type='text/javascript' src="{{ asset('client/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min44fd.js') }}">
     </script>
-    <script type='text/javascript'>
+    {{-- <script type='text/javascript'>
       /* <![CDATA[ */
       var wc_add_to_cart_params = {
         "ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/thehanger.wp-theme.design\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
       /* ]]> */
-    </script>
+    </script> --}}
     <script type='text/javascript' src="{{ asset('client/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.minb2f9.js') }}">
     </script>
     <script type='text/javascript' src="{{ asset('client/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min6b25.js') }}">
@@ -502,6 +507,8 @@
   </head>
   @if (url()->current() == config('app.url'))
     <body class="home page-template-default page page-id-572 page-child parent-pageid-564 wp-embed-responsive theme-the-hanger woocommerce-js wpb-js-composer js-comp-ver-6.2.0 vc_responsive site-main-font header-layout-full content-layout-full page-without-title footer-layout-full">
+  @elseif (Route::currentRouteName() === 'product_detail')
+  <body class="product-template-default single single-product postid-248 wp-embed-responsive theme-the-hanger woocommerce woocommerce-page woocommerce-js wpb-js-composer js-comp-ver-6.3.0 vc_responsive site-main-font header-layout-full content-layout-full  footer-layout-full">
   @else
     <body class="archive tax-product_cat term-jackets-coats term-45 wp-embed-responsive theme-the-hanger woocommerce woocommerce-page woocommerce-js wpb-js-composer js-comp-ver-6.2.0 vc_responsive site-main-font header-layout-full content-layout-full  woocommerce-shop shop-pagination-infinite_scroll shop-sidebar-active shop-sidebar-left blog-pagination-infinite_scroll footer-layout-full">
   @endif
@@ -520,6 +527,7 @@
         @includeIf('client.partials.footer')
     </div>
     <!-- .site-wrapper -->
+    @stack('scripts-client')
     <!-- .site-search -->
     <style id="kirki-local-webfonts-">@font-face{
       font-family:'Libre Franklin';
@@ -661,7 +669,7 @@
       }
       )();
     </script>
-    <script type="text/javascript">!function(e,t,n){
+    {{-- <script type="text/javascript">!function(e,t,n){
         function a(){
           var e=t.getElementsByTagName("script")[0],n=t.createElement("script");
           n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net/",e.parentNode.insertBefore(n,e)}
@@ -674,8 +682,7 @@
       (window,document,window.Beacon||function(){
       }
       );
-    </script>
-    <script type="text/javascript">window.Beacon('init', '81de2327-e6ca-43d0-a65f-2a9872bb5cc6')</script>
+    </script> --}}
     <script type="text/javascript">
       var c = document.body.className;
       c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
@@ -744,6 +751,9 @@
         "wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_no_matching_variations_text":"Sorry, no products matched your selection. Please choose a different combination.","i18n_make_a_selection_text":"Please select some product options before adding this product to your cart.","i18n_unavailable_text":"Sorry, this product is unavailable. Please choose a different combination."};
       /* ]]> */
     </script>
+    <script type="text/javascript" src="https://thehanger.wp-theme.design/wp-content/plugins/woocommerce/assets/js/zoom/jquery.zoom.min.js?ver=1.7.21" id="zoom-js"></script>
+    <script type="text/javascript" src="https://thehanger.wp-theme.design/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe.min.js?ver=4.1.1" id="photoswipe-js"></script>
+    <script type="text/javascript" src="https://thehanger.wp-theme.design/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe-ui-default.min.js?ver=4.1.1" id="photoswipe-ui-default-js"></script>
     <script type='text/javascript' src="{{ asset('client/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart-variation.minb2f9.js') }}">
     </script>
     <script type='text/javascript' src="{{ asset('client/wp-content/themes/the-hanger/inc/_vendor/foundation/dist/js/foundation.min84fc.js') }}">
@@ -768,8 +778,9 @@
         "select_placeholder":"Choose an option","blog_pagination_type":"infinite_scroll","shop_pagination_type":"infinite_scroll","accent_color":"#C4B583","shop_display":"grid","is_customize_preview":"","accordion_description":"","ajax_url":"https:\/\/thehanger.wp-theme.design\/wp-admin\/admin-ajax.php","woo_ajax_layered_nav_plugin":""};
       /* ]]> */
     </script>
-    <script type='text/javascript' src="{{ asset('client/wp-content/themes/the-hanger/js/scripts-dist905d.js') }}">
-    </script>
+    {{-- <script type='text/javascript' src="{{ asset('client/wp-content/themes/the-hanger/js/scripts-dist905d.js') }}">
+    </script> --}}
+    <script type='text/javascript' src='https://thehanger.wp-theme.design/wp-content/themes/the-hanger/js/scripts-dist.js?ver=1.6.4' id='getbowtied-scripts-js'></script>
     <script type='text/javascript' src="{{ asset('client/wp-content/plugins/js_composer/assets/lib/vc_waypoints/vc-waypoints.min10df.js') }}">
     </script>
     <script type="text/javascript">
