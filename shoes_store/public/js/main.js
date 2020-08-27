@@ -148,7 +148,7 @@ jQuery(document).ready(function($) {
 	zoom_pro_large();
 
 	function add_to_cart_popup() {
-		$('#add-to-cart-form button').click(function() {
+		$('#add-to-cart-form button.btn_add_cart').click(function() {
 			$('body').css('overflow', 'hidden');
 			$('#popup-cart').show();
 	
