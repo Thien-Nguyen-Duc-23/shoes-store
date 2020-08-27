@@ -194,19 +194,8 @@
 .rte-summary ul { list-style: none; padding-left: 0; margin-left: 0; margin-bottom: 10px; }
 .rte-summary ul li { position: relative; padding-left: 20px; margin-bottom: 0 }
 .rte-summary ul li:before { display: block; position: absolute; content: "\f058"; font-family: "FontAwesome"; color: #64c343; left: 0px; top: 0; font-size: 15px }
-#popup-cart {
-    -webkit-overflow-scrolling: touch;
-    outline: 0;
-    background: rgba(0,0,0,0.5);
-    position: fixed;
-	top: 0;
-	left: 0;
-    height: 100%;
-    width: 100%;
-	z-index: 99999;
-	overflow-y: auto;
-}
-#popup-cart-desktop {     z-index: 1; width: 900px; overflow: hidden; background: #fff; float: none; margin: 0 auto; position: relative; top: 7%; bottom: 10%; border-radius: 4px }
+#popup-cart { -webkit-overflow-scrolling: touch; outline: 0; background: rgba(0, 0, 0, 0.5); position: fixed; top: 0; left: 0; height: 100%; width: 100%; z-index: 99999; overflow-y: auto; }
+#popup-cart-desktop { z-index: 1; width: 900px; overflow: hidden; background: #fff; float: none; margin: 0 auto; position: relative; top: 7%; bottom: 10%; border-radius: 4px }
 #popup-cart-desktop .wrap_popup { padding: 0px 20px 20px; width: 100%; float: left }
 #popup-cart-desktop .title-popup-cart { font-family: 'Arial', sans-serif; margin-bottom: 13px; font-size: 16px; padding-right: 15px; font-weight: 400; padding: 20px; background: #000 }
 #popup-cart-desktop .title-popup-cart img { width: 24px; display: inline-block; float: left }
