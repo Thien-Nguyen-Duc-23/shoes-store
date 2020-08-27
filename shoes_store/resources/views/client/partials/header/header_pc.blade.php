@@ -233,19 +233,20 @@
                       </div>
                     </a>
                     <div class="header-minicart-placeholder">
-                      <div class="dropdown-pane minicart" id="header-normal-minicart" data-dropdown="" data-hover="true" data-hover-pane="true" data-alignment="right" aria-hidden="true" data-yeti-box="header-normal-minicart" data-resize="header-normal-minicart" aria-labelledby="i4wfla-dd-anchor" data-e="rmfpnn-e" data-events="resize" style="top: 84.2344px; left: 893.5px;">
+                      <div class="dropdown-pane minicart" id="header-normal-minicart" data-dropdown="" data-hover="true" data-hover-pane="true" data-alignment="right" aria-hidden="true" data-yeti-box="header-normal-minicart" data-resize="header-normal-minicart" aria-labelledby="z7udsh-dd-anchor" data-e="akfmhp-e" data-events="resize" style="top: 84.2344px; left: 893.5px;">
                         <div class="widget woocommerce widget_shopping_cart">
                           <h2 class="widgettitle">Cart
                           </h2>
                           <div class="widget_shopping_cart_content">
-                            <p class="woocommerce-mini-cart__empty-message">No products in the cart.
-                            </p>
+                            <div class="widget_shopping_cart_content">
+                            </div>
                           </div>
                         </div>														
                         <div class="minicart_infos">Free shipping on all orders over $75
                         </div>
                       </div>
                     </div>
+                    
                   </li>
                 </ul>
               </div>

@@ -669,20 +669,6 @@
       }
       )();
     </script>
-    {{-- <script type="text/javascript">!function(e,t,n){
-        function a(){
-          var e=t.getElementsByTagName("script")[0],n=t.createElement("script");
-          n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net/",e.parentNode.insertBefore(n,e)}
-        if(e.Beacon=n=function(t,n,a){
-          e.Beacon.readyQueue.push({
-            method:t,options:n,data:a}
-                                  )}
-           ,n.readyQueue=[],"complete"===t.readyState)return a();
-        e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}
-      (window,document,window.Beacon||function(){
-      }
-      );
-    </script> --}}
     <script type="text/javascript">
       var c = document.body.className;
       c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
@@ -778,58 +764,8 @@
         "select_placeholder":"Choose an option","blog_pagination_type":"infinite_scroll","shop_pagination_type":"infinite_scroll","accent_color":"#C4B583","shop_display":"grid","is_customize_preview":"","accordion_description":"","ajax_url":"https:\/\/thehanger.wp-theme.design\/wp-admin\/admin-ajax.php","woo_ajax_layered_nav_plugin":""};
       /* ]]> */
     </script>
-    {{-- <script type='text/javascript' src="{{ asset('client/wp-content/themes/the-hanger/js/scripts-dist905d.js') }}">
-    </script> --}}
     <script type='text/javascript' src='https://thehanger.wp-theme.design/wp-content/themes/the-hanger/js/scripts-dist.js?ver=1.6.4' id='getbowtied-scripts-js'></script>
     <script type='text/javascript' src="{{ asset('client/wp-content/plugins/js_composer/assets/lib/vc_waypoints/vc-waypoints.min10df.js') }}">
-    </script>
-    <script type="text/javascript">
-      jQuery(document).ready(function ($) {
-        //$( document ).ajaxStart(function() {
-        //});
-        for (var i = 0; i < document.forms.length; ++i) {
-          var form = document.forms[i];
-          if ($(form).attr("method") != "get") {
-            $(form).append('<input type="hidden" name="lPyfaicJWN" value="Vhsl07tdok" />');
-          }
-          if ($(form).attr("method") != "get") {
-            $(form).append('<input type="hidden" name="dQSIJVoz-hWqNi" value="nVFXBuCzS@oc_M" />');
-          }
-          if ($(form).attr("method") != "get") {
-            $(form).append('<input type="hidden" name="UzkEGumLhel" value="tFQCp518S_U" />');
-          }
-        }
-        $(document).on('submit', 'form', function () {
-          if ($(this).attr("method") != "get") {
-            $(this).append('<input type="hidden" name="lPyfaicJWN" value="Vhsl07tdok" />');
-          }
-          if ($(this).attr("method") != "get") {
-            $(this).append('<input type="hidden" name="dQSIJVoz-hWqNi" value="nVFXBuCzS@oc_M" />');
-          }
-          if ($(this).attr("method") != "get") {
-            $(this).append('<input type="hidden" name="UzkEGumLhel" value="tFQCp518S_U" />');
-          }
-          return true;
-        }
-                      );
-        jQuery.ajaxSetup({
-          beforeSend: function (e, data) {
-            //console.log(Object.getOwnPropertyNames(data).sort());
-            //console.log(data.type);
-            if (data.type !== 'POST') return;
-            if (typeof data.data === 'object' && data.data !== null) {
-              data.data.append("lPyfaicJWN", "Vhsl07tdok");
-              data.data.append("dQSIJVoz-hWqNi", "nVFXBuCzS@oc_M");
-              data.data.append("UzkEGumLhel", "tFQCp518S_U");
-            }
-            else {
-              data.data =  data.data + '&lPyfaicJWN=Vhsl07tdok&dQSIJVoz-hWqNi=nVFXBuCzS@oc_M&UzkEGumLhel=tFQCp518S_U';
-            }
-          }
-        }
-                        );
-      }
-                            );
     </script>
   </body>
 </html>
