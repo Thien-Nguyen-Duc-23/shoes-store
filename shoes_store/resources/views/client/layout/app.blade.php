@@ -383,6 +383,8 @@
     <link rel='stylesheet' id='getbowtied-th-ecommerce-widget-styles-css'  href="{{ asset('client/wp-content/plugins/the-hanger-extender/includes/widgets/assets/css/widget-ecommerce-info7661.css') }}" type='text/css' media='all' />
     <link rel='stylesheet' id='js_composer_front-css'  href="{{ asset('client/wp-content/plugins/js_composer/assets/css/js_composer.min10df.css') }}" type='text/css' media='all' />
     <link rel='stylesheet' id='getbowtied-default-fonts-css'  href="{{ asset('client/wp-content/themes/the-hanger/inc/fonts/default905d.css') }}" type='text/css' media='all' />
+    <link rel='stylesheet' id='owl-css'  href="{{ asset('css/owl.carousel.min.css') }}" type='text/css' media='all' />
+    <link rel='stylesheet' id='custom-css'  href="{{ asset('css/custom.css') }}" type='text/css' media='all' />
     <script type="text/template" id="tmpl-unavailable-variation-template">
 	<p>Sorry, this product is unavailable. Please choose a different combination.</p>
     </script>
@@ -765,7 +767,9 @@
       /* ]]> */
     </script>
     <script type='text/javascript' src='https://thehanger.wp-theme.design/wp-content/themes/the-hanger/js/scripts-dist.js?ver=1.6.4' id='getbowtied-scripts-js'></script>
-    <script type='text/javascript' src="{{ asset('client/wp-content/plugins/js_composer/assets/lib/vc_waypoints/vc-waypoints.min10df.js') }}">
-    </script>
+    <script type='text/javascript' src="{{ asset('client/wp-content/plugins/js_composer/assets/lib/vc_waypoints/vc-waypoints.min10df.js') }}"></script>
+    <script type='text/javascript' src="{{ asset('js/owl.carousel.min.js') }}"></script>
+    <script type='text/javascript' src="{{ asset('js/jquery.elevatezoom308.min.js') }}"></script>
+    <script type='text/javascript' src="{{ asset('js/main.js') }}"></script>
   </body>
 </html>
