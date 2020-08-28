@@ -1,4 +1,6 @@
 .wrap-detail { overflow: hidden !important; padding-bottom: 15px; }
+.wrap-detail .site-content{ max-width: 1340px;    margin: 0 auto; }
+.single-product{ overflow-x: hidden; }
 .title-product { color: #080000; font-size: 24px; line-height: 30px; margin: 0px; margin-bottom: 8px; font-weight: 400 }
 .details-product .col-lg-5, .details-product .col-lg-7, .details-product .col-lg-3, .details-product .col-lg-9, .details-product .col-md-5, .details-product .col-md-7 { float: left; position: relative; padding-right: 15px; padding-left: 15px; max-width: 100%; }
 .details-product { margin: 0 -15px; }
