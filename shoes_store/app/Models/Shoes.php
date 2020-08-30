@@ -36,6 +36,17 @@ class Shoes extends Model
         'updated_at',
     ];
 
+    // formart price to VND
+    public function formartToVND($priceFloat)
+    {
+        $symbol = '₫';
+        $symbol_thousand = '.';
+        $decimal_place = 0;
+        $price = number_format($priceFloat, $decimal_place, '', $symbol_thousand);
+
+        return $price.$symbol;
+    }
+
     public function shoesImages()
     {
         return $this->hasMany(ShoesImages::class, 'shoes_id');
@@ -59,5 +70,15 @@ class Shoes extends Model
     public function categories()
     {
         return $this->belongsTo(Categories::class, 'category_id');
+    }
+
+    public function colors()
+    {
+        return $this->belongsToMany(Colors::class, 'shoes_colors', 'shoes_id', 'color_id');
+    }
+
+    public function sizes()
+    {
+        return $this->belongsToMany(Sizes::class, 'shoes_sizes', 'shoes_id', 'size_id');
     }
 }
