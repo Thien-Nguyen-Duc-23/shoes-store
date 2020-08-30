@@ -31,7 +31,6 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.0.1/css/fileinput.min.css" media="all" rel="stylesheet" type="text/css" />
-        {{-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script> --}}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.0.1/js/fileinput.min.js"></script>
         <link href="{{ asset('libs/fileinput/fileinput.min.css') }}" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="{{ asset('admin_lte/plugins/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css') }}">
