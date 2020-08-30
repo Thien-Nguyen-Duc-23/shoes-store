@@ -197,8 +197,8 @@ class ShoesController extends Controller
      */
     public function update(ShoesEditRequest $request, $id)
     {
-        \DB::beginTransaction();
-        try {
+        // \DB::beginTransaction();
+        // try {
             $shoes = Shoes::find($id);
             if (empty($shoes)) {
                 \DB::rollBack();
@@ -255,7 +255,7 @@ class ShoesController extends Controller
                 if (isset($request->shoesImages)) {
                     foreach ($request->shoesImages as $shoesImage) {
                         $dataShoesImage = [
-                            'shoes_id' => $shoes->id,
+                            'shoes_id' => $id,
                             'image' => $filename = $this->uploadImage(ShoesImages::DIRECTORY, $shoesImage),
                         ];
                         ShoesImages::create($dataShoesImage);
@@ -266,12 +266,12 @@ class ShoesController extends Controller
             \DB::commit();
             flash('Update Successfully!', ['name' => 'Update successfully'])->success();
             return redirect()->route('shoes.index');
-        } catch (\Exception $e) {
-            \DB::rollBack();
-            \Log::error($e->getMessage());
-            flash('error', ['name' => 'Update error'])->error();
-            return back();
-        }
+        // } catch (\Exception $e) {
+        //     \DB::rollBack();
+        //     \Log::error($e->getMessage());
+        //     flash('error', ['name' => 'Update error'])->error();
+        //     return back();
+        // }
     }
 
     /**

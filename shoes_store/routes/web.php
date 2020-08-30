@@ -38,5 +38,5 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
 Route::group(['prefix' => '/', 'namespace' => 'Client'], function () {
     Route::get('/', 'HomePage@homePage');
     Route::get('/product-category/{slug}', 'CategoryController@index')->name('product_category');
-    Route::get('/product-detail', 'ShoesController@index')->name('product_detail');
+    Route::get('/product-detail/{slug}', 'ShoesController@index')->name('product_detail');
 });

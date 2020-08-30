@@ -24,7 +24,7 @@ class ShoesColors extends Model
         return $this->belongsTo(Shoes::class, 'shoes_id');
     }
 
-    public function colors()
+    public function colors()
     {
         return $this->belongsTo(Colors::class, 'color_id');
     }
