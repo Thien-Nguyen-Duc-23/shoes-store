@@ -32,7 +32,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.0.1/css/fileinput.min.css" media="all" rel="stylesheet" type="text/css" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/5.0.1/js/fileinput.min.js"></script>
-        <link href="{{ asset('libs/fileinput/fileinput.min.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ asset('admin_lte/libs/fileinput/fileinput.min.css') }}" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="{{ asset('admin_lte/plugins/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css') }}">
         <link rel="stylesheet" href="{{ asset('css/bootstrap-datetimepicker.css') }}" />
         <style>
@@ -92,8 +92,8 @@
         <script type="text/javascript" src="{{ asset('js/bootstrap-datetimepicker.js') }}"></script>
         <script src="{{ asset('admin_lte/plugins/bootstrap-switch/dist/js/bootstrap-switch.min.js') }}"></script>
         <script src="{{ asset('js/admin.js') }}"></script>
-        <script src="{{ asset('libs/fileinput/fileinput.min.js') }}"></script>
-        <script src="{{ asset('libs/bootstrap-notify/bootstrap-notify.min.js') }}"></script>
+        <script src="{{ asset('admin_lte/libs/fileinput/fileinput.min.js') }}"></script>
+        <script src="{{ asset('admin_lte/libs/bootstrap-notify/bootstrap-notify.min.js') }}"></script>
         <script>
             $(document).ready(function () {
                 //Initialize Select2 Elements
