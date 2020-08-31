@@ -410,7 +410,7 @@
         // remove all item in dev and create again
         $("div.check_remove_cart").remove();
 
-        if (JSON.parse(readCartProduct()).length == 0) {
+        if (JSON.parse(readCartProduct()) == null || JSON.parse(readCartProduct()).length == 0) {
           var html = '<p class="woocommerce-mini-cart__empty-message">No products in the cart.</p>';
         } else {
           var htmlLi = '';
