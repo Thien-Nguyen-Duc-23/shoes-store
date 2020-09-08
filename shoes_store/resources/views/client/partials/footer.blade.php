@@ -102,30 +102,15 @@
                 </div>
                 <div class="column">
                     <aside id="nav_menu-2" class="widget widget_nav_menu">
-                    <h4 class="widget-title">Shop Highlights
-                    </h4>
+                    <h4 class="widget-title">Shop Highlights</h4>
                     <div class="menu-footer-shop-highlights-container">
                         <ul id="menu-footer-shop-highlights" class="">
-                        <li id="menu-item-98" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-98">
-                            <a href="product-category/women/index.html">Women
-                            </a>
-                        </li>
-                        <li id="menu-item-99" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-99">
-                            <a href="product-category/accessories/index.html">Accessories
-                            </a>
-                        </li>
-                        <li id="menu-item-100" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-100">
-                            <a href="product-category/junior/index.html">Junior
-                            </a>
-                        </li>
-                        <li id="menu-item-101" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-101">
-                            <a href="product-category/men/index.html">Men
-                            </a>
-                        </li>
-                        <li id="menu-item-103" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-103">
-                            <a href="product-category/gifts/index.html">Gifts
-                            </a>
-                        </li>
+                            @foreach ($categoriesShareView as $itemCategoryShareView)
+                                <li id="menu-item-98" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-98">
+                                    <a href="{{ route('product_category', $itemCategoryShareView->slug) }}">{{ $itemCategoryShareView->name }}
+                                    </a>
+                                </li>
+                            @endforeach
                         </ul>
                     </div>
                     </aside>

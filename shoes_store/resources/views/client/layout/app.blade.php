@@ -30,6 +30,8 @@
     <body class="home page-template-default page page-id-572 page-child parent-pageid-564 wp-embed-responsive theme-the-hanger woocommerce-js wpb-js-composer js-comp-ver-6.2.0 vc_responsive site-main-font header-layout-full content-layout-full page-without-title footer-layout-full">
   @elseif (Route::currentRouteName() === 'product_detail')
     <body class="product-template-default single single-product postid-248 wp-embed-responsive theme-the-hanger woocommerce woocommerce-page woocommerce-js wpb-js-composer js-comp-ver-6.3.0 vc_responsive site-main-font header-layout-full content-layout-full  footer-layout-full">
+  @elseif (Route::currentRouteName() === 'product_cart')
+    <body class="page-template-default page page-id-6 wp-embed-responsive theme-the-hanger woocommerce-cart woocommerce-page woocommerce-js wpb-js-composer js-comp-ver-6.3.0 vc_responsive site-main-font header-layout-full content-layout-full  footer-layout-full"></body>
   @else
     <body class="archive tax-product_cat term-jackets-coats term-45 wp-embed-responsive theme-the-hanger woocommerce woocommerce-page woocommerce-js wpb-js-composer js-comp-ver-6.2.0 vc_responsive site-main-font header-layout-full content-layout-full  woocommerce-shop shop-pagination-infinite_scroll shop-sidebar-active shop-sidebar-left blog-pagination-infinite_scroll footer-layout-full">
   @endif
