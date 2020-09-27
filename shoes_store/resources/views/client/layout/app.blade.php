@@ -239,6 +239,85 @@
           $(this).removeClass("loading")
           e.stopPropagation();
         });
+
+        function showItemInCart() {
+          if (JSON.parse(readCartProduct()) != null || JSON.parse(readCartProduct()).length != 0) {
+            var htmlItemInCart = '';
+            var totalPriceInCart = 0;
+            var totalQuantilyInCart = 0;
+            $.each(JSON.parse(readCartProduct()), function (key, value) {
+              var priceItem = parseInt(value.quantilyProduct) * parseFloat(value.priceProduct);
+              totalPriceInCart += parseInt(value.quantilyProduct) * parseFloat(value.priceProduct);
+              htmlItemInCart += '<tr class="woocommerce-cart-form__cart-item cart_item" id="'+ value.idProduct +'">';
+                htmlItemInCart += '<td class="product-remove">';
+                  htmlItemInCart += '<a href="#" class="remove" aria-label="Remove this item" data-product_id="175" data-product_sku="">×</a>';
+                htmlItemInCart += '</td>';
+                htmlItemInCart += '<td class="product-thumbnail">';
+                  htmlItemInCart += '<a href="#">';
+                    htmlItemInCart += '<img width="330" height="413" src="'+ value.imageProduct +'" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy">';
+                  htmlItemInCart += '</a>';
+                htmlItemInCart += '</td>';
+
+                htmlItemInCart += '<td class="product-name" data-title="Product">';
+                  htmlItemInCart += '<a href="#">'+ value.nameProduct +' - '+ value.sizeNameProduct +'</a>';
+                htmlItemInCart += '</td>';
+
+                htmlItemInCart += '<td class="product-price" data-title="Price">';
+                  htmlItemInCart += '<span class="woocommerce-Price-amount woocommerce-data-price amount" data-price="'+ value.priceProduct +'">';
+                    htmlItemInCart += '<bdi>'+ formatNumber(value.priceProduct, '.', ',') +'</bdi>';
+                  htmlItemInCart += '</span>';
+                htmlItemInCart += '</td>';
+
+                htmlItemInCart += '<td class="product-quantity" data-title="Quantity">';
+                  htmlItemInCart += '<div class="quantity">';
+                    htmlItemInCart += '<label class="screen-reader-text" for="quantity_5f605c5a4c62d">Ripped Skinny Jeans quantity</label>';
+                    htmlItemInCart += '<input type="number" id="quantity_5f605c5a4c62d" class="input-text qty text" step="1" min="0" max="" name="cartQty" value="'+ value.quantilyProduct +'" title="Qty" size="4" placeholder="" inputmode="numeric">';
+                  htmlItemInCart += '</div>';
+                htmlItemInCart += '</td>';
+
+                htmlItemInCart += '<td class="product-subtotal" data-title="Subtotal">';
+                  htmlItemInCart += '<span class="woocommerce-Price-amount woocommerce-data-price-item amount" data-price-item="'+ priceItem +'">';
+                    htmlItemInCart += '<bdi>'+ formatNumber(priceItem, '.', ',') +'</bdi>';
+                  htmlItemInCart += '</span>';
+                htmlItemInCart += '</td>';
+            });
+          }
+
+          $('.woocommerce-price-total-cart').text(formatNumber(totalPriceInCart, '.', ','));
+          $('#item-in-cart').html(htmlItemInCart);
+        }
+
+        $(document).on('change','#quantity_5f605c5a4c62d', function() {
+          if ($(this).val() == 0) {
+            $(this).val(1)
+          }
+
+          var row = $(this).closest('tr');
+          var dataPrice = row.find('.woocommerce-data-price').data("price") * $(this).val();
+          row.find('.woocommerce-data-price-item').attr('data-price-item', dataPrice);
+          row.find('.woocommerce-data-price-item').text(formatNumber(dataPrice, '.', ','));
+
+          var totalPrice = 0;
+          $('.woocommerce-data-price-item').each(function () {
+            totalPrice += parseFloat($(this).closest('tr').find('.woocommerce-data-price-item').attr('data-price-item'));
+          });
+
+          var cartProductArray = readCartProduct() === null ? [] : JSON.parse(readCartProduct());
+          if (Array.isArray(cartProductArray) && cartProductArray.length) {
+            var findProduct = cartProductArray.findIndex((obj => obj.idProduct == row.attr('id')));
+          }
+
+          if (findProduct >= 0) {
+            cartProductArray[findProduct].quantilyProduct = parseInt($(this).val());
+            createCartProduct(JSON.stringify(cartProductArray));
+            showPopupProductInCart();
+            showPopupCart();
+          }
+
+          $('.woocommerce-price-total-cart').text(formatNumber(totalPrice, '.', ','));
+        });
+
+        showItemInCart();
   
         // $('.add_cart_check').click(function(e) {
         //   e.preventDefault();
