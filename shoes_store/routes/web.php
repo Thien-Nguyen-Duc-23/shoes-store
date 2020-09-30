@@ -40,4 +40,10 @@ Route::group(['prefix' => '/', 'namespace' => 'Client'], function () {
     Route::get('/cart', 'CartController@index')->name('product_cart');
     Route::get('/checkout', 'CartController@checkout')->name('checkout');
     Route::post('/processCheckout', 'CartController@processCheckout')->name('process_checkout');
+
+    /****************************** AUTH CLIENT ******************************/
+    Route::get('my-account/login', 'AuthClientController@indexLogin')->name('index_login');
+    Route::post('my-account/login', 'AuthClientController@postLogin')->name('post_login');
+    Route::get('my-account/register', 'AuthClientController@indexRegister')->name('index_register');
+    Route::post('my-account/register', 'AuthClientController@registerCustomer')->name('store_register');
 });
