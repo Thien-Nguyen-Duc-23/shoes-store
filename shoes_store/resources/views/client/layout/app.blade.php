@@ -3,6 +3,7 @@
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <head>
     <meta charset="UTF-8">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <title>The Hanger &#8211; Exlusively on the Envato Market</title>
     <script type='text/javascript' src="{{ asset('client/wp-includes/js/jquery/jquery4a5f.js') }}"></script>
@@ -24,6 +25,16 @@
     </script>
     <script type='text/javascript' src="{{ asset('client/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min6b25.js') }}"></script>
     <script type='text/javascript' src="{{ asset('client/wp-content/plugins/pixelyoursite-pro/dist/scripts/jquery.bind-first-0.2.3.min7661.js') }}"></script>
+    <style>
+      .text-danger {
+        color: red !important;
+        border-color: red;
+      }
+
+      .custom-span {
+        font-size: 12px;
+      }
+    </style>
   </head>
 
   @if (url()->current() == config('app.url'))
@@ -31,7 +42,9 @@
   @elseif (Route::currentRouteName() === 'product_detail')
     <body class="product-template-default single single-product postid-248 wp-embed-responsive theme-the-hanger woocommerce woocommerce-page woocommerce-js wpb-js-composer js-comp-ver-6.3.0 vc_responsive site-main-font header-layout-full content-layout-full  footer-layout-full">
   @elseif (Route::currentRouteName() === 'product_cart')
-    <body class="page-template-default page page-id-6 wp-embed-responsive theme-the-hanger woocommerce-cart woocommerce-page woocommerce-js wpb-js-composer js-comp-ver-6.3.0 vc_responsive site-main-font header-layout-full content-layout-full  footer-layout-full"></body>
+    <body class="page-template-default page page-id-6 wp-embed-responsive theme-the-hanger woocommerce-cart woocommerce-page woocommerce-js wpb-js-composer js-comp-ver-6.3.0 vc_responsive site-main-font header-layout-full content-layout-full  footer-layout-full">
+  @elseif (Route::currentRouteName() === 'index_login' || Route::currentRouteName() === 'index_register')
+    <body class="page-template-default page page-id-8 wp-embed-responsive theme-the-hanger woocommerce-account woocommerce-page woocommerce-js wpb-js-composer js-comp-ver-6.3.0 vc_responsive site-main-font header-layout-full content-layout-full  footer-layout-full">
   @else
     <body class="archive tax-product_cat term-jackets-coats term-45 wp-embed-responsive theme-the-hanger woocommerce woocommerce-page woocommerce-js wpb-js-composer js-comp-ver-6.2.0 vc_responsive site-main-font header-layout-full content-layout-full  woocommerce-shop shop-pagination-infinite_scroll shop-sidebar-active shop-sidebar-left blog-pagination-infinite_scroll footer-layout-full">
   @endif
@@ -316,44 +329,6 @@
 
           $('.woocommerce-price-total-cart').text(formatNumber(totalPrice, '.', ','));
         });
-
-        showItemInCart();
-  
-        // $('.add_cart_check').click(function(e) {
-        //   e.preventDefault();
-        //   var cartProductArray = readCartProduct() === null ? [] : JSON.parse(readCartProduct());
-  
-        //   var idProduct = $(this).attr("data-product_cart_id");
-        //   var priceProduct = $(this).attr("data-product_cart_price");
-        //   var nameProduct = $(this).attr("data-product_cart_name");
-        //   var imageProduct = $(this).attr("data-product_cart_image");
-        //   var quantilyProduct = 1;
-  
-        //   if (Array.isArray(cartProductArray) && cartProductArray.length) {
-        //     var findProduct = cartProductArray.findIndex((obj => obj.idProduct == idProduct));
-        //   } else {
-        //     var findProduct = -1;
-        //   }
-  
-        //   if (findProduct >= 0) {
-        //     cartProductArray[findProduct].quantilyProduct = cartProductArray[findProduct].quantilyProduct + quantilyProduct;
-        //   } else {
-        //     cartProductArray.push({
-        //       idProduct : idProduct,
-        //       priceProduct : priceProduct,
-        //       nameProduct : nameProduct,
-        //       imageProduct : imageProduct,
-        //       quantilyProduct : 1,
-        //     })
-        //   }
-  
-        //   createCartProduct(JSON.stringify(cartProductArray));
-        //   showPopupCart();
-  
-        //   $(this).addClass("added")
-        //   $(this).removeClass("loading")
-        //   e.stopPropagation();
-        // });
       });
     </script>
 
