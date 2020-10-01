@@ -21,6 +21,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
         Route::resource('shoes', 'ShoesController');
         Route::resource('customer', 'CustomerController');
         Route::resource('banner', 'BannerController');
+        Route::resource('news', 'NewsController');
 /****************************** Order **********************************/
         Route::get('order/get-product-shoes', 'OrderController@getProductShoes')->name('order.get_product_shoes');
         Route::get('order/get-infor-user', 'OrderController@getInforCustomer')->name('order.get_infor_user');
