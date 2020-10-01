@@ -18,7 +18,7 @@
           <i class="fa fa-dashboard"></i> <span>Dashboard</span>
         </a>
       </li>
-      <li class="header">SHOP-ADMIN</li>
+      <li class="header">SHOP-ADMIN</li>  
       <li class="treeview">
         <a href="#">
           <i class="fa fa-shopping-cart"></i> <span>Oders</span>
@@ -105,15 +105,15 @@
         </ul>
       </li>
       <li class="treeview">
-        <a href="#">
+        <a href="">
           <i class="fa fa-file-powerpoint-o"></i> <span>Blog/News</span>
           <span class="pull-right-container">
             <i class="fa fa-angle-left pull-right"></i>
           </span>
         </a>
         <ul class="treeview-menu">
-          <li class="active"><a href="{{ route('banner.index') }}"><i class="fa fa-circle-o"></i> List Banners </a></li>
-          <li><a href="{{ route('banner.create') }}"><i class="fa fa-circle-o"></i> New </a></li>
+          <li class="active"><a href="{{ route('news.index') }}"><i class="fa fa-circle-o"></i> List News </a></li>
+          <li><a href="{{ route('news.create') }}"><i class="fa fa-circle-o"></i> New </a></li>
         </ul>
       </li>
       <li class="header">SYSTEM-ADMIN</li>
