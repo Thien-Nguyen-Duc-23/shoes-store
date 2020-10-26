@@ -41,6 +41,8 @@ Route::group(['prefix' => '/', 'namespace' => 'Client'], function () {
     Route::get('/cart', 'CartController@index')->name('product_cart');
     Route::get('/checkout', 'CartController@checkout')->name('checkout');
     Route::post('/processCheckout', 'CartController@processCheckout')->name('process_checkout');
+    Route::get('/news', 'NewsController@index')->name('news');
+    Route::get('/news/{slug}', 'NewsController@detail')->name('news_detail');
 
     /****************************** AUTH CLIENT ******************************/
     Route::get('my-account/login', 'AuthClientController@indexLogin')->name('index_login');

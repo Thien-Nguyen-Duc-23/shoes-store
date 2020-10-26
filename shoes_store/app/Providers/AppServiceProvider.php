@@ -10,6 +10,8 @@ use App\Repositories\Category\CategoryRepositoryInterface;
 use App\Repositories\Category\CategoryEloquentRepository;
 use App\Repositories\Customer\CustomerRepositoryInterface;
 use App\Repositories\Customer\CustomerEloquentRepository;
+use App\Repositories\News\NewsEloquentRepository;
+use App\Repositories\News\NewsRepositoryInterface;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -22,15 +24,17 @@ class AppServiceProvider extends ServiceProvider
     {
         $this->app->singleton(
             CategoryRepositoryInterface::class,
-            CategoryEloquentRepository::class,
-
-            CustomerRepositoryInterface::class,
-            CustomerEloquentRepository::class
+            CategoryEloquentRepository::class
         );
 
         $this->app->singleton(
             CustomerRepositoryInterface::class,
             CustomerEloquentRepository::class
+        );
+
+        $this->app->singleton(
+            NewsRepositoryInterface::class,
+            NewsEloquentRepository::class
         );
     }
 

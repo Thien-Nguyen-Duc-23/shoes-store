@@ -45,6 +45,10 @@
     <body class="page-template-default page page-id-6 wp-embed-responsive theme-the-hanger woocommerce-cart woocommerce-page woocommerce-js wpb-js-composer js-comp-ver-6.3.0 vc_responsive site-main-font header-layout-full content-layout-full  footer-layout-full">
   @elseif (Route::currentRouteName() === 'index_login' || Route::currentRouteName() === 'index_register')
     <body class="page-template-default page page-id-8 wp-embed-responsive theme-the-hanger woocommerce-account woocommerce-page woocommerce-js wpb-js-composer js-comp-ver-6.3.0 vc_responsive site-main-font header-layout-full content-layout-full  footer-layout-full">
+  @elseif (Route::currentRouteName() === 'news')
+    <body class="blog wp-embed-responsive theme-the-hanger woocommerce-js wpb-js-composer js-comp-ver-6.3.0 vc_responsive site-main-font header-layout-full content-layout-full blog-sidebar-active blog-sidebar-right  blog-pagination-infinite_scroll footer-layout-full">
+  @elseif (Route::currentRouteName() === 'news_detail')
+    <body class="post-template-default single single-post postid-76 single-format-standard wp-embed-responsive theme-the-hanger woocommerce-js wpb-js-composer js-comp-ver-6.4.1 vc_responsive site-main-font header-layout-full content-layout-full blog-sidebar-inactive  footer-layout-full">
   @else
     <body class="archive tax-product_cat term-jackets-coats term-45 wp-embed-responsive theme-the-hanger woocommerce woocommerce-page woocommerce-js wpb-js-composer js-comp-ver-6.2.0 vc_responsive site-main-font header-layout-full content-layout-full  woocommerce-shop shop-pagination-infinite_scroll shop-sidebar-active shop-sidebar-left blog-pagination-infinite_scroll footer-layout-full">
   @endif
@@ -299,6 +303,8 @@
           $('.woocommerce-price-total-cart').text(formatNumber(totalPriceInCart, '.', ','));
           $('#item-in-cart').html(htmlItemInCart);
         }
+
+        showItemInCart();
 
         $(document).on('change','#quantity_5f605c5a4c62d', function() {
           if ($(this).val() == 0) {

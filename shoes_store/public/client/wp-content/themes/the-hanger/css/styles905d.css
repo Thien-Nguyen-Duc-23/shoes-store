@@ -10271,8 +10271,8 @@ body.blog-pagination-load_more_button .pagination-container {
 .bypostauthor {
   color: inherit; }
 
-.content-layout-full .archive-header {
-  border-bottom: 1px solid; }
+/* .content-layout-full .archive-header {
+  border-bottom: 1px solid; } */
 
 .content-layout-boxed .archive-header .archive-header-inner {
   border-bottom: 1px solid; }
