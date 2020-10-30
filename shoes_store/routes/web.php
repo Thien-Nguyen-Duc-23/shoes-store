@@ -35,7 +35,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
 
 /****************************** ROUTE CLIENT ******************************/
 Route::group(['prefix' => '/', 'namespace' => 'Client'], function () {
-    Route::get('/', 'HomePage@homePage')->name('home');
+    // Route::get('/', 'HomePage@homePage')->name('home');
     Route::get('/product-category/{slug}', 'CategoryController@index')->name('product_category');
     Route::get('/product-detail/{slug}', 'ShoesController@index')->name('product_detail');
     Route::get('/cart', 'CartController@index')->name('product_cart');
@@ -43,10 +43,17 @@ Route::group(['prefix' => '/', 'namespace' => 'Client'], function () {
     Route::post('/processCheckout', 'CartController@processCheckout')->name('process_checkout');
     Route::get('/news', 'NewsController@index')->name('news');
     Route::get('/news/{slug}', 'NewsController@detail')->name('news_detail');
+    Route::get('/contact', 'ContactController@index')->name('contact');
 
     /****************************** AUTH CLIENT ******************************/
     Route::get('my-account/login', 'AuthClientController@indexLogin')->name('index_login');
     Route::post('my-account/login', 'AuthClientController@postLogin')->name('post_login');
     Route::get('my-account/register', 'AuthClientController@indexRegister')->name('index_register');
     Route::post('my-account/register', 'AuthClientController@registerCustomer')->name('store_register');
+});
+
+
+/****************************** ROUTE CLIENT V-2 ******************************/
+Route::group(['prefix' => '/', 'namespace' => 'Client_V_2'], function () {
+    Route::get('/', 'Home\HomeClient@index')->name('home');
 });

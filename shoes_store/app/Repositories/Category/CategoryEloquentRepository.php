@@ -25,4 +25,14 @@ class CategoryEloquentRepository extends EloquentRepository implements CategoryR
             ->orderBy('created_at', 'desc')
             ->get();
     }
+
+    public function getCategoryHomePage($limit)
+    {
+        return $this->model::with('children')
+            ->whereNull('parent_id')
+            ->orWhere('parent_id', 0)
+            ->orderBy('created_at', 'desc')
+            ->limit(3)
+            ->get();
+    }
 }
