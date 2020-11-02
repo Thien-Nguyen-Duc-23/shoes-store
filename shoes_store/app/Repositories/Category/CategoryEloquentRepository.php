@@ -32,7 +32,7 @@ class CategoryEloquentRepository extends EloquentRepository implements CategoryR
             ->whereNull('parent_id')
             ->orWhere('parent_id', 0)
             ->orderBy('created_at', 'desc')
-            ->limit(3)
+            ->limit($limit)
             ->get();
     }
 }
