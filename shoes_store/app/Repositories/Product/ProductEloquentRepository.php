@@ -35,4 +35,12 @@ class ProductEloquentRepository extends EloquentRepository implements ProductRep
             ->limit($limit)
             ->get();
     }
+
+    // get detail product by slug
+    public function getDetailProductBySlug($slug)
+    {
+        return $this->model::with('shoesImages', 'colors', 'sizes', 'categories')
+            ->where('slug', $slug)
+            ->first();
+    }
 }

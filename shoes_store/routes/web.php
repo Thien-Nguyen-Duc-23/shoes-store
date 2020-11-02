@@ -56,4 +56,5 @@ Route::group(['prefix' => '/', 'namespace' => 'Client'], function () {
 /****************************** ROUTE CLIENT V-2 ******************************/
 Route::group(['prefix' => '/', 'namespace' => 'Client_V_2'], function () {
     Route::get('/', 'Home\HomeClient@index')->name('home');
+    Route::get('/{slug}', 'Product\ProductClient@index')->name('product_detail');
 });

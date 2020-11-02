@@ -6,4 +6,6 @@ interface ProductRepositoryInterface
     public function getNewProducts($limit);
 
     public function getSellProducts($limit);
+
+    public function getDetailProductBySlug($slug);
 }
