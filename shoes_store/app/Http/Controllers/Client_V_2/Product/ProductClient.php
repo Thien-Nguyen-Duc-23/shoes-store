@@ -23,13 +23,14 @@ class ProductClient extends Controller
       $this->product = $product;
     }
 
-    public function index(Request $request)
+    public function detail(Request $request)
     {
-        $productDetailBySlug = $this->product->getDetailProductBySlug($request->slug);
+        // $productDetailBySlug = $this->product->getDetailProductBySlug($request->slug);
 
-        if (empty($productDetailBySlug)) {
-            return redirect()->back();
-        }
+        // if (empty($productDetailBySlug)) {
+        //     return redirect()->back();
+        // }
 
+        return view('client_v_2.product.detail');
     }
 }

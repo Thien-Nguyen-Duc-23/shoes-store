@@ -37,7 +37,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function () {
 Route::group(['prefix' => '/', 'namespace' => 'Client'], function () {
     // Route::get('/', 'HomePage@homePage')->name('home');
     Route::get('/product-category/{slug}', 'CategoryController@index')->name('product_category');
-    Route::get('/product-detail/{slug}', 'ShoesController@index')->name('product_detail');
+    // Route::get('/product-detail/{slug}', 'ShoesController@index')->name('product_detail');
     Route::get('/cart', 'CartController@index')->name('product_cart');
     Route::get('/checkout', 'CartController@checkout')->name('checkout');
     Route::post('/processCheckout', 'CartController@processCheckout')->name('process_checkout');
@@ -56,5 +56,5 @@ Route::group(['prefix' => '/', 'namespace' => 'Client'], function () {
 /****************************** ROUTE CLIENT V-2 ******************************/
 Route::group(['prefix' => '/', 'namespace' => 'Client_V_2'], function () {
     Route::get('/', 'Home\HomeClient@index')->name('home');
-    Route::get('/{slug}', 'Product\ProductClient@index')->name('product_detail');
+    Route::get('/{slug}', 'Product\ProductClient@detail')->name('product_detail');
 });
