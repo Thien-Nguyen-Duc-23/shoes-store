@@ -23,23 +23,12 @@
     <!-- ================= Google Fonts ================== -->
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto+Slab:400,700&amp;subset=vietnamese" rel="stylesheet">
-    <!-- Facebook Open Graph meta tags -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Homies SG">
-    <meta property="og:image" content="https://bizweb.dktcdn.net/100/345/647/themes/710110/assets/logo.png?1593244016703">
-    <meta property="og:image:secure_url" content="https://bizweb.dktcdn.net/100/345/647/themes/710110/assets/logo.png?1593244016703">
-    <meta property="og:description" content="Homies SG - STORE CHUYÊN SỈ THỜI TRANG UNISEX. 
-                                             Địa chỉ : 110 Đường 8, P.Linh Xuân, Quận Thủ Đức, TP.HCM. 
-                                             SĐT : 0903 169 942
-                                             Instagtam : homies.saigon. 
-                                             Shopee : shopee.vn/homies.saigon">
-    <meta property="og:url" content="index.html">
-    <meta property="og:site_name" content="Homies SG">		
     <!-- Plugin CSS -->	
-    <link rel="stylesheet" href="http://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css" >
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="http://bizweb.dktcdn.net/100/345/647/themes/710110/assets/owl.carousel.min.css?1593244016703" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css" >
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css"> --}}
+    <link href="//bizweb.dktcdn.net/100/345/647/themes/710110/assets/owl.carousel.min.css?1593244016703" rel="stylesheet" type="text/css" />
     <!-- Build Main CSS -->								
     <link href="http://bizweb.dktcdn.net/100/345/647/themes/710110/assets/base.scss.css?1593244016703" rel="stylesheet" type="text/css" />		
     <link href="http://bizweb.dktcdn.net/100/345/647/themes/710110/assets/style.scss.css?1593244016703" rel="stylesheet" type="text/css" />		
@@ -63,6 +52,10 @@
       <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=955764381212476&amp;ev=PageView&amp;noscript=1"/>
     </noscript>
     <!-- End Facebook Pixel Code -->
+
+    <!-- Stack style -->
+    @stack('styles')
+    <!-- End Stack style -->
   </head>
   <body>
     <div class="hidden-md hidden-lg opacity_menu">
@@ -114,15 +107,21 @@
     @includeIf('client_v_2.layout.footer.index')
     <!-- end include footer -->
 
+    <!-- Stack style -->
+    @stack('scripts')
+    <!-- End Stack style -->
+
     <!-- Bizweb javascript -->
     <script src="http://bizweb.dktcdn.net/100/345/647/themes/710110/assets/option-selectors.js?1593244016703" type="text/javascript">
     </script>
     <script src="http://bizweb.dktcdn.net/assets/themes_support/api.jquery.js" type="text/javascript">
     </script> 
     <!-- Plugin JS -->
-    <script src="http://bizweb.dktcdn.net/100/345/647/themes/710110/assets/owl.carousel.min.js?1593244016703" type="text/javascript">
+    <script src="//bizweb.dktcdn.net/100/345/647/themes/710110/assets/owl.carousel.min.js?1593244016703" type="text/javascript">
     </script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js">
+    </script> --}}
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
     </script>
     <!-- Add to cart -->	
     <div class="ajax-load"> 
@@ -269,18 +268,25 @@
     </div>
     <div id="myModal" class="modal fade" role="dialog">
     </div>
-    <script src="http://bizweb.dktcdn.net/100/345/647/themes/710110/assets/cs.script.js?1593244016703" type="text/javascript">
+    <script src="//bizweb.dktcdn.net/100/345/647/themes/710110/assets/cs.script.js?1593244016703" type="text/javascript">
     </script>
-    <script src="http://bizweb.dktcdn.net/100/345/647/themes/710110/assets/appear.js?1593244016703" type="text/javascript">
+    <script src="//bizweb.dktcdn.net/100/345/647/themes/710110/assets/appear.js?1593244016703" type="text/javascript">
     </script>
-    <script src="http://bizweb.dktcdn.net/100/345/647/themes/710110/assets/double_tab_togo.js?1593244016703" type="text/javascript">
+    <script src="//bizweb.dktcdn.net/100/345/647/themes/710110/assets/double_tab_togo.js?1593244016703" type="text/javascript">
     </script>
     <!-- Main JS -->	
-    <script src="http://bizweb.dktcdn.net/100/345/647/themes/710110/assets/sticky.js?1593244016703" type="text/javascript">
+    <script src="//bizweb.dktcdn.net/100/345/647/themes/710110/assets/sticky.js?1593244016703" type="text/javascript">
     </script>
-    <script src="http://bizweb.dktcdn.net/100/345/647/themes/710110/assets/main.js?1593244016703" type="text/javascript">
+    <script src="//bizweb.dktcdn.net/100/345/647/themes/710110/assets/main.js?1593244016703" type="text/javascript">
     </script>
     <!-- Product detail JS,CSS -->
+    <link href="//bizweb.dktcdn.net/100/345/647/themes/710110/assets/lightbox.css?1593244016703" rel="stylesheet" type="text/css" />
+    <script src="//bizweb.dktcdn.net/100/345/647/themes/710110/assets/jquery.elevatezoom308.min.js?1593244016703" type="text/javascript">
+    </script>		
+    <script src="//bizweb.dktcdn.net/100/345/647/themes/710110/assets/jquery.prettyphoto.min005e.js?1593244016703" type="text/javascript">
+    </script>
+    <script src="//bizweb.dktcdn.net/100/345/647/themes/710110/assets/jquery.prettyphoto.init.min367a.js?1593244016703" type="text/javascript">
+    </script>
     <a href="tel:0903 169 942" class="suntory-alo-phone suntory-alo-green hidden-lg hidden-md" id="suntory-alo-phoneIcon" style="left: 0px; bottom: 0px;">
       <div class="suntory-alo-ph-circle">
       </div>
@@ -319,7 +325,7 @@
          page_id="161262297612432"
          theme_color="#0084ff">
     </div>
-    <script src="http://bizweb.dktcdn.net/100/345/647/themes/710110/assets/appbulk-product-statistics.js?1593244016703" type="text/javascript">
+    <script src="//bizweb.dktcdn.net/100/345/647/themes/710110/assets/appbulk-product-statistics.js?1593244016703" type="text/javascript">
     </script>
   </body>
   <!-- Mirrored from homiessg.vn/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 26 Oct 2020 08:53:33 GMT -->
