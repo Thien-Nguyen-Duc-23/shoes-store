@@ -50,6 +50,7 @@ class ColorController extends Controller
         try {
             $data = [
                 'name' => $request->name,
+                'color_code' => $request->color_code,
             ];
             Colors::create($data);
 
@@ -105,6 +106,7 @@ class ColorController extends Controller
         try {
             $data = [
                 'name' => $request->name,
+                'color_code' => $request->color_code
             ];
             Colors::where('id', $id)->update($data);
 

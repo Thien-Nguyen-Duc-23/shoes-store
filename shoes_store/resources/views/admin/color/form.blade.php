@@ -31,6 +31,20 @@
                 </div>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    {!! Form::label('title', 'Color Code:<span class="text-red">*</span>', ['class'=> 'col-sm-3 control-label'], false) !!}
+                    <div class="col-sm-8">
+                        {!! Form::text('color_code', $isEdit ? $color->color_code : null, ['class' => 'form-control input-radius color_code '.($errors->has('color_code') ? 'is-invalid' : '')]) !!}
+                        @if ($errors->has('color_code'))
+                        <span class="text-danger invalid-feedback">{{ $errors->first('color_code') }}</span>
+                        @endif
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- /.box-body -->
     <div class="box-footer text-center">

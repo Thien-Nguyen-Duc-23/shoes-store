@@ -43,4 +43,16 @@ class ProductEloquentRepository extends EloquentRepository implements ProductRep
             ->where('slug', $slug)
             ->first();
     }
+
+    // get relation product
+    public function getRelationProduct($id, $arrayCate, $limit)
+    {
+        return $this->model::with('shoesImages')
+            ->whereIn('category_id', $arrayCate)
+            ->where('id', '<>', $id)
+            ->where('status', Shoes::ACTIVE)
+            ->orderBy('created_at', 'desc')
+            ->limit($limit)
+            ->get();
+    }
 }
