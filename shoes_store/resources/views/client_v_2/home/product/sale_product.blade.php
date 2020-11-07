@@ -78,7 +78,7 @@
             </div>
           </div>
           <div class="btn_xemthem">
-            <a href="san-pham-noi-bat.html" title="Xem thêm">Xem thêm
+            <a href="{{ route('category', \App\Models\Categories::IS_SALE) }}" title="Xem thêm">Xem thêm
             </a>  
           </div>
         </div>

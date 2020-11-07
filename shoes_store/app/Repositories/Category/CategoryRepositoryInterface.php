@@ -8,4 +8,6 @@ interface CategoryRepositoryInterface
     public function getTreeViewCategory();
 
     public function getCategoryHomePage($limit);
+
+    public function getCategoryBySlug($slug);
 }

@@ -5,7 +5,7 @@
         <div class="row row-noGutter-2">
           <div class="heading_spbc">
             <h2 class="title-head">
-              <a href="san-pham-moi.html">Sản Phẩm Mới
+              <a href="{{ route('category', \App\Models\Categories::NEWS) }}">Sản Phẩm Mới
               </a>
             </h2>
           </div>
@@ -64,10 +64,10 @@
                           </h3>
                           <div class="price-box clearfix">
                             @if ($newProduct->is_sale == \App\Models\Shoes::IS_SALE && \Carbon\Carbon::now()->gte(\Carbon\Carbon::parse($newProduct->start_date_sale)->format('Y-m-d H:i:s')) && \Carbon\Carbon::now()->lte(\Carbon\Carbon::parse($newProduct->end_date_sale)->format('Y-m-d H:i:s')))
-                              <span class="price product-price">{{  $newProduct->formartToVND($newProduct->price_sale) ?? null }}</span>
-                              <span class="price product-price-old">{{  $newProduct->formartToVND($newProduct->price) ?? null }}</span>
+                              <span class="price product-price">{{ $newProduct->formartToVND($newProduct->price_sale) ?? null }}</span>
+                              <span class="price product-price-old">{{ $newProduct->formartToVND($newProduct->price) ?? null }}</span>
                             @else
-                              <span class="price product-price black-price">{{  $newProduct->formartToVND($newProduct->price) ?? null }}</span>
+                              <span class="price product-price black-price">{{ $newProduct->formartToVND($newProduct->price) ?? null }}</span>
                             @endif
                           </div>
                         </div>
@@ -79,7 +79,7 @@
             </div>
           </div>
           <div class="btn_xemthem">
-            <a href="san-pham-moi.html" title="Xem thêm">Xem thêm</a>  
+            <a href="{{ route('category', \App\Models\Categories::NEWS) }}" title="Xem thêm">Xem thêm</a>  
           </div>
         </div>
       </div>

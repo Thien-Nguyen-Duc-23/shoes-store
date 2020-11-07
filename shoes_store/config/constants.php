@@ -40,5 +40,6 @@ return [
         '1' => 'Cash on delivery',
         '2' => 'Paypal',
         '99' => 'Orther'
-    ]
+    ],
+    'pagination' => 2,
 ];

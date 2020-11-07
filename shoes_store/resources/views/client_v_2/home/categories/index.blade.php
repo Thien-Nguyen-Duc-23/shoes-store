@@ -7,7 +7,7 @@
             <div class="col-md-4 col-sm-4 col-xs-12">
               <div class="adv_bottom_inner">
                 <figure>
-                  <a href="ao.html" title="Banner 1">
+                  <a href="{{ route('category', $category->slug) }}" title="Banner 1">
                     @php
                       $imageCategory = \Storage::disk('public')->exists(\App\Models\Categories::DIRECTORY.'/'.$category->image) ?  Storage::disk(config('filesystems.public_disk'))->url(\App\Models\Categories::DIRECTORY.'/'.$category->image) : asset('admin_lte/dist/img/default-50x50.gif');
                     @endphp

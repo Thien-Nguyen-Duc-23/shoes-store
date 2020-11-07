@@ -13,27 +13,43 @@ class ProductEloquentRepository extends EloquentRepository implements ProductRep
         return Shoes::class;
     }
 
-    // get news product
-    public function getNewProducts($limit)
+    public function baseQuery()
     {
         return $this->model::with('shoesImages')
             ->where('status', Shoes::ACTIVE)
-            ->orderBy('created_at', 'desc')
-            ->limit($limit)
-            ->get();
+            ->orderBy('created_at', 'desc');
     }
 
-    // get product sell
-    public function getSellProducts($limit)
+    public function baseQuerySell()
     {
-        return $this->model::with('shoesImages')
-            ->where('status', Shoes::ACTIVE)
+        return $this->baseQuery()
             ->where('is_sale', Shoes::IS_SALE)
             ->whereDate('start_date_sale', '<=', Carbon::now()->format('y-m-d'))
-            ->whereDate('end_date_sale', '>', Carbon::now()->format('y-m-d'))
-            ->orderBy('created_at', 'desc')
-            ->limit($limit)
-            ->get();
+            ->whereDate('end_date_sale', '>', Carbon::now()->format('y-m-d'));
+    }
+
+    // get news product category
+    public function getNewProducts($limit)
+    {
+        return $this->baseQuery()->limit($limit)->get();
+    }
+
+    // get product sell home page
+    public function getSellProducts($limit)
+    {
+        return $this->baseQuerySell()->limit($limit)->get();
+    }
+
+    // get product sell category
+    public function getSellProductsCate($pagination)
+    {
+        return $this->baseQuerySell()->paginate($pagination);
+    }
+
+    // get product sell category
+    public function getNewProductsCate($pagination)
+    {
+        return $this->baseQuery()->paginate($pagination);
     }
 
     // get detail product by slug
@@ -47,12 +63,18 @@ class ProductEloquentRepository extends EloquentRepository implements ProductRep
     // get relation product
     public function getRelationProduct($id, $arrayCate, $limit)
     {
-        return $this->model::with('shoesImages')
+        return $this->baseQuery()
             ->whereIn('category_id', $arrayCate)
             ->where('id', '<>', $id)
-            ->where('status', Shoes::ACTIVE)
-            ->orderBy('created_at', 'desc')
             ->limit($limit)
             ->get();
+    }
+
+    // get product follow category
+    public function getProductFollowCategory($arrayCate, $pagination)
+    {   
+        return $this->baseQuery()
+            ->whereIn('category_id', $arrayCate)
+            ->paginate($pagination);
     }
 }
