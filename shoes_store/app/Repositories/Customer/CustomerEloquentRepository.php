@@ -12,4 +12,14 @@ class CustomerEloquentRepository extends EloquentRepository implements CustomerR
     {
         return User::class;
     }
+
+    public function create(array $attribute)
+    {
+        return $this->model::create($attribute);
+    }
+
+    public function findByEmail($email)
+    {
+        return $this->model::where('email', $email)->first();
+    }
 }

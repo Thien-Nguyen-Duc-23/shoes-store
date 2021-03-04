@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Carbon\Carbon;
 
 class Shoes extends Model
 {
@@ -35,6 +36,15 @@ class Shoes extends Model
         'created_at',
         'updated_at',
     ];
+
+    public function checkIsSale()
+    {
+        // dd($this);
+        return $this->is_sale == self::IS_SALE
+            && Carbon::now()->gte(Carbon::parse($this->start_date_sale)->format('Y-m-d H:i:s'))
+            && Carbon::now()->lte(Carbon::parse($this->end_date_sale)->format('Y-m-d H:i:s')) 
+            ? true : false;
+    }
 
     // formart price to VND
     public function formartToVND($priceFloat)

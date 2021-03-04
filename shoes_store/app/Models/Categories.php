@@ -15,6 +15,8 @@ class Categories extends Model
     ];
 
     const DIRECTORY = 'category';
+    const IS_SALE = 'is-sale';
+    const NEWS = 'news';
 
     protected $fillable = [
         'parent_id',
