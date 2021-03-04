@@ -7,6 +7,7 @@
     <title>
       Homies SG
     </title>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- ================= Page description ================== -->
     <meta name="description" content="Homies SG - STORE CHUYÊN SỈ THỜI TRANG UNISEX. 
                                       Địa chỉ : 110 Đường 8, P.Linh Xuân, Quận Thủ Đức, TP.HCM. 
@@ -70,13 +71,6 @@
     <!-- include header -->
     @includeIf('client_v_2.layout.header.header_pc')
     <!-- end include header -->
-
-    <h1 class="hidden">Homies SG - Homies SG - STORE CHUYÊN SỈ THỜI TRANG UNISEX. 
-        Địa chỉ : 110 Đường 8, P.Linh Xuân, Quận Thủ Đức, TP.HCM. 
-        SĐT : 0903 169 942
-        Instagtam : homies.saigon. 
-        Shopee : shopee.vn/homies.saigon
-    </h1>
 
     <!-- Content Wrapper. Contains page content -->
     @yield('content-client')
@@ -215,59 +209,17 @@
       <div class="overlay no-background">
       </div>
       <div class="popup-inner content">
-        <div class="error-message">
-        </div>
+        <div class="error-message"></div>
       </div>
     </div>
 
-    <div id="popup-cart" class="modal fade" role="dialog">
-      <div id="popup-cart-desktop" class="clearfix">
-        <div class="title-popup-cart">
-          <i class="fa fa-check check" aria-hidden="true">
-          </i>
-          <span class="pop-title">Sản phẩm 
-            <span class="cart-popup-name">
-            </span> đã thêm vào giỏ hàng
-          </span>
-        </div>
-        <div class="content-popup-cart">
-          <div class="tbody-popup">
-          </div>
-          <div class="tfoot-popup">
-            <div class="tfoot-popup-1 clearfix">
-              <div class="pull-left popup-ship">
-              </div>
-              <div class="pull-right popup-total">
-                <p>Tổng tiền: 
-                  <span class="total-price">
-                  </span>
-                </p>
-              </div>
-            </div>
-            <div class="tfoot-popup-2 clearfix">
-              <a class="button btn-proceed-checkout" title="Tiến hành đặt hàng" href="cart.html">
-                <span>Tiến hành đặt hàng
-                </span>
-              </a>
-              <a href="cart.html" class="button btn-continue" title="Tiếp tục mua hàng">
-                <span>
-                  <span>
-                    <i class="fa fa-caret-left" aria-hidden="true">
-                    </i> Giỏ hàng của bạn
-                  </span>
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <a title="Close" class="quickview-close close-window" href="javascript:;" onclick="$('#popup-cart').modal('hide');">
-          <i class="fa  fa-close">
-          </i>
-        </a>
-      </div>
-    </div>
-    <div id="myModal" class="modal fade" role="dialog">
-    </div>
+    <!-- start include popup cart -->
+    @includeIf('client_v_2.layout.popup.cart')
+    <!-- end include popup cart -->
+
+    <div id="myModal" class="modal fade" role="dialog"></div>
+
+    <script src="{{ asset('js/main_client.js') }}" type="text/javascript"></script>
     <script src="//bizweb.dktcdn.net/100/345/647/themes/710110/assets/cs.script.js?1593244016703" type="text/javascript">
     </script>
     <script src="//bizweb.dktcdn.net/100/345/647/themes/710110/assets/appear.js?1593244016703" type="text/javascript">
@@ -287,44 +239,6 @@
     </script>
     <script src="//bizweb.dktcdn.net/100/345/647/themes/710110/assets/jquery.prettyphoto.init.min367a.js?1593244016703" type="text/javascript">
     </script>
-    <a href="tel:0903 169 942" class="suntory-alo-phone suntory-alo-green hidden-lg hidden-md" id="suntory-alo-phoneIcon" style="left: 0px; bottom: 0px;">
-      <div class="suntory-alo-ph-circle">
-      </div>
-      <div class="suntory-alo-ph-circle-fill">
-      </div>
-      <div class="suntory-alo-ph-img-circle">
-        <i class="fa fa-phone">
-        </i>
-      </div>
-    </a>
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId            : '252271411871880',
-          autoLogAppEvents : true,
-          xfbml            : true,
-          version          : 'v3.2'
-        }
-               );
-      };
-      (function(d, s, id){
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {
-          return;
-        }
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js";
-        fjs.parentNode.insertBefore(js, fjs);
-      }
-       (document, 'script', 'facebook-jssdk'));
-    </script>
-    <!-- Your customer chat code -->
-    <div class="fb-customerchat"
-         attribution=setup_tool
-         page_id="161262297612432"
-         theme_color="#0084ff">
-    </div>
     <script src="//bizweb.dktcdn.net/100/345/647/themes/710110/assets/appbulk-product-statistics.js?1593244016703" type="text/javascript">
     </script>
   </body>

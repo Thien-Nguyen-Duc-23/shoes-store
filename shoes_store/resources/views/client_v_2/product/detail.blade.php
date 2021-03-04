@@ -1,10 +1,10 @@
 @extends('client_v_2.layout.app')
 
 @push('styles')
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" type="text/javascript">
-    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" type="text/javascript">
+  </script>
 @endpush
 @section('content-client')
   <!-- include bread_crumb -->
@@ -17,9 +17,6 @@
         <div class="row">
           <div class="col-xs-12 details-product">
             <div class="row">
-              <!-- include content image -->
-              @includeIf('client_v_2.product.content.image')
-              <!-- end include content image -->
 
               <!-- include content detail -->
               @includeIf('client_v_2.product.content.detail')
@@ -66,21 +63,21 @@
 @push('scripts')
   <script>
     $(document).ready(function() {
-        if($(window).width()>1200) {
-            setTimeout(function() {
-                $('#zoom_01').elevateZoom({
-                    gallery:'gallery_01',
-                    zoomWindowWidth:420,
-                    zoomWindowHeight:500,
-                    zoomWindowOffetx: 10,
-                    easing : true,
-                    scrollZoom : false,
-                    cursor: 'pointer',
-                    galleryActiveClass: 'active',
-                    imageCrossfade: true
-                });
-            }, 500);
-        }
+      if($(window).width()>1200) {
+        setTimeout(function() {
+          $('#zoom_01').elevateZoom({
+            gallery:'gallery_01',
+            zoomWindowWidth:420,
+            zoomWindowHeight:500,
+            zoomWindowOffetx: 10,
+            easing : true,
+            scrollZoom : false,
+            cursor: 'pointer',
+            galleryActiveClass: 'active',
+            imageCrossfade: true
+          });
+        }, 500);
+      }
     });
 
     $(window).on("load resize",function(e) {
@@ -100,19 +97,19 @@
         if (he < 250) {
           var items = 2;
         } else {
-            if (he < 400) {
-              var items = 4;
+          if (he < 400) {
+            var items = 4;
+          } else {
+            if (he > 750) {
+              var items = 9;
             } else {
-              if (he > 750) {
-                  var items = 9;
+              if (he > 600) {
+                var items = 6;
               } else {
-                if (he > 600) {
-                  var items = 6;
-                } else {
-                  var items = 4;
-                }
+                var items = 4;
               }
             }
+          }
         }
 
         $("#gallery_01.swiper-container").each(function() {

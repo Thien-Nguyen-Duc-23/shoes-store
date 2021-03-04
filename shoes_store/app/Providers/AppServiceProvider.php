@@ -14,6 +14,10 @@ use App\Repositories\News\NewsEloquentRepository;
 use App\Repositories\News\NewsRepositoryInterface;
 use App\Repositories\Product\ProductEloquentRepository;
 use App\Repositories\Product\ProductRepositoryInterface;
+use App\Repositories\Order\OrderEloquentRepository;
+use App\Repositories\Order\OrderRepositoryInterface;
+use App\Repositories\OrderDetail\OrderDetailEloquentRepository;
+use App\Repositories\OrderDetail\OrderDetailRepositoryInterface;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -42,6 +46,16 @@ class AppServiceProvider extends ServiceProvider
         $this->app->singleton(
             ProductRepositoryInterface::class,
             ProductEloquentRepository::class
+        );
+        
+        $this->app->singleton(
+            OrderRepositoryInterface::class,
+            OrderEloquentRepository::class
+        );
+        
+        $this->app->singleton(
+            OrderDetailRepositoryInterface::class,
+            OrderDetailEloquentRepository::class
         );
     }
 
