@@ -17,6 +17,7 @@ class Shoes extends Model
     const ACTIVE = 1;
     const DEACTIVATE = 0;
     const IS_SALE = 1;
+    const NUMBER_LIMIT_PRODUCT = 8;
 
     protected $fillable = [
         'category_id',

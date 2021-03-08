@@ -18,3 +18,11 @@ use Illuminate\Http\Request;
     
 //     Route::post('/vote/step/user', 'StepUser')->name('step_user');
 // });
+
+
+Route::pattern('apiVersion1', 'v[1]');
+Route::group(['prefix' => '{apiVersion1}', 'namespace' => 'Api\V1'], function () {
+    Route::group(['prefix' => 'product', 'namespace' => 'Product'], function () {
+        Route::get('/index', 'Index');
+    });
+});
