@@ -46,6 +46,33 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
+        switch ($exception) {
+            case ($exception instanceof ActionException
+                || $exception instanceof NotFoundException):
+                return $this->setResponse($exception->getCode(), $exception->getErrorDescription());
+            default:
+                break;
+        }
+
         return parent::render($request, $exception);
+    }
+
+    
+    private function setResponse(int $httpCode, $description = [])
+    {
+        $httpCode = $httpCode !== 0 ? $httpCode : JsonResponse::HTTP_INTERNAL_SERVER_ERROR;
+        $description = $description ? $description : translate(
+            'http_message.' . config('httpstatus.code.' . $httpCode)
+        );
+
+        $response = [
+            'message' => [
+                'status' => false,
+                'code' => $httpCode,
+                'description' => [$description]
+            ]
+        ];
+
+        return response()->json($response, $httpCode);
     }
 }
