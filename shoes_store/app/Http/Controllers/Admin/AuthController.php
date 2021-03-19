@@ -4,12 +4,12 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Illuminate\Foundation\Auth\AuthenticatesUsers;
+// use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Auth;
 
 class AuthController extends Controller
 {
-    use AuthenticatesUsers;
+    // use AuthenticatesUsers;
 
     public function login()
     {
