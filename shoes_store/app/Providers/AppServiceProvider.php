@@ -28,6 +28,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
+        if (in_array($this->app->environment(), ['local', 'development'])) {
+            $this->app->register(\Laravel\Telescope\TelescopeServiceProvider::class);
+            $this->app->register(TelescopeServiceProvider::class);
+        }
+        
         $this->app->singleton(
             CategoryRepositoryInterface::class,
             CategoryEloquentRepository::class
